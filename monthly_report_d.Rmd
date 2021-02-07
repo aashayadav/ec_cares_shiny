@@ -1,0 +1,423 @@
+---
+title: "monthly_report_d"
+author: "Asha Yadav"
+date: "2/6/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidyverse)
+library(rio)
+library(here)
+library(janitor)
+library(plotly)
+library(kableExtra)
+
+```
+
+
+```{r, import data}
+# loading data: files received from EC Cares
+
+lane_monthly <- import(here("data", "Lane-monthly_report_data_Jan2015-Jan2021-1.xlsx")) %>%
+  clean_names()
+
+state_monthly <- import(here("data", "State-monthly_report_data_Jan2015-Jan2021-1.xlsx")) %>%
+  clean_names()
+```
+
+```{r}
+# Lane county monthly report- received from EC Cares 
+# selected requied variables.
+# separated month and year in two separate columns.
+# removed line 74 as total of columns
+# added a new column to specify it is lane county data.
+
+
+lane_monthly <- lane_monthly %>%
+  select("month", "ei_ref", "ec_ref", "ei_elig", "ec_elig", "ei_total_qual", "ecse_total_qual", "total_qual", "ei_total_exit", "ecse_total_exit", "total_exit", "ei_total_screen", "ecse_total_screen", "total_screen", "ei_total_eval", "ecse_total_eval", "total_eval") %>%
+  separate("month", into = c("month", "year"), sep = " ")
+  
+lane_monthly = lane_monthly[-(74),]
+
+lane_monthly$area <- rep("Lane county", nrow(lane_monthly)) # created a new column with area to specify lane county. 
+
+#view(lane_monthly)
+
+```
+
+```{r}
+# Oregon state monthly data- received from EC Cares 
+# selected requied variables.
+# separated month and year in two separate columns.
+# removed line 74 as total of columns
+# added a new column to specify it is Oregon data.
+
+state_monthly <- state_monthly %>%
+  select("month", "ei_ref", "ec_ref", "ei_elig", "ec_elig", "ei_total_qual", "ecse_total_qual", "total_qual", "ei_total_exit", "ecse_total_exit", "total_exit", "ei_total_screen", "ecse_total_screen", "total_screen", "ei_total_eval", "ecse_total_eval", "total_eval") %>%
+  separate("month", into = c("month", "year"), sep = " ")
+
+state_monthly = state_monthly[-(74),] 
+
+state_monthly$area <- rep("Oregon", nrow(state_monthly)) # created a new column to specify a state data.
+#view(state_monthly)
+
+```
+
+```{r}
+
+# combined state and lanc county data 
+# calculated total number of children under ei and ecse in lane county and oregon state.
+monthly_report <- bind_rows(lane_monthly, state_monthly) %>%
+   mutate(total_elig = ei_elig + ec_elig) %>%
+   mutate(total_ref = ei_ref + ec_ref)
+```
+
+
+```{r}
+
+# calculating total number of children by year and area by each query: 
+# Query: Eligibility, Referrals, Evaluated, Qualify, Exit, Screen.
+
+d <- monthly_report %>%
+  group_by(year, area) %>%
+  summarize(ei_elig = sum(ei_elig),
+            ec_elig = sum(ec_elig),
+            total_elig = sum(total_elig),
+            ei_ref = sum(ei_ref),
+            ec_ref = sum(ec_ref),
+            total_ref = sum(total_ref),
+            ei_total_qual = sum(ei_total_eval),
+            ecse_total_qual = sum(ecse_total_qual),
+            total_qual = sum(total_qual),
+            ei_total_exit = sum(ei_total_exit),
+            ecse_total_exit = sum(ecse_total_exit),
+            total_exit = sum(total_exit),
+            ei_total_screen = sum(ei_total_screen),
+            ecse_total_screen = sum(ecse_total_screen),
+            total_screen = sum(total_screen),
+            ei_total_eval = sum(ei_total_eval),
+            ecse_total_eval = sum(ecse_total_eval),
+            total_eval = sum(total_eval))
+ 
+d_elig <- d %>%
+  group_by(year, area) %>%
+  pivot_longer(cols = c(ei_elig, ec_elig, total_elig),
+               names_to = "Eligibility",
+               values_to = "Count_elig") %>%
+  select(year, area, Eligibility, Count_elig) 
+
+ 
+
+d_ref <- d %>%
+  group_by(year, area) %>%
+  pivot_longer(cols = c(ei_ref, ec_ref, total_ref),
+               names_to = "Referrals",
+               values_to = "Count_ref")%>%
+  select(year, area, Referrals, Count_ref) 
+
+d_eval <- d %>%
+  group_by(year, area) %>%
+  pivot_longer(cols = c(ei_total_eval, ecse_total_eval, total_eval),
+               names_to = "Evaluated",
+               values_to = "Count_eval")%>%
+  select(year, area, Evaluated, Count_eval) 
+  
+d_exit <- d %>%
+  group_by(year, area) %>%
+  pivot_longer(cols = c(ei_total_exit, ecse_total_exit, total_exit),
+               names_to = "Exit",
+               values_to ="Count_exit")%>%
+  select(year, area, Exit, Count_exit) 
+  
+
+d_screen <- d %>%
+  group_by(year, area) %>%
+  pivot_longer(cols = c(ei_total_screen, 
+                        ecse_total_screen, 
+                        total_screen),
+               names_to = "Screen",
+               values_to = "Count_screen")%>%
+  select(year, area, Screen, Count_screen) 
+
+d_qual <- d %>%
+  group_by(year, area) %>%
+  pivot_longer(cols = c(ei_total_qual, 
+                        ecse_total_qual, total_qual),
+               names_to = "Qualify",
+               values_to = "Count_qual")%>%
+  select(year, area, Qualify, Count_qual) 
+
+d_monthly_report <- bind_cols(d_eval, d_exit, d_qual, d_elig, d_ref, d_screen, d_exit) %>%
+  select(1:2, 3:4, 7:8, 11:12, 15:16, 19:20, 23:24)
+  
+
+ 
+ 
+```
+```{r}
+d_monthly_report$Eligibility = recode(d_monthly_report$Eligibility,
+                                      "ei_elig" = "EI",
+                                      "ec_elig" = "ECSE",
+                                      "total_elig" = "TOTAL")
+
+ d_monthly_report$Evaluated = recode(d_monthly_report$Evaluated,
+                                      "ei_total_eval" = "EI",
+                                      "ecse_total_eval" = "ECSE",
+                                      "total_eval" = "TOTAL")
+ 
+ d_monthly_report$Referrals = recode(d_monthly_report$Referrals,
+                                      "ei_ref" = "EI",
+                                      "ec_ref" = "ECSE",
+                                      "total_ref" = "TOTAL")
+ 
+ d_monthly_report$Exit...7 = recode(d_monthly_report$Exit...7,
+                                  "ei_total_exit" = "EI",
+                                  "ecse_total_exit" = "ECSE",
+                                  "total_exit" = "TOTAL")
+ 
+ d_monthly_report$Screen = recode(d_monthly_report$Screen,
+                                  "ei_total_screen" = "EI",
+                                  "ecse_total_screen" = "ECSE",
+                                  "total_screen" = "TOTAL")
+ 
+ d_monthly_report$Qualify = recode(d_monthly_report$Qualify,
+                                       "ei_total_qual" = "EI",
+                                       "ecse_total_qual" = "ECSE",
+                                       "total_qual" = "TOTAL")
+ 
+ data_report <- d_monthly_report %>%
+   rename(Year = year...1,
+          Area = area...2,
+          Exit = Exit...7,
+          Count_exit = Count_exit...8)
+   
+```
+
+```{r}
+# Exporting dataset for Shiny
+
+#rio::export(data_report, here("data", "data_report.csv"))
+
+```
+
+
+```{r, plot1, Eligibility}
+# Plot1: Number of Children Eligible for EI & ECSE
+# Goals : eligible
+# Number of kids eligible in EI (ei_elig)
+# Number of kids eligible in ECSE (ec_elig)
+# Total eligible EI/ECSE (created a new column to calculate total_elig)
+
+d_eligibility<- data_report %>%
+  ggplot(aes(Year, Count_elig)) +
+  geom_line(aes(group = Eligibility), color= "grey80") +
+  geom_point(aes(color = Eligibility)) + 
+               facet_wrap(~Area) + 
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45,
+                                     vjust = 1.0,
+                                     hjust = 1.0),
+        axis.title.x = element_blank(),
+        axis.title.y = element_blank(),
+        legend.title = element_blank(),
+        plot.title = element_text(hjust = 0.5)) +
+  labs(title = "Number of Children Eligible for EI & ECSE") +
+  scale_y_continuous(expand = c(0, 0))
+ggplotly(d_eligibility)
+
+```
+```{r}
+data_report %>%
+  select(Year, Area, Eligibility, Count_elig) %>%
+  pivot_wider(names_from = Eligibility,
+              values_from = Count_elig) %>%
+  mutate(EI_percent = (EI/TOTAL)*100) %>%
+  mutate(ECSE_percent = (ECSE/TOTAL)*100) %>%
+  kable()
+  
+```
+
+
+```{r, plot2, Referrals}
+#plot2: Number of Children Referred to EI & ECSE
+
+# Goals : referrals
+# Number of EI referrals (ei_ref)
+# Number of ECSE referrals (ec_ref)
+# Total number of referrals
+
+d_referrals<- data_report %>%
+  ggplot(aes(Year, Count_ref)) +
+  geom_line(aes(group = Referrals), color= "grey80") +
+  geom_point(aes(color = Referrals)) + 
+               facet_wrap(~Area) + 
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45,
+                                     vjust = 1.0,
+                                     hjust = 1.0),
+        axis.title.x = element_blank(),
+        axis.title.y = element_blank(),
+        legend.title = element_blank(),
+        plot.title = element_text(hjust = 0.5)) +
+  labs(title = "Number of Children Referred to EI & ECSE") +
+  scale_y_continuous(expand = c(0, 0))
+ggplotly(d_referrals)
+
+```
+```{r}
+data_report %>%
+  select(Year, Area, Referrals, Count_ref) %>%
+  pivot_wider(names_from = Referrals,
+              values_from = Count_ref) %>%
+  mutate(EI_percent = (EI/TOTAL)*100) %>%
+  mutate(ECSE_percent = (ECSE/TOTAL)*100) %>%
+  kable()
+```
+
+```{r,plot3, Qualify}
+# Goals : evaluated who qualify
+# Number of EI children evaluated who qualify (ei_total_qual)
+# Number of ECSE children evaluated who quality(ecse_total_qual)
+# Total number of children evaluated who quality(total_qual)
+
+d_qualify <- data_report %>%
+  ggplot(aes(Year, Count_qual)) +
+  geom_line(aes(group = Qualify), color= "grey80") +
+  geom_point(aes(color = Qualify)) + 
+               facet_wrap(~Area) + 
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45,
+                                     vjust = 1.0,
+                                     hjust = 1.0),
+        axis.title.x = element_blank(),
+        axis.title.y = element_blank(),
+        legend.title = element_blank(),
+        plot.title = element_text(hjust = 0.5)) +
+  labs(title = "Number of Children Evaluated who Qualify for EI & ECSE") +
+  scale_y_continuous(expand = c(0, 0))
+  
+  
+ggplotly(d_qualify)
+```
+```{r}
+data_report %>%
+  select(Year, Area, Qualify, Count_qual) %>%
+  pivot_wider(names_from = Qualify,
+              values_from = Count_qual) %>%
+  mutate(EI_percent = (EI/TOTAL)*100) %>%
+  mutate(ECSE_percent = (ECSE/TOTAL)*100) %>%
+  kable()
+```
+
+```{r, Exit}
+
+# Goals: exit from services
+# Number of EI children who exit from services(ei_total_exit)
+# Number of ECSE children who exit from services (ecse_total_exit)
+# Total number of children who exit from services (total_exit)
+
+d_exit <- data_report %>%
+  ggplot(aes(Year, Count_exit)) +
+  geom_line(aes(group = Exit), color= "grey80") +
+  geom_point(aes(color = Exit)) + 
+               facet_wrap(~Area) + 
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45,
+                                     vjust = 1.0,
+                                     hjust = 1.0),
+        axis.title.x = element_blank(),
+        axis.title.y = element_blank(),
+        legend.title = element_blank(),
+        plot.title = element_text(hjust = 0.5)) +
+  labs(title = "Number of Children who Exit from EI & ECSE") +
+  scale_y_continuous(expand = c(0, 0))
+  
+ggplotly(d_exit)
+
+```
+
+```{r}
+data_report %>%
+  select(Year, Area, Exit, Count_exit) %>%
+  pivot_wider(names_from = Exit,
+              values_from = Count_exit) %>%
+  mutate(EI_percent = (EI/TOTAL)*100) %>%
+  mutate(ECSE_percent = (ECSE/TOTAL)*100) %>%
+  kable()
+```
+
+```{r, Screen}
+# Goals: screened and not referred
+# Number of EI children screened and not referred for evaluation (ei_total_screen)
+# Number of ECSE children screened and not referred for evaluation (ecse_total_screen)
+# Total number of children screened and not referred for evaluation (total_screen)
+d_screen <- data_report %>%
+  ggplot(aes(Year, Count_screen)) +
+  geom_line(aes(group = Screen), color= "grey80") +
+  geom_point(aes(color = Screen)) + 
+               facet_wrap(~Area) + 
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45,
+                                     vjust = 1.0,
+                                     hjust = 1.0),
+        axis.title.x = element_blank(),
+        axis.title.y = element_blank(),
+        legend.title = element_blank(),
+        plot.title = element_text(hjust = 0.5)) +
+  labs(title = "No. of Children Screened & Not Referred for Evaluation") +
+  scale_y_continuous(expand = c(0, 0))
+
+ggplotly(d_screen)
+
+```
+```{r}
+data_report %>%
+  select(Year, Area, Screen, Count_screen) %>%
+  pivot_wider(names_from = Screen,
+              values_from = Count_screen) %>%
+  mutate(EI_percent = (EI/TOTAL)*100) %>%
+  mutate(ECSE_percent = (ECSE/TOTAL)*100) %>%
+  kable()
+```
+
+```{r, Evaluated}
+
+# Goals: evaluated who did not quality
+# Number of EI children evaluated who did not quality(ei_total_eval)
+# Number of ECSE children evaluated who did not quality (ecse_total_eval)
+# Total number of children evaluated who did not qualify(total_eval)
+
+d_eval <- data_report %>%
+  ggplot(aes(Year, Count_eval)) +
+  geom_line(aes(group = Evaluated), color= "grey80") +
+  geom_point(aes(color = Evaluated)) + 
+               facet_wrap(~Area) + 
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45,
+                                     vjust = 1.0,
+                                     hjust = 1.0),
+        axis.title.x = element_blank(),
+        axis.title.y = element_blank(),
+        legend.title = element_blank(),
+        plot.title = element_text(hjust = 0.5)) +
+  labs(title = "Number of Children Evaluated who Did Not Qualify") +
+  scale_y_continuous(expand = c(0, 0))
+  
+ggplotly(d_eval)
+
+```
+```{r}
+data_report %>%
+  select(Year, Area, Evaluated, Count_eval) %>%
+  pivot_wider(names_from = Evaluated,
+              values_from = Count_eval) %>%
+  mutate(EI_percent = (EI/TOTAL)*100) %>%
+  mutate(ECSE_percent = (ECSE/TOTAL)*100) %>%
+  kable()
+```
+
