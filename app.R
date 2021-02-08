@@ -6,7 +6,7 @@ library(rio)
 library(here)
 library(plotly)
 library(dplyr)
-
+library(kableExtra)
 
 data_report <- import(here("data", "data_report.csv"))
 
@@ -18,7 +18,7 @@ ui <- dashboardPage(
   
   dashboardSidebar(
   selectInput("variable", "Select variable: Report Data",
-                choices = c("No. of Children Eligible" = "Eligibility",
+                choices = c("No. of Children Eligible" = "Eligibile",
                             "No. of Children Evaluated who Qualify " = "Qualify",
                             "No. of Children Screened & Not Referred" = "Screen",
                             "No. of Children Referred" = "Referrals",
@@ -68,8 +68,8 @@ server <- function(input, output) {
       select(Year, Area, Eligibility, Count_elig) %>%
       pivot_wider(names_from = Eligibility,
                   values_from = Count_elig) %>%
-      mutate(EI_percent = (EI/TOTAL)*100) %>%
-      mutate(ECSE_percent = (ECSE/TOTAL)*100) %>%
+      mutate(EI_percent = round((EI/TOTAL)*100, digits = 2)) %>%
+      mutate(ECSE_percent = round((ECSE/TOTAL)*100, digits = 2)) %>%
       kable(caption = "Number of Children Eligible for EI and ECSE") %>%
       kable_styling(bootstrap_options = "striped", "hover",
                     full_width = F, position = "float_right") %>%
@@ -106,8 +106,8 @@ server <- function(input, output) {
       select(Year, Area, Referrals, Count_ref) %>%
       pivot_wider(names_from = Referrals,
                   values_from = Count_ref) %>%
-      mutate(EI_percent = (EI/TOTAL)*100) %>%
-      mutate(ECSE_percent = (ECSE/TOTAL)*100) %>%
+      mutate(EI_percent = round((EI/TOTAL)*100, digits = 2)) %>%
+      mutate(ECSE_percent = round((ECSE/TOTAL)*100, digits = 2)) %>%
       kable(caption = "Number of Children Referred to EI & ECSE") %>%
       kable_styling(bootstrap_options = "striped", "hover",
                     full_width = F, position = "float_right") %>%
@@ -144,8 +144,8 @@ server <- function(input, output) {
       select(Year, Area, Qualify, Count_qual) %>%
       pivot_wider(names_from = Qualify,
                   values_from = Count_qual) %>%
-      mutate(EI_percent = (EI/TOTAL)*100) %>%
-      mutate(ECSE_percent = (ECSE/TOTAL)*100) %>%
+      mutate(EI_percent = round((EI/TOTAL)*100, digits = 2)) %>%
+      mutate(ECSE_percent = round((ECSE/TOTAL)*100, digits = 2)) %>%
       kable(caption = "Number of Children Evaluated who Qualify for EI & ECSE") %>%
       kable_styling(bootstrap_options = "striped", "hover",
                     full_width = F, position = "float_right") %>%
@@ -181,8 +181,8 @@ server <- function(input, output) {
       select(Year, Area, Exit, Count_exit) %>%
       pivot_wider(names_from = Exit,
                   values_from = Count_exit) %>%
-      mutate(EI_percent = (EI/TOTAL)*100) %>%
-      mutate(ECSE_percent = (ECSE/TOTAL)*100) %>%
+      mutate(EI_percent = round((EI/TOTAL)*100, digits = 2)) %>%
+      mutate(ECSE_percent = round((ECSE/TOTAL)*100, digits = 2)) %>%
       kable(caption = "Number of Children who Exit from EI & ECSE") %>%
       kable_styling(bootstrap_options = "striped", "hover",
                     full_width = F, position = "float_right") %>%
@@ -217,8 +217,8 @@ server <- function(input, output) {
       select(Year, Area, Screen, Count_screen) %>%
       pivot_wider(names_from = Screen,
                   values_from = Count_screen) %>%
-      mutate(EI_percent = (EI/TOTAL)*100) %>%
-      mutate(ECSE_percent = (ECSE/TOTAL)*100) %>%
+      mutate(EI_percent = round((EI/TOTAL)*100, digits = 2 )) %>%
+      mutate(ECSE_percent = round((ECSE/TOTAL)*100, digits = 2)) %>%
       kable(caption = "Number of Children Screened and Not Referred for Evaluation") %>%
       kable_styling(bootstrap_options = "striped", "hover",
                     full_width = F, position = "float_right") %>%
@@ -253,8 +253,8 @@ server <- function(input, output) {
       select(Year, Area, Evaluated, Count_eval) %>%
       pivot_wider(names_from = Evaluated,
                   values_from = Count_eval) %>%
-      mutate(EI_percent = (EI/TOTAL)*100) %>%
-      mutate(ECSE_percent = (ECSE/TOTAL)*100) %>%
+      mutate(EI_percent = round((EI/TOTAL)*100, digits = 2)) %>%
+      mutate(ECSE_percent = round((ECSE/TOTAL)*100, digits = 2)) %>%
       kable(caption = "Number of Children Evaluated who Did Not Qualify") %>%
       kable_styling(bootstrap_options = "striped", "hover",
                     full_width = F, position = "float_right") %>%
