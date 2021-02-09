@@ -105,6 +105,13 @@ d <- monthly_report %>%
             total_eval = sum(total_eval))
 ```
 
+```{r}
+# Export data_report in csv for Shiny. To test if function works with dataset
+
+#rio::export(d, here("data", "d.csv"))
+
+```
+
 
 ```{r}
 # Step1: Function to create variables needed to anser client queries: Eligibility, Referrals, Evaluated, Qualify, Exit, Screen.
@@ -152,6 +159,9 @@ data_report <- bind_cols(d_eval, d_exit, d_qual,
 
 ```
 
+
+
+
 ```{r}
 
 # Recoding ei_, ec_, total_ to EI, ECSE, TOTAL for table generation.
@@ -191,7 +201,7 @@ data_report$Eligibility = recode(data_report$Eligibility,
 # Export data_report in csv for Shiny.
 
 
-rio::export(data_report, here("data", "data_report.csv"))
+#rio::export(data_report, here("data", "data_report.csv"))
 
 ```
 
