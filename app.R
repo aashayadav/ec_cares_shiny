@@ -158,6 +158,23 @@ ui <- dashboardPage(
   # "UI" ends here and "server" starts #
   server <- function(input, output) {
     
+    
+    #1. Maindashboard
+    output$overviewtab <- renderUI({
+      overview_tbl <- data_report_pyramid %>%
+        pivot_wider(names_from = "variable",
+                    values_from = "number")
+      box(reactable(overview_tbl,
+                groupBy = "Year",
+                height = 350,
+                width = 1200,
+                striped = TRUE,
+                defaultPageSize = 12,
+                minRows = 14,
+                searchable = TRUE,
+                highlight = TRUE))
+      })
+    
     # 2.1monthly report variables plot
     output$plot <- renderPlotly({
       ggplotly(
