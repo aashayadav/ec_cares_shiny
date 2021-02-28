@@ -16,7 +16,8 @@ library(here)
 library(janitor)
 library(plotly)
 library(kableExtra)
-
+library(ggthemes)
+library(colorblindr)
 ```
 
 
@@ -28,6 +29,8 @@ lane_monthly <- import(here("data", "Lane-monthly_report_data_Jan2015-Jan2021-1.
 
 state_monthly <- import(here("data", "State-monthly_report_data_Jan2015-Jan2021-1.xlsx")) %>%
   clean_names()
+
+
 ```
 
 ```{r}
@@ -83,6 +86,8 @@ monthly_report <- bind_rows(lane_monthly, state_monthly) %>%
 # Query: Eligibility, Referrals, Evaluated, Qualify, Exit, Screen.
 
 # Calculation total number of children in EI, ECSE and overall total by year and area.
+
+
 d <- monthly_report %>%
   group_by(year, area) %>%
   summarize(ei_elig = sum(ei_elig),
@@ -103,6 +108,17 @@ d <- monthly_report %>%
             ei_total_eval = sum(ei_total_eval),
             ecse_total_eval = sum(ecse_total_eval),
             total_eval = sum(total_eval))
+
+# Function to calculate sum as above. But doens't reduce number of lines of code so not used. Used curly curly from rlang. 
+
+#d_sum <- function(data, var) {
+#  data %>%
+#    group_by(year, area) %>%
+#    summarise(var = sum({{var}}))
+#}
+
+
+
 ```
 
 ```{r}
@@ -195,6 +211,7 @@ data_report$Eligibility = recode(data_report$Eligibility,
                                        "ecse_total_qual" = "ECSE",
                                        "total_qual" = "TOTAL")
  
+ data_report
 ```
 
 ```{r}
@@ -229,9 +246,11 @@ report_dataviz <- function(x, y) {
 }
 
 
-report_dataviz(Eligibility, Count_elig)
+
  
 ```
+
+
 ```{r, function with three input variables}
 
 # Function to generate plot from 
@@ -495,5 +514,115 @@ data_report %>%
   mutate(EI_percent = round((EI/TOTAL)*100, digits = 2)) %>%
   mutate(ECSE_percent = round((ECSE/TOTAL)*100, digits = 2)) %>%
   kable()
+```
+```{r, tried_pyramid plot}
+#install.packages("lemon")
+library(lemon)
+
+data_report_pyramid <- data_report %>%
+  filter(Evaluated == "TOTAL") %>%
+  select(Year, Area, Count_screen, Count_eval, 
+         Count_exit, Count_qual, Count_elig, Count_ref)
+
+names(data_report_pyramid)[names(data_report_pyramid) == "Count_elig"] <-
+  "Eligibility"
+names(data_report_pyramid)[names(data_report_pyramid) == "Count_screen"] <-
+  "Screen"
+names(data_report_pyramid)[names(data_report_pyramid) == "Count_exit"] <-
+  "Exit"
+names(data_report_pyramid)[names(data_report_pyramid) == "Count_qual"] <-
+  "Qualify"
+names(data_report_pyramid)[names(data_report_pyramid) == "Count_ref"] <-
+  "Referral"
+names(data_report_pyramid)[names(data_report_pyramid) == "Count_eval"] <-
+  "Evaluated"
+
+data_report_pyramid <- data_report_pyramid %>%
+  pivot_longer(cols = "Screen":"Referral",
+               names_to = "variable",
+               values_to = "number")
+
+# set variables as factor
+data_report_pyramid[sapply(data_report_pyramid, is.character)] <- lapply(data_report_pyramid[sapply(data_report_pyramid,is.character)], as.factor)
+
+data_report_pyramid
+
+```
+
+```{r}
+# Export data_report_pyramid in csv for the overview table Shiny.
+
+#rio::export(data_report_pyramid, here("data", "data_report_pyramid.csv"))
+
+```
+
+```{r, tried_pyramid plot}
+ggplot(data = data_report_pyramid, 
+       mapping = aes(x = ifelse(test = Area == "Lane county", 
+                                yes = -number, 
+                                no = number), 
+                     y = variable, fill = Area)) +
+  geom_col() +
+  scale_x_symmetric(labels = abs) +
+  labs(x = "number") +
+  facet_wrap(~Year)
+
+```
+
+
+
+```{r, data table}
+
+library(reactable)
+
+data_pyramid_table <- data_report_pyramid %>%
+  pivot_wider(names_from = "variable",
+               values_from = "number") %>%
+  group_by(Year) %>%
+  reactable(height = 270,
+            striped = TRUE,
+            )
+  
+
+
+
+ # gt() %>%
+ # tab_spanner(label = "Services",
+         #     columns = vars("Screen", "Evaluated", "Exit", "Qualify", 
+       #                      "Eligibility", "Referral")) %>%
+ # cols_label(Area = " ") %>%
+ # cols_align(align = "left", columns = vars(Area)) %>%
+#  tab_header(title = "Number of Children",
+      #       subtitle = "EC Cares Enrollment: 2015-2021") %>%
+#  tab_options(row_group.background.color = "#B0E0E6")
+  
+  
+  
+#data_pyramid_table
+
+```
+
+
+
+
+
+```{r}
+plot_overall <- data_report_pyramid %>%
+  filter(Area == "Lane county") %>%
+  ggplot(aes(reorder(variable, number), number, fill = Area)) +
+  geom_col(width = 0.5) +
+  coord_flip() +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45,
+                                     vjust = 1.0,
+                                     hjust = 1.0),
+        axis.title.x = element_blank(),
+        axis.title.y = element_blank(),
+        legend.position = "none") +
+  facet_wrap(~Year)
+ggplotly(plot_overall)
+
+
+  
 ```
 

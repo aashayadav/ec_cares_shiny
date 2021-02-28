@@ -1,0 +1,780 @@
+---
+title: "child_data"
+author: "Asha Yadav"
+date: "2/12/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidyverse)
+library(rio)
+library(here)
+library(janitor)
+library(plotly)
+library(kableExtra)
+library(plotly)
+library(colorblindr)
+library(ggthemes)
+library(dplyr)
+library(zoo)
+library(reactable)
+
+```
+
+```{r}
+
+child_data1 <- import(here("data", "ecweb_child1_2021-01-28.xlsx")) %>%
+  clean_names()
+
+child_data2 <- import(here("data", "ecweb_child2_2021-01-28.xlsx")) %>%
+  clean_names()
+
+child_eligibility <- import(here("data", 
+                                 "ecweb_eligibility_2021-01-28.xlsx")) %>%
+  clean_names()
+
+child_placement <- import(here("data", 
+                               "ecweb_placement_2021-01-28.xlsx")) %>%
+  clean_names()
+
+child_referral <- import(here("data", 
+                              "ecweb_referral_2021-01-28.xlsx")) %>%
+  clean_names()
+
+child_site <- import(here("data", 
+                          "ecweb_site_2021-01-28.xlsx")) %>%
+  clean_names()
+
+
+```
+
+
+
+```{r}
+child_data <- merge(child_data1, child_data2) 
+# calculate medicaid, foster, 
+
+```
+
+
+
+
+
+
+```{r, eligibility}
+child_eligibility1 <- child_eligibility %>%
+  separate(elig_date, into = c("year", "month", "day", sep = "-")) %>%
+  filter(year >= 2015) %>%
+  mutate(elig_code = recode(elig_code,
+                            DeafBlind = "Other",
+                            DHH = "Other",
+                            ED = "Other",
+                            OHI = "Other",
+                            OI = "Other",
+                            TBI = "Other",
+                            VI = "Other")) %>%
+  select(project_child_id, elig_program, year, elig_code) %>%
+  group_by(year, elig_program) %>%
+  count(elig_code) %>%
+  ungroup()
+```
+
+```{r}
+# Exporting child_eligiblity1 data for plot and table on primary eligiblity condition
+
+#write.table(child_eligibility1, file = "child_eligibility1.csv")
+```
+
+```{r, eligibility}
+plot_elig <- ggplot(child_eligibility1, aes(year, n, 
+                                            fill = elig_code)) +
+  scale_fill_manual(values=c("#4c4c4c", "#86BB8D", 
+                             "#68a4bd", "#ff9900","#ff0000")) +
+  geom_col(width = 0.5) +
+  facet_wrap(~elig_program, scales = "free_y") + 
+  theme_economist_white() +
+  theme(axis.text.x = element_text(angle = 45,
+                                     vjust = 1.0,
+                                     hjust = 1.0),
+        axis.title.x = element_blank(),
+        axis.title.y = element_blank(),
+        legend.title = element_blank(),
+        plot.title = element_text(hjust = 0.5)) +
+  labs(title = "Primary Eligibility Condition for EI & ECSE")
+  
+ggplotly(plot_elig) 
+
+```
+```{r}
+child_eligibility1 %>%
+  pivot_wider(names_from = elig_code,
+              values_from = n)%>%
+  reactable()
+```
+
+
+```{r, joining datasets}
+#child_data <- merge(child_data1, child_data2)
+#child_data <- merge(child_data, child_eligibility)
+#child_data <- merge(child_data, child_referral)
+#child_data <- merge(child_data, child_site)
+```
+
+```{r}
+child_data_a <- child_data1 %>%
+  select(project_child_id, age_class, has_medicaid_id, 
+         has_foster_parent) %>%
+  mutate_at(c("has_medicaid_id", 
+              "has_foster_parent"), ~(recode(.,
+                                           "0" = "No",
+                                           "1" = "Yes"))) %>%
+  pivot_longer(cols = c("has_medicaid_id", 
+                        "has_foster_parent"),
+               names_to = "medi_fost",
+               values_to = "category") %>%
+  group_by(medi_fost) %>%
+  #group_by(age_class, medi_fost) %>%
+  count(category) %>%
+  mutate(percent = round((n/2659)*100, digits = 2)) %>%
+  mutate(medi_fost = case_when(
+    medi_fost %in% "has_foster_parent" ~ "Has Foster Parent",
+    medi_fost %in% "has_medicaid_id" ~ "Has Medicaid ID"))
+  
+
+
+plot_foster <- ggplot(child_data_a,
+                      aes(x = medi_fost, y = percent, fill = catebory)) +
+  geom_col(aes(fill = category), width = 0.1) +
+  scale_fill_manual(values=c("#CC79A7", "#68a4bd")) +
+  theme_economist() +
+  theme(axis.title.x = element_blank(),
+        legend.title = element_blank()) +
+  labs(title = "Number of children in foster care and with medicaid",
+       y = "Percent")
+ggplotly(plot_foster)
+
+ 
+
+
+
+```
+
+```{r}
+
+child_placement1 <- child_placement %>%
+  separate(placement_date, into = c("year", "month", "day", sep = "-")) %>%
+  mutate(month = factor(month),
+         month = recode(month,
+                     "01" = "january",
+                     "02" = "february",
+                     "03" = "march",
+                     "04" = "april",
+                     "05" = "may",
+                     "06" = "june",
+                     "07" = "july",
+                     "08" = "august",
+                     "09" = "september",
+                     "10" = "october",
+                     "11" = "november",
+                     "12" = "december")) %>%
+ # unite(placement, prefix:suffix, sep = "_")
+mutate(Outcome = recode(prefix,
+                       "n" = "notification",
+                       "r" = "referral",
+                       "s" = "screening",
+                       "e" = "evaluation",
+                       "etm" = "edu_team_meet",
+                       "p" = "placement",
+                       "ia" = "inactive",
+                       "t" = "typ_peer_or_tution")) %>%
+  group_by(year, month) %>%
+  count(Outcome)
+
+plot_placement<- ggplot(child_placement1, aes(month, n, 
+                                            fill = Outcome)) +
+  scale_fill_manual(values=c("#4c4c4c", "#86BB8D", "#68a4bd", "#ff9900",
+                             "#ff0000", "#CC79A7", "#00FF00", "#0072B2" )) +
+  geom_col(aes(group = Outcome), width = 0.5) +
+  facet_wrap(~year, scales = "free_y") + 
+  #theme_minimal() +
+  theme_economist() +
+  theme(axis.text.x = element_text(angle = 45,
+                                     vjust = 1.0,
+                                     hjust = 1.0),
+        axis.title.x = element_blank(),
+        axis.title.y = element_blank(),
+        legend.title = element_blank(),
+        plot.title = element_text(hjust = 0.5)) +
+  labs(title = "Primary Eligibility Condition for EI & ECSE") 
+
+  
+ggplotly(plot_placement)
+  
+                            
+ 
+
+
+```
+
+
+
+```{r, Quaterly Placement data}
+#str(child_placement)
+library(zoo)
+library(lubridate)
+
+child_placement[sapply(child_placement, is.character)] <- 
+  lapply(child_placement[sapply(child_placement,is.character)],as.factor)
+
+child_placement$placement_date <- as.Date(child_placement$placement_date, 
+                                          format = "%Y-%m-%d")
+str(child_placement)
+
+
+child_placement_qtr <- child_placement %>%
+  mutate(qd = as.yearqtr(placement_date)) %>%
+  group_by(qd) %>%
+  count(prefix) %>%
+  separate(qd, into = c("year", "qtr", sep = " ")) %>%
+  mutate(Outcome = recode(prefix, 
+                         "n" = "notification",
+                         "r" = "referral",
+                         "s" = "screening",
+                         "e" = "evaluation",
+                         "etm" = "elig_team_meet",
+                         "p" = "placement",
+                         "ia" = "inactive",
+                         "t" = "typ_peer_or_tution")) %>%
+  filter(year >=2016)
+
+child_placement_qtr <- child_placement_qtr %>%
+  select(year, qtr, Outcome, n)
+
+
+
+```
+
+```{r}
+# Export dataset: child_placement_qtr for quaterly placement outcome representation
+
+rio::export(child_placement_qtr, here("data", "child_placement_qtr.csv"))
+
+```
+
+
+```{r, Quaterly Placement table}
+
+child_placement_qtr %>%
+  select(year, qtr, Outcome, n) %>%
+  pivot_wider(names_from = Outcome,
+              values_from = n) %>%
+  group_by(year) %>%
+  summarize_all(mean) %>%
+  select(-qtr, -typ_peer_or_tution)
+ 
+    
+
+```
+
+
+```{r, Quaterly Placement plot}
+
+plot_placement<- ggplot(child_placement_qtr, aes(reorder(qtr, n), n,
+                                                 fill = Outcome)) +
+  scale_fill_manual(values=c("#4c4c4c", "#86BB8D", "#B22222", "#ff9900",
+                             "#68a4bd", "#CC79A7", "#008000", "#0072B2" )) +
+  geom_col(width = 0.5) +
+  facet_wrap(~year, scales = "free_y") +
+  theme_economist_white() +
+  theme(axis.text.x = element_text(angle = 45,
+                                   vjust = 1.0,
+                                   hjust = 1.0,
+                                   size = 10),
+        axis.text.y = element_text(size = 10),
+        axis.title.x = element_blank(),
+        axis.title.y = element_blank(),
+        legend.title = element_text(size = 10),
+        legend.text = element_text(size = 10),
+        strip.text = element_text(size = 10)) +
+  labs(title = "Quaterly Placement Outcome: 2016-2021")
+ggplotly(plot_placement)
+
+
+
+#child_placement_qtr$placement_date <- as.Date(child_placement$placement_date, 
+                                       #   format = "%Y-%m-%d")
+#child_placement <- arrange(child_placement, placement_date)
+
+#child_placement$qd <- as.yearqtr(child_placement$placement_date)
+
+
+
+```
+
+  
+
+
+
+```{r, referral sources}
+
+child_ref1 <- child_referral %>%
+  select(project_child_id, ref_age_class, ref_type, ref_source_ode,
+         ref_source_more, ref_outcome, ref_outcome_days)
+
+# converting character to factor variable
+child_ref1[sapply(child_ref1, is.character)] <- lapply(child_ref1[sapply(child_ref1,
+                                                                         is.character)], as.factor)
+# clubbed inital, latest and primary into primary
+child_ref1 <- child_ref1 %>%
+  mutate(ref_source = case_when(
+    ref_type %in% "initial and latest primary" ~ "primary",
+    ref_type %in% "initial primary" ~ "primary",
+    ref_type %in% "latest primary" ~ "primary",
+    ref_type %in% "primary" ~ "primary",
+    TRUE ~ "secondary"
+    )) %>%
+  separate(ref_outcome, into = c("outcome", "sub_outcome", sep = "-")) %>%
+   mutate(ref_age_class = case_when(
+    ref_age_class %in% "ei" ~ "EI",
+    ref_age_class %in% "ecse" ~ "ECSE",
+    ref_age_class %in% "ei tecse" ~ "EI to ECSE",
+    ref_age_class %in% "ecse tk" ~ "EI to KG"))
+ 
+
+```
+ 
+
+
+```{r, rescreened & outcome}
+
+
+
+child_ref2 <- child_ref1 %>%
+  select(project_child_id, ref_age_class, ref_source, ref_source_ode, 
+         ref_source_more, outcome) 
+
+child_ref_rescreen <- child_ref2 %>%
+  filter(ref_source_more == c("Rescreen", "Rescreen1", "Rescreen2", "Rescreen3")) %>%
+  mutate(rescreen = case_when(
+    ref_source_more %in% "Rescreen" ~ "rescreen",
+    ref_source_more %in% "Rescreen1" ~ "rescreen",
+    ref_source_more %in% "Rescreen2" ~ "rescreen",
+    ref_source_more %in% "Rescreen3" ~ "rescreen")) %>%
+  mutate(ref_age_class = factor(ref_age_class, levels = unique(ref_age_class))) %>% # to rearrange bars in an order in the plot.
+  group_by(ref_age_class, outcome) %>%
+  count(rescreen) %>%
+  mutate(outcome = recode(outcome,
+                       "ia" = "Inactive",
+                       "p" = "Placement"))
+
+plot_rescreened <-ggplot(child_ref_rescreen,
+                         aes(x = ref_age_class, y = n, fill = outcome)) +
+  geom_col(width = 0.5) +
+  scale_fill_manual(values=c("#CC79A7", "#68a4bd")) +
+  theme_economist() +
+  theme(axis.title.x = element_blank(),
+        axis.title.y = element_blank(),
+        legend.title = element_blank(),
+        plot.title = element_text(hjust = 0.5)) +
+  labs(title = "Number of children rescreened and\noutcome achieved") +
+  coord_flip() +
+  annotate("text", 
+           x = "EI to KG", 
+           y = 40,
+          label = "Total number of\nchildren rescreened\nat least twice = 82", 
+          size= 3,
+          color = "red",
+          hjust = 1)
+
+ggplotly(plot_rescreened)
+ 
+  
+```
+
+
+```{r, source of referral & outcome}
+
+child_ref_outcome <- child_ref1 %>%
+  select(project_child_id, ref_age_class, ref_source, ref_source_ode, outcome)
+#change ref_source from character to factor
+
+child_ref_outcome$ref_source <- as.factor(child_ref_outcome$ref_source)
+child_ref_outcome$ref_source_ode <- as.factor(child_ref_outcome$ref_source_ode)
+child_ref_outcome$ref_age_class <- as.factor(child_ref_outcome$ref_age_class)
+
+#str(child_ref_outcome)
+```
+
+
+```{r, secondary ref_source}
+
+
+child_ref_sec <- child_ref_outcome %>%
+  filter(ref_source == "secondary") %>%
+  mutate(ref_source_ode = case_when(
+    ref_source_ode %in% "CAPTA" ~ "CAPTA",
+    ref_source_ode %in% "Other DHS" ~ "CAPTA",
+    ref_source_ode %in% "Physician/Clinic" ~ "Phys/Clinic/Hosp",
+    ref_source_ode %in% "Hospital" ~ "Phys/Clinic/Hosp",
+    TRUE ~ "Other")) %>%
+  group_by(ref_age_class) %>%
+  count(ref_source_ode)
+  
+  
+ 
+plot_secondary <-ggplot(child_ref_sec, (aes(reorder(ref_age_class, n), n,
+                                            fill = ref_source_ode))) +
+  geom_col(width = 0.3) +
+  scale_fill_manual(values=c("#CC79A7", "#68a4bd", "#86BB8D")) +
+  theme_economist() +
+  theme(axis.title.x = element_blank(),
+        axis.title.y = element_blank(),
+        legend.title = element_blank(),
+        plot.title = element_text(hjust = 0.5)) +
+  labs(title = "Secondary Referral Source",
+       x = "Age Class") +
+  coord_flip() +
+  annotate("text", 
+           x = "EI to ECSE", 
+           y = 200,
+          label = "Note: No outcome recorded\n for the secondary\nreferral sources", 
+          size= 3,
+          color = "red",
+          hjust = 1)
+
+ggplotly(plot_secondary)
+
+```
+
+
+```{r}
+child_ref_pri <- child_ref_outcome %>%
+  filter(ref_source == "primary") %>%
+  mutate(ref_source_ode = case_when(
+    ref_source_ode %in% "CAPTA" ~ "CAPTA",
+    ref_source_ode %in% "Other DHS" ~ "CAPTA",
+    ref_source_ode %in% "Physician/Clinic" ~ "Phys/Clinic/Hosp",
+    ref_source_ode %in% "Hospital" ~ "Phys/Clinic/Hosp",
+    TRUE ~ "Other"))
+ # group_by(ref_age_class) %>%
+ # count(ref_source_ode)
+
+ #distinct(child_ref_pri) +TOTAL number of unique records in child_Ref_ori = 4142
+
+child_ref_pri <- child_ref_pri %>%
+  group_by(ref_age_class, ref_source_ode) %>%
+  count(outcome) %>%
+  mutate(Outcome = recode(outcome,
+                       "ia" = "Inactive",
+                       "p" = "Placement",
+                       "e" = "Evaluation",
+                       "etm" = "TM-Elig",
+                       "r" = "Referral",
+                       "s" = "Screening"))
+ 
+
+plot_pri_outcome <-ggplot(child_ref_pri, aes(reorder(ref_source_ode, n),
+                                             n, fill = Outcome)) +
+  geom_col(aes(group = Outcome), width = 0.3) +
+  scale_fill_manual(values = c("#4c4c4c", "#ff9900", "#68a4bd",
+                               "#86BB8D","#B22222", "#CC79A7")) +
+  theme_economist() +
+  theme(axis.title.x = element_blank(),
+        axis.title.y = element_blank(),
+        plot.title = element_text(hjust = 0.5)) +
+  labs(title = "Primary Referral Sources and Outcomes") +
+  coord_flip() +
+  facet_wrap(~ref_age_class)
+
+ggplotly(plot_pri_outcome)
+
+```
+
+```{r, Transition}
+# get DNQ from child_placemnet dataset
+
+child_placement_dnq <- child_placement %>%
+  select(project_child_id, placement_date, prefix, suffix) %>%
+  unite(ref_outcome, prefix:suffix, sep = "-") %>%
+  filter(ref_outcome == "ia-dnq") #%>%
+  #get_dupes() # No Duplicate records exist
+
+
+# Get child with transition age class such "as ei tcse" and "ecse tk".
+
+child_referral_transition <- child_referral %>%
+  select(project_child_id, ref_age_class, ref_outcome) %>%
+  filter(ref_age_class == c("ei tecse", "ecse tk" )) #%>%
+ # get_dupes(project_child_id) # 10 duplicate records found
+
+child_elig_transition <- child_eligibility %>%
+  select(project_child_id, elig_program, elig_code) %>%
+  get_dupes(project_child_id)
+
+# Joined the two datasets
+child_transition_d <- left_join(child_referral_transition, 
+                                child_elig_transition, by = "project_child_id")
+
+child_transition <- full_join(child_transition_d, 
+                             child_placement_dnq, 
+                             by = "project_child_id")
+
+```
+
+
+```{r}
+child_placement_trans <- child_placement %>%
+  unite(ref_outcome, prefix:suffix, sep = "-")
+
+ 
+```
+
+```{r, Transition}
+
+child_ref_elig <- left_join(child_referral, child_eligibility, 
+                              by = "project_child_id") %>%
+  select(project_child_id, notification_date, referral_date, 
+         ref_age_class, ref_type, ref_source_ode, ref_outcome, 
+         elig_date, elig_code) %>%
+  filter(ref_age_class == c("ei tecse", "ecse tk"))
+  # Duplicate returned only 30 unique records.
+ # get_dupes(project_child_id)
+
+
+# Removing secondary referrals as no outcome recorded.
+
+child_ref_elig <- child_ref_elig %>%
+  filter(ref_type == c("latest primary", "primary", 
+                       "inital and latest primary")) 
+
+#child_ref_elig_placwithdnq <- full_join(child_placement_dnq, child_ref_elig,
+ #                                       by = "project_child_id") # to find dnq children in transition age group. Only 5 overlapping record were found.
+
+ # get_dupes(project_child_id)  # Check duplicate records. Result: these are unique records
+# select the required variables to answer follwing question:
+# 1. EI to ECSE Transition: a) No. who DNQ (data not present or not recorded or no transiton age group fall under 'do not qualify'. b) No. who qulify under conditons like autism, DD etc. 
+# 2. EI to KG : a) No. who DNQ (data not present or not recorded or no transiton age group fall under 'do not qualify'. b) No. who qulify under conditons like autism, DD etc. 
+child_ref_elig <- child_ref_elig %>%
+  select(project_child_id, ref_age_class, ref_outcome, elig_code) %>%
+  separate(ref_outcome, into = c("outcome", "sub-outcome", sep = "-")) %>%
+  mutate(outcome = recode(outcome,
+                       "ia" = "Inactive",
+                       "p" = "Placement")) %>%
+  select(ref_age_class, outcome, elig_code) %>%
+  group_by(ref_age_class, outcome) %>%
+  count(elig_code) 
+
+plot_tran_elig <- ggplot(child_ref_elig, aes(elig_code, n, 
+                                            fill = outcome)) +
+  scale_fill_manual(values=c("#4c4c4c", "#86BB8D", 
+                             "#68a4bd", "#ff9900","#ff0000")) +
+  geom_col(aes(group = outcome), width = 0.5) +
+  facet_wrap(~ref_age_class, scales = "free_y") + 
+  theme_economist_white() +
+  theme(axis.text.x = element_text(angle = 45,
+                                   vjust = 1.0,
+                                   hjust = 1.0,
+                                   size = 10),
+        axis.title.x = element_blank(),
+        axis.title.y = element_blank(),
+        legend.title = element_blank(),
+        plot.title = element_text(size = 10, hjust = 0.5)) +
+  labs(title = "Number of Children Qualifying Based on Conditions during Transition")
+  
+ggplotly(plot_tran_elig) 
+
+
+  
+
+
+
+```
+
+
+```{r, return_aftet_dnq}
+
+child_ref_dnq <- child_referral %>%
+  filter(ref_outcome == "ia-dnq")
+
+
+
+# join to get records who were dnq in the past
+
+child_dnq_return <- left_join(child_ref_dnq, child_referral, 
+                              by = "project_child_id")
+
+# join the dataset child_placement_dnq as it's dnq is recorded in the placement dataset. join to make sure all dnq records are captured.
+
+child_dnq_return <- left_join(child_dnq_return, child_placement_dnq,
+                              by = "project_child_id") %>%
+  select(project_child_id, notification_date.x, notification_date.y, 
+         referral_date.x, referral_date.y, ref_age_class.x, 
+         ref_age_class.y, ref_outcome.x, ref_outcome.y, placement_date, 
+         ref_outcome) 
+  
+child_dnq_return <- child_dnq_return %>%
+  filter(ref_outcome.y != "ia-dnq") %>%
+  select(project_child_id, ref_age_class.y, ref_outcome.y) %>%
+  separate(ref_outcome.y, into = c("outcome.y", "sub-outcome.y",
+                                   sep = "-")) %>%
+  group_by(project_child_id) %>%
+  count(outcome.y) %>%
+  mutate(outcome.y = recode(outcome.y,
+                          "ia" = "Inactive",
+                          "p" = "Placement"))%>%
+  pivot_wider(names_from = "outcome.y",
+              values_from = "n")
+
+# marck the variables as factor to be able to count frequency
+child_dnq_return$Inactive <- as.factor(child_dnq_return$Inactive)
+child_dnq_return$Placement <- as.factor(child_dnq_return$Placement)
+
+# Frequency calculation for children 
+child_dnq_return <- child_dnq_return %>%
+  group_by(Inactive, Placement) %>%
+  count(Inactive, Placement)
+  
+#add new factor level.o to replace NA.
+  
+child_dnq_return$Inactive = factor(child_dnq_return$Inactive,
+                                     levels=c(levels(child_dnq_return$Inactive), 
+                                              0))
+
+#convert all NA's to 0
+child_dnq_return$Inactive[is.na(child_dnq_return$Inactive)] = 0
+
+#pasted inactive and placemnet to create a meaningful category variable for plot
+
+child_dnq_return$Inactive <- sapply(child_dnq_return$Inactive, function(x) paste('inactive-', x))
+child_dnq_return$Placement <- sapply(child_dnq_return$Placement, function(x) paste('placement-', x))
+
+#Unite the two columns
+child_dnq_return$return_category <- paste(child_dnq_return$Inactive, 
+                                          "-", child_dnq_return$Placement)
+
+#child_dnq_return[sapply(child_dnq_return, is.character)] <- 
+ # lapply(child_dnq_return[sapply(child_dnq_return,is.character)],as.factor)
+
+ggplot(child_dnq_return, aes(reorder(return_category, n), n, 
+                             fill = return_category)) +
+  geom_col(fill = "#5F9EA0", width = 0.5) +
+  geom_text(aes(label = n), vjust = -0.2, size = 3) +
+  theme_economist() + 
+  theme(axis.text.x = element_text(angle = 60,
+                                     vjust = 1.0,
+                                     hjust = 1.0, size = 10),
+        legend.position = "none",
+        axis.title.x = element_blank(),
+        axis.title.y = element_blank(),
+        plot.title = element_text(hjust = 0.5)) +
+  annotate("text",
+           x = 4,
+           y = 10,
+           label = "Number of unique\nDNQ children who returned\nat least once=76",
+           size= 3,
+           color = "red",
+           hjust = 1) +
+  labs(title = "Number of DNQ children who returned")
+  
+    
+child_dnq_return
+
+
+
+```
+
+
+```{r, table}
+
+child_dnq_return %>%
+  select(Inactive, Placement, n) %>%
+  reactable()
+
+
+```
+```{r}
+child_site_center <- child_site %>%
+  select(project_child_id, site_center, eccares, community_preschool,
+         head_start, ocdc, preschool_promise, eep, relief_nursery, dhh, 
+         speech, home_visit) %>%
+  pivot_longer(cols = -c(project_child_id, site_center),
+               names_to = "site",
+               values_to = "count") %>%
+  filter(count == 1) %>%
+  group_by(site_center, site) %>%
+  count(count) %>%
+  select(site_center, site, n) %>%
+  rename(
+    Region = site_center,
+    Placement = site,
+    Number = n)
+
+#child_site_center$Placement <- as.factor(child_site_center$site)
+```
+
+```{r}
+# Export child_site_center in csv for Shiny. For children in each Placement by site plot
+
+write.table(child_site_center, file = "child_site_center.xlsx")
+
+
+
+```
+
+```{r}
+center_plot <- ggplot(child_site_center, aes(reorder(Placement, Number), Number,
+                                             fill = Region)) +
+  geom_col(width = 0.5) +
+  theme_economist() +
+  scale_fill_manual(values=c("#4c4c4c", "#86BB8D", "#B22222", "#ff9900",
+                             "#68a4bd", "#CC79A7", "#0074D9")) +
+  theme(axis.text.x = element_text(angle = 60,
+                                     vjust = 1.0,
+                                     hjust = 1.0, size = 8),
+        axis.title.x = element_blank(),
+        axis.title.y = element_blank(),
+        plot.title = element_text(size = 10, hjust = 0.5),
+        legend.title = element_text( size=8), 
+        legend.text=element_text(size=8)) +
+  labs(title = "Number of Children in each Placement by Region")
+
+ggplotly(center_plot)
+
+
+```
+
+
+```{r, placement by site table}
+
+library(reactable)
+
+child_site_center <- child_site_center[, c("Region", "Placement", "Number")]
+
+reactable(child_site_center, groupBy = "Region",
+          highlight = TRUE, height = 300)
+
+#global option for reactable theme 
+#          options(reactable.theme = reactableTheme(
+#            backgroundColor = "#E6E6FA",
+#            highlightColor = "#00a5c1",
+#            headerStyle = list(
+#              "&:hover[aria-sort]" = list(background = "hsl(0, 0%, 96%)"),
+#              "&[aria-sort='ascending'], 
+#              &[aria-sort='descending']" = list(background = "hsl(0, 0%, 96%)"),
+#              borderColor = "#555"))
+#          )
+  
+#   theme = reactableTheme(
+ #           highlightColor = "#00a5c1",
+  #          headerStyle = list(
+  #            "&:hover[aria-sort]" = list(background = "hsl(0, 0%, 96%)"),
+  #            "&[aria-sort='ascending'], 
+  #            &[aria-sort='descending']" = list(background = "hsl(0, 0%, 96%)"),
+ #             borderColor = "#555")),
+
+```
+
