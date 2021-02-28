@@ -22,6 +22,11 @@ child_placement_qtr <- import(here("data", "child_placement_qtr.csv"))
 
 #A. Add functions here#
 
+#. Global theme for all reactable tables
+options(reactable.theme = reactableTheme(
+  backgroundColor = "#D6EAF8",
+  highlightColor = "#00a5c1"))
+  
 
 #2. Monthly Report Data tab
 ##2.1 Function to change name of variables and build a plot on monthly report data tab
@@ -170,7 +175,7 @@ ui <- dashboardPage(
                 width = 1200,
                 striped = TRUE,
                 defaultPageSize = 12,
-                minRows = 14,
+                minRows = 7,
                 searchable = TRUE,
                 highlight = TRUE))
       })
