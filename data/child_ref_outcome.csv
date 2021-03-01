@@ -1,0 +1,4889 @@
+project_child_id,ref_age_class,ref_source,ref_source_ode,outcome
+149282,EI,primary,CAPTA,p
+149282,EI to ECSE,secondary,Physician/Clinic,
+145254,EI,primary,Physician/Clinic,p
+145254,EI,secondary,CAPTA,
+145254,EI,secondary,Physician/Clinic,
+148021,EI,primary,Hospital,ia
+148021,EI,primary,Physician/Clinic,ia
+148021,EI,primary,Parents/Family,ia
+148021,EI,primary,Parents/Family,p
+146738,EI,primary,Physician/Clinic,ia
+146738,EI,primary,Other,ia
+146738,EI,primary,Other,ia
+146738,ECSE,primary,Healthy Families Oregon,p
+143348,EI,primary,Hospital,p
+143348,EI,primary,Physician/Clinic,p
+142431,EI,primary,Physician/Clinic,ia
+142431,EI,primary,Physician/Clinic,ia
+142431,EI,primary,CAPTA,p
+142272,EI,primary,Physician/Clinic,p
+144233,EI,primary,CAPTA,p
+144233,ECSE,primary,Head Start,p
+144331,EI,primary,Other,p
+149954,EI,primary,Hospital,p
+149954,ECSE,primary,Head Start,p
+145352,EI,primary,CAPTA,p
+145352,EI,secondary,Physician/Clinic,
+145352,EI,primary,CAPTA,ia
+145352,EI,primary,CAPTA,ia
+145352,EI,primary,Parents/Family,p
+143591,EI,primary,Physician/Clinic,ia
+143591,EI,primary,CAPTA,p
+143591,EI,secondary,Physician/Clinic,
+143591,ECSE,secondary,Other DHS,
+143591,ECSE,secondary,Physician/Clinic,
+141917,EI,primary,Hospital,ia
+141917,ECSE,primary,Physician/Clinic,p
+141358,EI,primary,Physician/Clinic,p
+141358,EI,secondary,CAPTA,
+141358,ECSE,primary,Head Start,p
+149178,EI,primary,Hospital,p
+144615,EI,primary,Public Health,p
+144615,EI,secondary,Physician/Clinic,
+149520,EI,primary,Public Health,p
+149520,EI,secondary,Physician/Clinic,
+144514,EI,primary,CAPTA,ia
+144514,EI,primary,Other,ia
+144514,EI,primary,Other,p
+144514,EI,secondary,CAPTA,
+147306,EI,primary,Parents/Family,p
+140767,EI,primary,Hospital,ia
+140767,EI,primary,Physician/Clinic,p
+140767,ECSE,primary,Head Start,p
+146706,EI,primary,CAPTA,p
+146706,EI,secondary,Hospital,
+146706,EI to KG,primary,Head Start,p
+143328,EI,primary,CAPTA,p
+143328,EI,primary,Parents/Family,ia
+143328,ECSE,primary,Physician/Clinic,p
+148096,EI,primary,CAPTA,ia
+148096,EI,primary,CAPTA,p
+146538,EI,primary,Hospital,ia
+146538,EI,primary,Hospital,p
+149258,EI,primary,Hospital,p
+149258,EI,secondary,CAPTA,
+149676,EI,primary,Physician/Clinic,ia
+149676,EI,primary,Other,p
+148308,EI,primary,Physician/Clinic,ia
+148308,EI,primary,Physician/Clinic,p
+142780,EI,primary,Parents/Family,p
+142652,EI,primary,Parents/Family,ia
+142652,EI,primary,Parents/Family,p
+142652,ECSE,primary,Other,ia
+142652,ECSE,primary,Parents/Family,p
+152475,EI,primary,Physician/Clinic,p
+152475,ECSE,primary,Head Start,p
+154211,EI,primary,Parents/Family,p
+155249,EI,primary,Physician/Clinic,ia
+155249,EI,primary,Physician/Clinic,ia
+155249,ECSE,primary,Physician/Clinic,ia
+155249,ECSE,primary,Physician/Clinic,ia
+155249,ECSE,primary,Parents/Family,p
+152081,EI,primary,Physician/Clinic,ia
+152081,EI,primary,Parents/Family,p
+150226,EI,primary,CAPTA,ia
+150226,EI,primary,CAPTA,p
+159909,EI,primary,Physician/Clinic,ia
+159909,EI,primary,Other,ia
+159909,EI,primary,Parents/Family,p
+153648,EI,primary,Hospital,ia
+153648,EI to KG,primary,Parents/Family,p
+152892,EI,primary,Hospital,ia
+152892,EI,primary,Physician/Clinic,p
+152892,ECSE,primary,Head Start,p
+155289,EI,primary,CAPTA,p
+155289,EI,secondary,Physician/Clinic,
+151862,EI,primary,Hospital,ia
+151862,EI,primary,Hospital,p
+151862,EI,primary,Healthy Families Oregon,p
+152641,EI,primary,Physician/Clinic,p
+152641,EI,secondary,EHDI,
+157874,EI,primary,Parents/Family,p
+157874,EI,secondary,Physician/Clinic,
+155911,EI,primary,CAPTA,p
+152346,EI,primary,Hospital,p
+152346,EI,secondary,EHDI,
+158698,EI,primary,EHDI,p
+158698,ECSE,primary,Parents/Family,p
+158947,EI,primary,CAPTA,ia
+158947,ECSE,primary,Head Start,p
+154494,EI,primary,Hospital,p
+154494,ECSE,primary,Parents/Family,p
+152774,EI,primary,Parents/Family,p
+152774,EI,secondary,CAPTA,
+150733,EI,primary,Physician/Clinic,ia
+150733,EI,primary,Other,ia
+150733,EI,primary,Parents/Family,ia
+150733,EI,primary,Healthy Families Oregon,p
+158297,EI,primary,Hospital,p
+158297,EI,primary,Physician/Clinic,ia
+158297,EI to ECSE,primary,CAPTA,ia
+158297,ECSE,primary,Other,ia
+158297,ECSE,primary,Head Start,p
+158297,EI to KG,secondary,Other DHS,
+152593,EI,primary,Physician/Clinic,p
+152593,EI,secondary,Physician/Clinic,
+154831,EI,primary,Parents/Family,p
+153211,EI,primary,Physician/Clinic,ia
+153211,EI,primary,Physician/Clinic,p
+157209,EI,primary,Physician/Clinic,ia
+157209,EI,primary,Parents/Family,ia
+157209,EI,primary,Other,ia
+157209,EI,primary,Parents/Family,ia
+157209,ECSE,primary,Parents/Family,p
+158436,EI,primary,Physician/Clinic,ia
+158436,EI,primary,Parents/Family,ia
+158436,EI,primary,Parents/Family,p
+152546,EI,primary,CAPTA,p
+152546,EI,secondary,Physician/Clinic,
+156465,EI,primary,Physician/Clinic,p
+156465,EI,primary,Physician/Clinic,ia
+156465,EI,primary,Parents/Family,p
+156465,EI to KG,primary,Childcare/Preschool,p
+152331,EI,primary,Hospital,p
+153964,EI,primary,Hospital,p
+153964,EI,secondary,Physician/Clinic,
+156616,EI,primary,CAPTA,ia
+156616,EI,primary,Physician/Clinic,ia
+156616,EI,primary,Other,ia
+156616,EI,primary,Physician/Clinic,p
+156156,EI,primary,Physician/Clinic,ia
+156156,ECSE,primary,Physician/Clinic,ia
+156156,ECSE,primary,Parents/Family,p
+154251,EI,primary,Physician/Clinic,ia
+154251,EI,primary,Parents/Family,ia
+154251,EI,primary,Parents/Family,ia
+154251,EI to ECSE,primary,Physician/Clinic,p
+155603,EI,primary,Physician/Clinic,ia
+155603,EI,primary,Parents/Family,p
+155579,EI,primary,Physician/Clinic,p
+154174,EI,primary,Other,p
+154174,EI,secondary,Physician/Clinic,
+151245,EI,primary,Physician/Clinic,ia
+151245,EI,primary,Hospital,p
+151245,EI,primary,Physician/Clinic,p
+158471,EI,primary,Hospital,p
+158201,EI,primary,Physician/Clinic,p
+150766,EI,primary,Physician/Clinic,ia
+150766,ECSE,primary,Other,ia
+150766,ECSE,primary,Physician/Clinic,p
+154949,EI,primary,Hospital,p
+154949,EI,primary,Physician/Clinic,p
+154996,EI,primary,Hospital,p
+151718,EI,primary,Other,ia
+151718,EI,primary,Other,ia
+151718,EI,primary,Parents/Family,ia
+151718,EI,primary,Parents/Family,p
+154817,EI,primary,Hospital,p
+154817,EI,secondary,CAPTA,
+154817,EI to ECSE,secondary,CAPTA,
+157419,EI,primary,Parents/Family,p
+156784,EI,primary,Parents/Family,ia
+156784,EI,primary,Other,p
+156784,ECSE,primary,Parents/Family,p
+154352,EI,primary,Physician/Clinic,ia
+154352,EI,primary,Physician/Clinic,ia
+154352,ECSE,primary,Head Start,p
+154352,ECSE,secondary,Physician/Clinic,
+156550,EI,primary,Hospital,ia
+156550,EI,primary,Parents/Family,p
+156550,EI,primary,Physician/Clinic,ia
+156550,ECSE,primary,Childcare/Preschool,p
+152043,EI,primary,Parents/Family,p
+152043,EI,secondary,CAPTA,
+152043,EI,secondary,Physician/Clinic,
+152043,ECSE,primary,Childcare/Preschool,ia
+152043,ECSE,primary,Childcare/Preschool,ia
+152043,EI to KG,primary,Childcare/Preschool,p
+153507,EI,primary,Parents/Family,p
+153507,EI,secondary,Physician/Clinic,
+151694,EI,primary,Parents/Family,p
+154145,EI,primary,Physician/Clinic,p
+154145,ECSE,primary,Physician/Clinic,p
+154145,ECSE,secondary,Other DHS,
+156758,EI,primary,Physician/Clinic,ia
+156758,EI,primary,Physician/Clinic,p
+155498,EI,primary,Physician/Clinic,p
+159963,EI,primary,Hospital,p
+159963,EI,secondary,CAPTA,
+150646,EI,primary,Physician/Clinic,ia
+150646,EI,primary,Physician/Clinic,ia
+150646,EI,primary,Physician/Clinic,p
+150762,EI,primary,Parents/Family,ia
+150762,EI,primary,Parents/Family,ia
+150762,EI to ECSE,primary,Physician/Clinic,p
+158868,EI,primary,Physician/Clinic,ia
+158868,ECSE,primary,Physician/Clinic,ia
+158868,ECSE,primary,Physician/Clinic,p
+159203,EI,primary,Hospital,p
+159203,ECSE,primary,Parents/Family,p
+155834,EI,primary,Physician/Clinic,ia
+155834,ECSE,primary,Head Start,p
+159752,EI,primary,Public Health,p
+159752,EI to KG,primary,Childcare/Preschool,p
+151644,EI,primary,Parents/Family,p
+157657,EI,primary,Physician/Clinic,ia
+157657,EI,primary,Physician/Clinic,ia
+157657,ECSE,primary,Parents/Family,ia
+157657,ECSE,primary,Parents/Family,p
+152734,EI,primary,CAPTA,ia
+152734,EI,primary,CAPTA,ia
+152734,EI,primary,Parents/Family,ia
+152734,ECSE,primary,Healthy Families Oregon,p
+152734,ECSE,secondary,Other DHS,
+159280,EI,primary,CAPTA,ia
+159280,EI,primary,CAPTA,ia
+159280,EI,primary,CAPTA,ia
+159280,EI,secondary,Parents/Family,
+159280,ECSE,primary,Other,p
+156774,EI,primary,Physician/Clinic,ia
+156774,EI,primary,Other,ia
+156774,EI,primary,Parents/Family,ia
+156774,EI to ECSE,primary,Parents/Family,p
+159313,EI,primary,Other,p
+152154,EI,primary,Physician/Clinic,ia
+152154,EI,primary,Head Start,p
+159587,EI,primary,Hospital,p
+159587,EI,primary,Physician/Clinic,p
+152568,EI,primary,Hospital,p
+152568,EI,secondary,CAPTA,
+152568,ECSE,primary,Other,p
+154411,EI,primary,Hospital,p
+154411,EI,secondary,CAPTA,
+154411,ECSE,primary,Head Start,ia
+154411,ECSE,primary,Other,ia
+154411,ECSE,primary,Parents/Family,p
+152086,EI,primary,Parents/Family,p
+157346,EI,primary,Parents/Family,p
+157346,EI,secondary,CAPTA,
+157346,EI,secondary,EHDI,
+157665,EI,primary,Parents/Family,p
+157665,EI,secondary,CAPTA,
+150531,EI,primary,Hospital,ia
+150531,ECSE,primary,Physician/Clinic,p
+155695,EI,primary,Hospital,p
+158203,EI,primary,Parents/Family,ia
+158203,EI,primary,Parents/Family,ia
+158203,EI,primary,Parents/Family,p
+158203,ECSE,primary,Physician/Clinic,p
+156581,EI,primary,Parents/Family,p
+152730,EI,primary,CAPTA,ia
+152730,EI,primary,CAPTA,ia
+152730,EI,primary,Physician/Clinic,p
+156506,EI,primary,Physician/Clinic,ia
+156506,EI,primary,Physician/Clinic,p
+156506,ECSE,primary,Physician/Clinic,ia
+156506,EI to KG,primary,Head Start,p
+167405,EI,primary,Physician/Clinic,p
+161468,EI,primary,Physician/Clinic,ia
+161468,ECSE,primary,Parents/Family,p
+168879,EI,primary,Physician/Clinic,ia
+168879,EI to ECSE,primary,Parents/Family,ia
+168879,ECSE,primary,Other,ia
+168879,EI to KG,primary,Childcare/Preschool,ia
+168879,EI to KG,secondary,Physician/Clinic,
+168879,EI to KG,primary,Childcare/Preschool,p
+161128,EI,primary,Parents/Family,ia
+161128,EI,secondary,Physician/Clinic,
+161128,EI,primary,Other,ia
+161128,EI,secondary,Physician/Clinic,
+161128,EI to KG,primary,Parents/Family,p
+163147,EI,primary,Physician/Clinic,p
+163147,EI,secondary,EHDI,
+168590,EI,primary,Hospital,ia
+168590,EI to KG,primary,Physician/Clinic,p
+161056,EI,primary,Parents/Family,p
+168726,EI,primary,Physician/Clinic,ia
+168726,EI,primary,Other,p
+161500,EI,primary,CAPTA,ia
+161500,EI,primary,CAPTA,ia
+161500,ECSE,primary,Head Start,p
+161064,EI,primary,Physician/Clinic,ia
+161064,EI,primary,Other,p
+166282,EI,primary,Hospital,p
+166282,EI to KG,primary,Parents/Family,p
+165559,EI,primary,CAPTA,ia
+165559,EI,primary,Other,ia
+165559,EI,primary,Parents/Family,p
+160460,EI,primary,Physician/Clinic,ia
+160460,ECSE,primary,Parents/Family,p
+161577,EI,primary,Physician/Clinic,ia
+161577,EI,primary,Physician/Clinic,ia
+161577,EI,primary,Physician/Clinic,ia
+161577,EI,primary,Physician/Clinic,ia
+161577,ECSE,primary,Physician/Clinic,p
+168481,EI,primary,Physician/Clinic,ia
+168481,EI,primary,Other,ia
+168481,EI,primary,Other,ia
+168481,ECSE,primary,Healthy Families Oregon,p
+160996,EI,primary,Hospital,p
+160996,EI,primary,Physician/Clinic,ia
+160996,EI,primary,Physician/Clinic,ia
+160996,EI,primary,Head Start,ia
+160996,EI to ECSE,primary,Other,ia
+160996,ECSE,primary,Other DHS,ia
+160996,ECSE,primary,Head Start,p
+165242,EI,primary,Physician/Clinic,ia
+165242,EI,primary,Parents/Family,p
+166392,EI,primary,Physician/Clinic,ia
+166392,EI,secondary,Hospital,
+166392,EI,primary,Parents/Family,p
+166392,EI,secondary,Physician/Clinic,
+166392,EI,primary,Parents/Family,p
+166392,ECSE,primary,Parents/Family,p
+165888,EI,primary,Physician/Clinic,p
+165888,EI,secondary,Head Start,
+165888,EI to ECSE,primary,Parents/Family,p
+165608,EI,primary,Physician/Clinic,ia
+165608,EI,primary,Physician/Clinic,ia
+165608,EI,primary,Parents/Family,p
+165608,ECSE,primary,Head Start,p
+163601,EI,primary,Physician/Clinic,ia
+163601,EI,primary,Parents/Family,ia
+163601,EI to ECSE,primary,Parents/Family,p
+161319,EI,primary,Parents/Family,ia
+161319,EI,primary,Parents/Family,ia
+161319,ECSE,primary,Other,p
+169783,EI,primary,CAPTA,ia
+169783,EI,primary,Parents/Family,ia
+169783,EI,primary,Parents/Family,ia
+169783,ECSE,primary,Parents/Family,p
+164222,EI,primary,Parents/Family,ia
+164222,EI,primary,Other,ia
+164222,EI,primary,Parents/Family,ia
+164222,EI,primary,Parents/Family,ia
+164222,ECSE,primary,Parents/Family,p
+165978,EI,primary,Physician/Clinic,ia
+165978,EI,primary,Physician/Clinic,p
+165149,EI,primary,Physician/Clinic,ia
+165149,EI,primary,Parents/Family,ia
+165149,ECSE,primary,Parents/Family,p
+162563,EI,primary,CAPTA,ia
+162563,EI,primary,CAPTA,ia
+162563,EI to ECSE,primary,Other,p
+163424,EI,primary,Physician/Clinic,ia
+163424,ECSE,primary,Physician/Clinic,ia
+163424,ECSE,primary,Parents/Family,p
+164577,EI,primary,Physician/Clinic,p
+164577,ECSE,primary,Parents/Family,p
+165878,EI,primary,Public Health,p
+165878,EI to KG,primary,Childcare/Preschool,p
+160610,EI,primary,Parents/Family,p
+165790,EI,primary,Parents/Family,ia
+165790,EI,secondary,Physician/Clinic,
+165790,EI,primary,Parents/Family,p
+165790,EI,secondary,EHDI,
+161222,EI,primary,CAPTA,ia
+161222,EI,primary,Other,ia
+161222,EI,primary,Physician/Clinic,ia
+161222,EI,primary,Other,ia
+161222,EI to ECSE,primary,Other,p
+161222,ECSE,secondary,Physician/Clinic,
+166295,EI,primary,Parents/Family,p
+165902,EI,primary,Physician/Clinic,ia
+165902,ECSE,primary,Head Start,p
+163907,EI,primary,Parents/Family,p
+161101,EI,primary,Hospital,p
+161101,EI,secondary,Public Health,
+161101,ECSE,primary,Physician/Clinic,p
+164738,EI,primary,Physician/Clinic,ia
+164738,EI,primary,Physician/Clinic,p
+167033,EI,primary,Physician/Clinic,ia
+167033,EI,primary,Physician/Clinic,ia
+167033,EI,primary,Hospital,ia
+167033,EI,primary,Parents/Family,p
+160662,EI,primary,CAPTA,ia
+160662,EI,primary,Physician/Clinic,ia
+160662,EI,primary,Parents/Family,p
+160662,EI to ECSE,primary,Parents/Family,p
+169077,EI,primary,Physician/Clinic,ia
+169077,EI,primary,Other,ia
+169077,EI,primary,Physician/Clinic,ia
+169077,EI,primary,Parents/Family,p
+169077,ECSE,primary,Head Start,p
+162922,EI,primary,Physician/Clinic,ia
+162922,EI,primary,Parents/Family,ia
+162922,EI,primary,Parents/Family,ia
+162922,EI to ECSE,primary,CAPTA,p
+160051,EI,primary,Physician/Clinic,ia
+160051,EI,primary,Physician/Clinic,ia
+160051,EI,primary,Healthy Families Oregon,p
+164418,EI,primary,Hospital,p
+166932,EI,primary,Parents/Family,p
+160061,EI,primary,Physician/Clinic,ia
+160061,EI,primary,Other,p
+160061,ECSE,secondary,Physician/Clinic,
+164503,EI,primary,Physician/Clinic,ia
+164503,EI,primary,Physician/Clinic,ia
+164503,EI,primary,Parents/Family,p
+161987,EI,primary,Physician/Clinic,ia
+161987,ECSE,primary,Childcare/Preschool,p
+161987,EI to KG,primary,Parents/Family,p
+160025,EI,primary,Physician/Clinic,ia
+160025,EI,primary,Physician/Clinic,p
+168536,EI,primary,Physician/Clinic,p
+168536,EI,secondary,Physician/Clinic,
+162937,EI,primary,Physician/Clinic,ia
+162937,EI,primary,Parents/Family,p
+160248,EI,primary,Physician/Clinic,ia
+160248,EI,primary,Other,p
+165554,EI,primary,Parents/Family,ia
+165554,EI to KG,primary,Parents/Family,p
+162040,EI,primary,Physician/Clinic,ia
+162040,EI,primary,Other,ia
+162040,ECSE,primary,Parents/Family,p
+164334,EI,primary,CAPTA,ia
+164334,EI,primary,Physician/Clinic,p
+161918,EI,primary,Physician/Clinic,p
+163788,EI,primary,Physician/Clinic,ia
+163788,EI,primary,Parents/Family,ia
+163788,EI to KG,primary,Head Start,p
+167225,EI,primary,Parents/Family,p
+166128,EI,primary,Hospital,ia
+166128,EI,primary,Parents/Family,p
+166128,EI,secondary,CAPTA,
+166128,EI,primary,Physician/Clinic,ia
+166128,EI,secondary,Parents/Family,
+166587,EI,primary,Parents/Family,ia
+166587,ECSE,primary,Head Start,p
+160880,EI,primary,Parents/Family,p
+160880,ECSE,primary,Parents/Family,p
+165048,EI,primary,Parents/Family,p
+162476,EI,primary,Physician/Clinic,ia
+162476,EI,primary,Parents/Family,p
+169634,EI,primary,Physician/Clinic,ia
+169634,EI,primary,Physician/Clinic,p
+162009,EI,primary,Parents/Family,ia
+162009,EI,primary,Parents/Family,ia
+162009,EI,primary,Physician/Clinic,ia
+162009,EI,primary,Parents/Family,ia
+162009,EI,primary,Parents/Family,p
+166209,EI,primary,Parents/Family,ia
+166209,EI,primary,Healthy Families Oregon,p
+166209,ECSE,primary,Head Start,p
+165080,EI,primary,Healthy Families Oregon,ia
+165080,EI,primary,Physician/Clinic,p
+165189,EI,primary,Physician/Clinic,ia
+165189,EI,primary,Physician/Clinic,ia
+165189,ECSE,primary,Childcare/Preschool,p
+168627,EI,primary,Physician/Clinic,ia
+168627,EI,primary,Parents/Family,p
+160875,EI,primary,Parents/Family,ia
+160875,EI,secondary,Public Health,
+160875,EI,primary,Parents/Family,ia
+160875,EI,primary,Parents/Family,ia
+160875,EI,primary,Other,ia
+160875,EI,primary,Other,ia
+160875,ECSE,primary,Parents/Family,ia
+160875,ECSE,primary,Healthy Families Oregon,p
+165091,EI,primary,Physician/Clinic,ia
+165091,EI,primary,Parents/Family,ia
+165091,EI to ECSE,primary,Parents/Family,p
+160396,EI,primary,EHDI,p
+161633,EI,primary,Physician/Clinic,ia
+161633,EI,secondary,Public Health,
+161633,EI to KG,primary,Childcare/Preschool,p
+162784,EI,primary,Physician/Clinic,ia
+162784,EI,primary,Other,p
+162815,EI,primary,CAPTA,ia
+162815,EI,primary,Physician/Clinic,ia
+162815,EI,primary,Parents/Family,ia
+162815,EI to ECSE,primary,Parents/Family,p
+169124,EI,primary,Physician/Clinic,ia
+169124,EI to ECSE,primary,Parents/Family,p
+165281,EI,primary,Physician/Clinic,ia
+165281,ECSE,primary,Other,p
+163695,EI,primary,Parents/Family,p
+163695,EI,secondary,Physician/Clinic,
+162096,EI,primary,Physician/Clinic,p
+169629,EI,primary,Physician/Clinic,ia
+169629,ECSE,primary,Parents/Family,p
+160516,EI,primary,Parents/Family,ia
+160516,EI,primary,CAPTA,ia
+160516,EI,primary,CAPTA,ia
+160516,EI,primary,Physician/Clinic,ia
+160516,EI,primary,Parents/Family,ia
+160516,ECSE,primary,Parents/Family,p
+164277,EI,primary,Parents/Family,ia
+164277,EI,primary,Other,p
+164277,EI,primary,Physician/Clinic,p
+167004,EI,primary,Physician/Clinic,ia
+167004,EI,primary,Physician/Clinic,ia
+167004,EI,primary,Parents/Family,p
+163637,EI,primary,Physician/Clinic,ia
+163637,EI,primary,Parents/Family,ia
+163637,EI,primary,Parents/Family,ia
+163637,EI,primary,Physician/Clinic,ia
+163637,EI,primary,Physician/Clinic,ia
+163637,EI to KG,primary,Physician/Clinic,p
+161175,EI,primary,CAPTA,p
+161141,EI,primary,Physician/Clinic,p
+164254,EI,primary,Parents/Family,ia
+164254,EI,primary,Other,p
+164254,EI to ECSE,secondary,Healthy Families Oregon,
+166253,EI,primary,Physician/Clinic,ia
+166253,EI,primary,Parents/Family,p
+166253,ECSE,primary,Parents/Family,p
+167019,EI,primary,Physician/Clinic,ia
+167019,EI,primary,Other,ia
+167019,EI,primary,Other,ia
+167019,EI,primary,Parents/Family,p
+169705,EI,primary,Physician/Clinic,ia
+169705,EI,primary,Parents/Family,p
+163742,EI,primary,Physician/Clinic,ia
+163742,EI,primary,Other,ia
+163742,EI to ECSE,primary,Other,p
+162432,EI,primary,Physician/Clinic,ia
+162432,EI,primary,Other,ia
+162432,EI,primary,Physician/Clinic,p
+164102,EI,primary,Other EI/ECSE program,ia
+164102,EI,primary,Physician/Clinic,ia
+164102,EI,primary,Parents/Family,p
+164102,EI,secondary,Physician/Clinic,
+160350,EI,primary,EHDI,p
+160350,EI,secondary,Public Health,
+168829,EI,primary,Physician/Clinic,ia
+168829,EI to KG,primary,Childcare/Preschool,p
+165833,EI,primary,Parents/Family,ia
+165833,EI,primary,Parents/Family,p
+160041,EI,primary,Parents/Family,ia
+160041,EI,primary,Physician/Clinic,p
+160302,EI,primary,Head Start,ia
+160302,EI,primary,Physician/Clinic,ia
+160302,EI,primary,Other,p
+165382,EI,primary,Physician/Clinic,p
+165382,EI,secondary,Physician/Clinic,
+168138,EI,primary,Physician/Clinic,p
+168138,EI,secondary,Physician/Clinic,
+167389,EI,primary,Physician/Clinic,ia
+167389,EI,primary,Physician/Clinic,ia
+167389,EI,primary,Other,p
+165660,EI,primary,Physician/Clinic,p
+163770,EI,primary,Parents/Family,p
+166461,EI,primary,Physician/Clinic,ia
+166461,EI,primary,Other,ia
+166461,EI to ECSE,primary,Childcare/Preschool,p
+166461,EI to ECSE,secondary,Physician/Clinic,
+168347,EI,primary,Healthy Families Oregon,ia
+168347,EI,primary,Parents/Family,ia
+168347,EI,primary,Other,ia
+168347,EI,primary,Parents/Family,p
+161449,EI,primary,Hospital,p
+167189,EI,primary,Physician/Clinic,ia
+167189,EI,primary,Other,p
+164228,EI,primary,Physician/Clinic,p
+163649,EI,primary,Hospital,p
+163649,EI,secondary,Physician/Clinic,
+163649,EI,secondary,CAPTA,
+163649,ECSE,primary,Parents/Family,ia
+168964,EI,primary,CAPTA,ia
+168964,EI,primary,Physician/Clinic,ia
+168964,EI,primary,Physician/Clinic,ia
+168964,EI,primary,Parents/Family,ia
+168964,ECSE,primary,Other DHS,p
+168964,ECSE,secondary,Physician/Clinic,
+165386,EI,primary,Parents/Family,ia
+165386,EI,primary,Other,ia
+165386,EI,primary,Physician/Clinic,ia
+165386,ECSE,primary,Other,p
+164944,EI,primary,Other,p
+164944,EI,secondary,Physician/Clinic,
+164944,EI,secondary,Physician/Clinic,
+164944,EI,primary,Physician/Clinic,p
+164944,ECSE,secondary,Physician/Clinic,
+160001,EI,primary,Hospital,p
+160001,EI,secondary,Physician/Clinic,
+169790,EI,primary,Physician/Clinic,ia
+169790,EI to KG,primary,Childcare/Preschool,p
+179708,EI,primary,Public Health,p
+179708,ECSE,primary,Head Start,p
+171677,EI,primary,Hospital,ia
+171677,EI,primary,Other,p
+172787,EI,primary,Physician/Clinic,ia
+172787,EI,primary,Physician/Clinic,p
+170243,EI,primary,Hospital,p
+170243,EI,primary,Physician/Clinic,p
+170243,EI,secondary,Physician/Clinic,
+170243,ECSE,primary,Parents/Family,p
+178790,EI,primary,Physician/Clinic,ia
+178790,EI,primary,Other,ia
+178790,ECSE,primary,Head Start,p
+170444,EI,primary,Healthy Families Oregon,ia
+170444,EI,primary,Other,ia
+170444,EI,primary,Healthy Families Oregon,p
+178398,EI,primary,Physician/Clinic,ia
+178398,ECSE,primary,Parents/Family,ia
+178398,ECSE,primary,Parents/Family,p
+173735,EI,primary,CAPTA,ia
+173735,EI,primary,Parents/Family,ia
+173735,EI,primary,Parents/Family,p
+173735,EI,secondary,Physician/Clinic,
+173735,ECSE,primary,Parents/Family,p
+172291,EI,primary,Physician/Clinic,ia
+172291,EI,primary,Other,ia
+172291,ECSE,primary,Physician/Clinic,p
+172291,ECSE,primary,Parents/Family,p
+172291,EI to KG,primary,Parents/Family,p
+178870,EI,primary,Childcare/Preschool,ia
+178870,EI,primary,Parents/Family,ia
+178870,EI,primary,Healthy Families Oregon,ia
+178870,ECSE,primary,Parents/Family,ia
+178870,ECSE,primary,Other DHS,p
+178870,EI to KG,secondary,Other DHS,
+171630,EI,primary,Physician/Clinic,ia
+171630,EI,primary,Other,ia
+171630,EI,primary,Physician/Clinic,ia
+171630,EI to ECSE,primary,Other,p
+172046,EI,primary,Public Health,p
+170747,EI,primary,Parents/Family,ia
+170747,EI,primary,Physician/Clinic,p
+173363,EI,primary,Parents/Family,p
+179507,EI,primary,Parents/Family,p
+176170,EI,primary,Physician/Clinic,ia
+176170,EI,primary,Physician/Clinic,p
+176170,EI,secondary,Physician/Clinic,
+176170,EI to KG,primary,Parents/Family,etm
+172598,EI,primary,Physician/Clinic,ia
+172598,EI,primary,Parents/Family,ia
+172598,ECSE,primary,Physician/Clinic,ia
+172598,ECSE,primary,Parents/Family,p
+172329,EI,primary,Parents/Family,p
+172930,EI,primary,Physician/Clinic,ia
+172930,EI,primary,Other,ia
+172930,EI,primary,Other,ia
+172930,ECSE,primary,Other,p
+177667,EI,primary,Physician/Clinic,p
+171231,EI,primary,Physician/Clinic,ia
+171231,EI,primary,Parents/Family,ia
+171231,ECSE,primary,Childcare/Preschool,ia
+171231,ECSE,primary,Parents/Family,p
+179271,EI,primary,CAPTA,ia
+179271,EI,primary,Parents/Family,p
+179271,ECSE,secondary,CAPTA,
+174101,EI,primary,Parents/Family,ia
+174101,EI,primary,Other,p
+177901,EI,primary,Physician/Clinic,p
+178784,EI,primary,Parents/Family,ia
+178784,EI,primary,Parents/Family,p
+178073,EI,primary,Physician/Clinic,p
+178968,EI,primary,Physician/Clinic,p
+173206,EI,primary,Physician/Clinic,p
+173206,EI,secondary,EHDI,
+175813,EI,primary,Physician/Clinic,p
+175813,EI,primary,Parents/Family,p
+175085,EI,primary,Hospital,p
+175085,EI,secondary,CAPTA,
+175085,EI,secondary,CAPTA,
+175085,ECSE,primary,Head Start,p
+177447,EI,primary,Hospital,p
+177447,EI,secondary,CAPTA,
+177447,EI,secondary,CAPTA,
+177447,ECSE,primary,Head Start,p
+170479,EI,primary,Healthy Families Oregon,ia
+170479,EI,primary,Other,ia
+170479,ECSE,primary,Other,ia
+170479,ECSE,primary,Other,ia
+170479,ECSE,primary,Parents/Family,p
+175652,EI,primary,CAPTA,ia
+175652,EI,primary,Other,ia
+175652,ECSE,primary,Head Start,p
+173937,EI,primary,Hospital,p
+179006,EI,primary,CAPTA,ia
+179006,EI,primary,Other,ia
+179006,EI,primary,Other,ia
+179006,EI,primary,Other,p
+176888,EI,primary,CAPTA,p
+175549,EI,primary,Physician/Clinic,ia
+175549,ECSE,primary,Physician/Clinic,p
+179559,EI,primary,Physician/Clinic,ia
+179559,EI,primary,Physician/Clinic,ia
+179559,EI,primary,Other,p
+172788,EI,primary,Parents/Family,p
+174825,EI,primary,CAPTA,ia
+174825,EI,primary,Private Therapy,ia
+174825,EI,primary,CAPTA,ia
+174825,EI,primary,Other,ia
+174825,EI to ECSE,primary,Other,ia
+174825,ECSE,primary,Head Start,p
+174825,ECSE,secondary,Other DHS,
+173208,EI,primary,Physician/Clinic,ia
+173208,EI,primary,Parents/Family,ia
+173208,EI,primary,Parents/Family,ia
+173208,EI to ECSE,primary,Parents/Family,p
+171723,EI,primary,CAPTA,ia
+171723,EI,primary,Parents/Family,p
+179766,EI,primary,CAPTA,ia
+179766,EI,primary,Parents/Family,ia
+179766,EI,primary,Parents/Family,ia
+179766,EI,primary,Physician/Clinic,p
+179974,EI,primary,Hospital,p
+179974,EI,secondary,CAPTA,
+179974,ECSE,primary,Parents/Family,p
+178059,EI,primary,Physician/Clinic,ia
+178059,ECSE,primary,Childcare/Preschool,p
+179517,EI,primary,Physician/Clinic,ia
+179517,EI,primary,Other,ia
+179517,EI,primary,Parents/Family,p
+170295,EI,primary,Hospital,ia
+170295,EI,primary,Parents/Family,p
+171403,EI,primary,CAPTA,p
+171403,EI,secondary,Hospital,
+178051,EI,primary,CAPTA,ia
+178051,EI,primary,Parents/Family,ia
+178051,EI,primary,Other,ia
+178051,EI,primary,Physician/Clinic,ia
+178051,ECSE,primary,Physician/Clinic,ia
+178051,EI to KG,primary,Physician/Clinic,ia
+178051,EI to KG,primary,Parents/Family,ia
+178051,EI to KG,primary,Physician/Clinic,p
+173230,EI,primary,Parents/Family,p
+177320,EI,primary,Physician/Clinic,p
+175905,EI,primary,Physician/Clinic,ia
+175905,EI,primary,Physician/Clinic,ia
+175905,EI,primary,Parents/Family,p
+178748,EI,primary,Private Therapy,p
+178748,ECSE,primary,Other DHS,p
+179672,EI,primary,EHDI,p
+177248,EI,primary,Physician/Clinic,ia
+177248,EI,primary,Physician/Clinic,p
+171805,EI,primary,Physician/Clinic,ia
+171805,EI,primary,Physician/Clinic,ia
+171805,EI,primary,Other,ia
+171805,EI,primary,Other,p
+174657,EI,primary,Physician/Clinic,ia
+174657,EI,primary,Healthy Families Oregon,p
+173216,EI,primary,Physician/Clinic,ia
+173216,EI,primary,Other,ia
+173216,EI,primary,Physician/Clinic,ia
+173216,ECSE,primary,Physician/Clinic,ia
+173216,EI to KG,primary,Childcare/Preschool,p
+173824,EI,primary,Parents/Family,ia
+173824,EI,primary,Other,ia
+173824,EI to ECSE,primary,Parents/Family,p
+174272,EI,primary,Hospital,ia
+174272,EI,primary,Parents/Family,p
+174272,EI,secondary,CAPTA,
+177949,EI,primary,Hospital,ia
+177949,EI,primary,Parents/Family,p
+177949,EI,secondary,CAPTA,
+177976,EI,primary,Private Therapy,p
+171013,EI,primary,Physician/Clinic,ia
+171013,ECSE,primary,Head Start,p
+174603,EI,primary,Hospital,p
+170291,EI,primary,Parents/Family,p
+173877,EI,primary,Parents/Family,p
+179458,EI,primary,Private Therapy,ia
+179458,EI,primary,Other,ia
+179458,ECSE,primary,Parents/Family,p
+171762,EI,primary,Physician/Clinic,p
+171044,EI,primary,Parents/Family,p
+175583,EI,primary,Physician/Clinic,ia
+175583,EI to KG,primary,Head Start,p
+170604,EI,primary,Physician/Clinic,ia
+170604,EI,primary,Parents/Family,ia
+170604,ECSE,primary,Other,ia
+170604,ECSE,primary,Parents/Family,p
+171859,EI,primary,Physician/Clinic,ia
+171859,EI to ECSE,primary,Physician/Clinic,ia
+171859,ECSE,primary,Physician/Clinic,ia
+171859,ECSE,primary,Physician/Clinic,p
+173596,EI,primary,Parents/Family,p
+177597,EI,primary,Parents/Family,ia
+177597,EI,primary,Parents/Family,p
+176775,EI,primary,Physician/Clinic,ia
+176775,EI to KG,primary,Head Start,p
+175416,EI,primary,Physician/Clinic,ia
+175416,EI,primary,Parents/Family,ia
+175416,EI,primary,Physician/Clinic,ia
+175416,EI,primary,Other,p
+172304,EI,primary,EHDI,ia
+172304,EI,primary,Physician/Clinic,p
+179481,EI,primary,Parents/Family,ia
+179481,EI,primary,Parents/Family,ia
+179481,ECSE,primary,Head Start,p
+174754,EI,primary,Physician/Clinic,ia
+174754,EI,primary,Parents/Family,ia
+174754,EI to ECSE,primary,Other,ia
+174754,ECSE,secondary,Physician/Clinic,
+174754,ECSE,primary,Parents/Family,p
+179003,EI,primary,Physician/Clinic,ia
+179003,EI to ECSE,primary,Physician/Clinic,p
+178426,EI,primary,Physician/Clinic,ia
+178426,EI,primary,Physician/Clinic,p
+179000,EI,primary,CAPTA,p
+179000,EI,secondary,Physician/Clinic,
+171643,EI,primary,Physician/Clinic,ia
+171643,EI,primary,Physician/Clinic,ia
+171643,EI,primary,Other,ia
+171643,ECSE,primary,Parents/Family,p
+172889,EI,primary,CAPTA,ia
+172889,EI to KG,primary,Head Start,p
+174757,EI,primary,CAPTA,p
+175410,EI,primary,CAPTA,p
+175410,EI,secondary,Physician/Clinic,
+177704,EI,primary,Physician/Clinic,p
+178092,EI,primary,Parents/Family,ia
+178092,EI,primary,Parents/Family,p
+179950,EI,primary,CAPTA,p
+179950,ECSE,primary,Other DHS,p
+179261,EI,primary,Physician/Clinic,p
+179261,EI,secondary,CAPTA,
+179261,EI,secondary,Physician/Clinic,
+178972,EI,primary,Parents/Family,ia
+178972,EI,primary,Parents/Family,ia
+178972,EI,primary,Healthy Families Oregon,ia
+178972,EI to ECSE,primary,Head Start,p
+176395,EI,primary,Parents/Family,ia
+176395,EI,primary,Parents/Family,p
+175940,EI,primary,Parents/Family,p
+175940,EI to KG,primary,Parents/Family,p
+175629,EI,primary,CAPTA,ia
+175629,EI,primary,Other,ia
+175629,EI,primary,Physician/Clinic,ia
+175629,EI,primary,Other,ia
+175629,EI,primary,Other,p
+170482,EI,primary,Hospital,ia
+170482,EI,primary,Parents/Family,p
+170482,ECSE,primary,Healthy Families Oregon,p
+176044,EI,primary,Physician/Clinic,ia
+176044,EI,primary,Physician/Clinic,ia
+176044,EI to ECSE,primary,Parents/Family,p
+176044,EI to ECSE,secondary,Physician/Clinic,
+172272,EI,primary,Physician/Clinic,ia
+172272,EI,primary,Parents/Family,p
+172272,ECSE,primary,Physician/Clinic,ia
+172272,EI to KG,primary,Head Start,p
+171918,EI,primary,Parents/Family,ia
+171918,EI,primary,Other,p
+177437,EI,primary,Physician/Clinic,p
+177437,EI,secondary,Public Health,
+177437,EI,secondary,Hospital,
+170552,EI,primary,Physician/Clinic,ia
+170552,EI,primary,Move in from another state,p
+171226,EI,primary,Physician/Clinic,ia
+171226,EI,primary,Parents/Family,ia
+171226,EI to ECSE,primary,Other,ia
+171226,EI to ECSE,primary,Other,ia
+171226,ECSE,primary,Parents/Family,p
+173441,EI,primary,Parents/Family,ia
+173441,EI,primary,Other,ia
+173441,ECSE,primary,Parents/Family,p
+176767,EI,primary,CAPTA,p
+176767,EI,secondary,Physician/Clinic,
+175991,EI,primary,Parents/Family,ia
+175991,EI,primary,Other,p
+176560,EI,primary,CAPTA,ia
+176560,EI,primary,CAPTA,ia
+176560,EI,primary,Parents/Family,p
+176560,EI to ECSE,secondary,Other DHS,
+176560,ECSE,primary,Other DHS,p
+175615,EI,primary,Physician/Clinic,ia
+175615,EI,primary,Other,ia
+175615,EI to ECSE,primary,Physician/Clinic,ia
+175615,EI to KG,primary,Physician/Clinic,ia
+175615,EI to KG,primary,Parents/Family,p
+178396,EI,primary,Physician/Clinic,p
+176348,EI,primary,EHDI,p
+173362,EI,primary,Parents/Family,p
+173362,ECSE,primary,Other DHS,ia
+173362,ECSE,primary,Other DHS,p
+178095,EI,primary,Parents/Family,p
+170569,EI,primary,Hospital,p
+174003,EI,primary,Parents/Family,ia
+174003,EI,primary,Parents/Family,ia
+174003,EI,primary,Parents/Family,p
+174003,ECSE,primary,Head Start,p
+175788,EI,primary,Parents/Family,ia
+175788,EI,primary,Other,ia
+175788,ECSE,primary,Other,p
+175223,EI,primary,Parents/Family,p
+175223,EI,secondary,CAPTA,
+172840,EI,primary,Physician/Clinic,p
+170959,EI,primary,Parents/Family,ia
+170959,ECSE,primary,Childcare/Preschool,p
+172855,EI,primary,Other EI/ECSE program,p
+172855,ECSE,secondary,Physician/Clinic,
+177775,EI,primary,Physician/Clinic,ia
+177775,EI,primary,CAPTA,ia
+177775,EI,primary,CAPTA,ia
+177775,ECSE,primary,Other,ia
+177775,ECSE,primary,Other,p
+177869,EI,primary,Physician/Clinic,ia
+177869,ECSE,primary,Physician/Clinic,p
+179418,EI,primary,Parents/Family,p
+179418,ECSE,primary,Childcare/Preschool,p
+177988,EI,primary,Physician/Clinic,ia
+177988,EI,primary,Parents/Family,p
+174790,EI,primary,CAPTA,p
+174790,EI,secondary,EHDI,
+173393,EI,primary,CAPTA,ia
+173393,EI,primary,CAPTA,ia
+173393,EI,primary,Other,ia
+173393,EI,primary,Parents/Family,ia
+173393,EI to ECSE,primary,Other,ia
+173393,ECSE,primary,Childcare/Preschool,p
+176656,EI,primary,CAPTA,ia
+176656,EI,primary,CAPTA,ia
+176656,EI,primary,Other,ia
+176656,EI,primary,Parents/Family,ia
+176656,EI to ECSE,primary,Other,ia
+176656,ECSE,primary,Childcare/Preschool,p
+178788,EI,primary,Move in from another state,p
+170948,EI,primary,Physician/Clinic,p
+176530,EI,primary,Physician/Clinic,ia
+176530,EI,primary,Parents/Family,p
+171756,EI,primary,Physician/Clinic,ia
+171756,EI,primary,Physician/Clinic,ia
+171756,ECSE,primary,Other,p
+176163,EI,primary,Hospital,p
+176163,EI,secondary,Physician/Clinic,
+176163,EI,secondary,CAPTA,
+176393,EI,primary,Physician/Clinic,ia
+176393,ECSE,primary,Head Start,p
+174396,EI,primary,CAPTA,ia
+174396,EI,primary,CAPTA,ia
+174396,EI to ECSE,primary,CAPTA,ia
+174396,ECSE,primary,Head Start,p
+174396,EI to KG,secondary,Physician/Clinic,
+179117,EI,primary,Hospital,p
+172988,EI,primary,Parents/Family,p
+172988,EI,secondary,CAPTA,
+172988,EI,secondary,Physician/Clinic,
+175837,EI,primary,Physician/Clinic,ia
+175837,EI to ECSE,primary,Parents/Family,p
+171746,EI,primary,Physician/Clinic,ia
+171746,ECSE,primary,Parents/Family,p
+176417,EI,primary,Physician/Clinic,ia
+176417,EI,primary,Physician/Clinic,ia
+176417,ECSE,primary,Healthy Families Oregon,ia
+176417,ECSE,primary,Parents/Family,ia
+176417,ECSE,primary,Head Start,p
+176855,EI,primary,Physician/Clinic,ia
+176855,EI,primary,Other,ia
+176855,EI,primary,Head Start,p
+170637,EI,primary,Parents/Family,ia
+170637,ECSE,primary,Parents/Family,ia
+170637,ECSE,primary,Other,ia
+170637,EI to KG,primary,Other,ia
+170637,EI to KG,primary,Other,p
+179116,EI,primary,CAPTA,ia
+179116,EI,primary,Physician/Clinic,p
+179116,EI,secondary,Physician/Clinic,
+177880,EI,primary,Physician/Clinic,ia
+177880,EI,primary,Other,p
+177880,EI,secondary,Physician/Clinic,
+178477,EI,primary,Parents/Family,ia
+178477,ECSE,primary,Other,ia
+178477,ECSE,primary,Parents/Family,p
+178477,ECSE,secondary,Physician/Clinic,
+170187,EI,primary,Physician/Clinic,ia
+170187,EI,primary,Parents/Family,ia
+170187,ECSE,primary,Parents/Family,p
+172368,EI,primary,Hospital,p
+172368,ECSE,primary,Parents/Family,p
+170424,EI,primary,Childcare/Preschool,ia
+170424,EI,primary,Parents/Family,ia
+170424,ECSE,primary,Head Start,p
+176041,EI,primary,Physician/Clinic,ia
+176041,ECSE,primary,Parents/Family,p
+176017,EI,primary,Physician/Clinic,ia
+176017,ECSE,primary,Parents/Family,p
+170970,EI,primary,Physician/Clinic,ia
+170970,EI,primary,Parents/Family,ia
+170970,ECSE,primary,Head Start,p
+171955,EI,primary,Physician/Clinic,p
+172193,EI,primary,Hospital,p
+178295,EI,primary,Other,p
+176725,EI,primary,Physician/Clinic,ia
+176725,EI to ECSE,primary,Parents/Family,p
+176725,ECSE,primary,Parents/Family,p
+171147,EI,primary,Parents/Family,ia
+171147,EI to ECSE,primary,Parents/Family,p
+176951,EI,primary,CAPTA,ia
+176951,EI,primary,Parents/Family,p
+175237,EI,primary,Parents/Family,ia
+175237,EI,primary,Other,p
+170769,EI,primary,Parents/Family,p
+177229,EI,primary,Healthy Families Oregon,p
+177229,EI,secondary,Hospital,
+177229,ECSE,secondary,Other DHS,
+178786,EI,primary,Parents/Family,p
+174627,EI,primary,Other EI/ECSE program,p
+170233,EI,primary,Parents/Family,ia
+170233,EI to ECSE,primary,Other,p
+171966,EI,primary,Parents/Family,ia
+171966,EI,primary,Parents/Family,p
+178831,EI,primary,Physician/Clinic,p
+171657,EI,primary,EHDI,p
+175795,EI,primary,Hospital,p
+175795,ECSE,primary,Other DHS,p
+179631,EI,primary,Physician/Clinic,p
+179631,EI,secondary,Physician/Clinic,
+175240,EI,primary,Physician/Clinic,ia
+175240,ECSE,primary,Parents/Family,ia
+175240,ECSE,primary,Other,ia
+175240,ECSE,primary,Physician/Clinic,p
+175564,EI,primary,Public Health,ia
+175564,EI,primary,Parents/Family,ia
+175564,EI,primary,Physician/Clinic,p
+175564,EI,secondary,EHDI,
+173293,EI,primary,Physician/Clinic,ia
+173293,EI,primary,Physician/Clinic,p
+178196,EI,primary,Physician/Clinic,ia
+178196,ECSE,primary,Parents/Family,ia
+178196,ECSE,primary,Parents/Family,p
+174218,EI,primary,Move in from another state,p
+177657,EI,primary,CAPTA,p
+177657,ECSE,primary,Head Start,p
+170144,EI,primary,CAPTA,p
+170144,ECSE,primary,Head Start,p
+177953,EI,primary,EHDI,ia
+177953,EI,primary,Parents/Family,p
+177953,EI,secondary,Physician/Clinic,
+170446,EI,primary,Physician/Clinic,ia
+170446,ECSE,primary,Physician/Clinic,p
+177684,EI,primary,Physician/Clinic,ia
+177684,EI,primary,Other,p
+172907,EI,primary,Physician/Clinic,ia
+172907,ECSE,primary,Physician/Clinic,p
+171375,EI,primary,Physician/Clinic,ia
+171375,EI,primary,Parents/Family,ia
+171375,EI,primary,Other,ia
+171375,ECSE,primary,Physician/Clinic,p
+174500,EI,primary,Physician/Clinic,ia
+174500,EI,primary,Parents/Family,ia
+174500,EI,primary,Other,ia
+174500,ECSE,primary,Physician/Clinic,p
+173137,EI,primary,Physician/Clinic,p
+173137,ECSE,primary,Parents/Family,p
+174528,EI,primary,Parents/Family,ia
+174528,EI to ECSE,primary,Parents/Family,p
+179357,EI,primary,Parents/Family,p
+179357,EI,secondary,Physician/Clinic,
+175508,EI,primary,Parents/Family,p
+175508,EI to KG,primary,Parents/Family,p
+179287,EI,primary,Parents/Family,ia
+179287,EI,primary,Physician/Clinic,p
+175192,EI,primary,Parents/Family,p
+179391,EI,primary,Parents/Family,p
+179234,EI,primary,Hospital,p
+179089,EI,primary,Physician/Clinic,ia
+179089,EI,primary,Childcare/Preschool,p
+179089,EI,secondary,Physician/Clinic,
+179089,EI to KG,secondary,Physician/Clinic,
+179502,EI,primary,Physician/Clinic,ia
+179502,ECSE,primary,Childcare/Preschool,p
+172319,EI,primary,Physician/Clinic,ia
+172319,EI,primary,Other,ia
+172319,ECSE,primary,Parents/Family,ia
+172319,ECSE,primary,Head Start,p
+173809,EI,primary,Private Therapy,p
+173809,EI to ECSE,primary,Parents/Family,p
+173809,ECSE,secondary,Physician/Clinic,
+170320,EI,primary,Private Therapy,ia
+170320,EI,primary,Parents/Family,p
+170320,EI,secondary,CAPTA,
+172828,EI,primary,Physician/Clinic,ia
+172828,EI,primary,Physician/Clinic,ia
+172828,ECSE,primary,Head Start,p
+178043,EI,primary,Other EI/ECSE program,p
+177531,EI,primary,Public Health,p
+177531,EI,secondary,CAPTA,
+173895,EI,primary,Physician/Clinic,ia
+173895,ECSE,primary,Healthy Families Oregon,p
+178439,EI,primary,Physician/Clinic,ia
+178439,EI,primary,Other,p
+178439,ECSE,primary,Parents/Family,p
+177910,EI,primary,Physician/Clinic,ia
+177910,ECSE,primary,Physician/Clinic,ia
+177910,ECSE,primary,Parents/Family,ia
+177910,EI to KG,primary,Head Start,p
+172238,EI,primary,Physician/Clinic,p
+170932,EI,primary,Physician/Clinic,ia
+170932,EI,primary,Other,p
+172481,EI,primary,Move in from another state,p
+176827,EI,primary,Physician/Clinic,p
+174624,EI,primary,CAPTA,ia
+174624,ECSE,primary,Parents/Family,ia
+174624,ECSE,primary,Parents/Family,p
+172783,EI,primary,CAPTA,p
+175480,EI to ECSE,primary,Parents/Family,p
+170311,EI,primary,Parents/Family,ia
+170311,EI to ECSE,primary,Parents/Family,p
+176721,EI,primary,Physician/Clinic,ia
+176721,ECSE,primary,Parents/Family,p
+171839,EI,primary,Physician/Clinic,ia
+171839,EI,primary,Parents/Family,p
+178008,EI,primary,EHDI,p
+179485,EI,primary,Move in from another state,p
+171811,EI,primary,Parents/Family,ia
+171811,ECSE,primary,Parents/Family,p
+173043,EI,primary,Healthy Families Oregon,ia
+173043,EI,primary,Public Health,ia
+173043,EI,primary,Other,p
+177803,EI,primary,Physician/Clinic,ia
+177803,EI,primary,Parents/Family,p
+184979,EI,primary,Physician/Clinic,ia
+184979,EI,primary,Physician/Clinic,ia
+184979,EI,primary,Physician/Clinic,ia
+184979,EI,primary,Parents/Family,p
+182393,EI,primary,Physician/Clinic,ia
+182393,EI,primary,Physician/Clinic,ia
+182393,EI,primary,Physician/Clinic,p
+182393,ECSE,primary,Parents/Family,p
+187737,EI,primary,Hospital,ia
+187737,EI,primary,Physician/Clinic,ia
+187737,EI,primary,Physician/Clinic,ia
+187737,ECSE,primary,Head Start,p
+180395,EI,primary,Physician/Clinic,ia
+180395,EI,primary,Other,ia
+180395,EI,primary,Other,ia
+180395,ECSE,primary,Physician/Clinic,ia
+180395,ECSE,primary,Childcare/Preschool,p
+183271,EI,primary,Physician/Clinic,ia
+183271,EI to ECSE,primary,Parents/Family,p
+185688,EI,primary,Physician/Clinic,p
+180243,EI,primary,CAPTA,ia
+180243,EI,primary,Parents/Family,ia
+180243,EI,primary,Other,ia
+180243,EI,primary,Other,ia
+180243,ECSE,primary,Head Start,p
+186410,EI,primary,Parents/Family,ia
+186410,ECSE,primary,Parents/Family,ia
+186410,ECSE,primary,Head Start,p
+181365,EI,primary,Physician/Clinic,ia
+181365,EI,primary,Other,p
+188924,EI,primary,EHDI,p
+185673,EI,primary,Physician/Clinic,ia
+185673,ECSE,primary,Physician/Clinic,p
+183943,EI,primary,Physician/Clinic,ia
+183943,EI to ECSE,primary,Parents/Family,p
+186577,EI,primary,Physician/Clinic,ia
+186577,EI to KG,primary,Head Start,p
+189073,EI,primary,Parents/Family,ia
+189073,ECSE,primary,Physician/Clinic,p
+180754,EI,primary,CAPTA,p
+186875,EI,primary,Healthy Families Oregon,ia
+186875,EI,primary,Childcare/Preschool,p
+181847,EI,primary,Healthy Families Oregon,ia
+181847,EI,primary,Childcare/Preschool,ia
+181847,ECSE,primary,Other,ia
+181847,ECSE,primary,Childcare/Preschool,p
+189011,EI,primary,Physician/Clinic,ia
+189011,EI,primary,Parents/Family,p
+181048,EI,primary,Parents/Family,p
+181048,EI,secondary,CAPTA,
+188420,EI,primary,Other EI/ECSE program,p
+189961,EI,primary,CAPTA,ia
+189961,EI,primary,CAPTA,ia
+189961,EI,primary,Physician/Clinic,ia
+189961,EI,primary,Healthy Families Oregon,p
+189961,EI to ECSE,primary,Healthy Families Oregon,ia
+189303,EI,primary,Physician/Clinic,ia
+189303,EI,primary,Parents/Family,p
+187571,EI,primary,Physician/Clinic,ia
+187571,ECSE,primary,Head Start,p
+187479,EI to ECSE,primary,Physician/Clinic,ia
+187479,ECSE,primary,Childcare/Preschool,p
+185913,EI,primary,Physician/Clinic,ia
+185913,EI,primary,Physician/Clinic,p
+181305,EI,primary,Parents/Family,p
+181305,ECSE,secondary,Other DHS,
+184095,EI,primary,CAPTA,ia
+184095,EI,primary,CAPTA,ia
+184095,EI,primary,CAPTA,p
+184095,EI,secondary,EHDI,
+187328,EI,primary,Parents/Family,ia
+187328,EI to ECSE,primary,Parents/Family,p
+187328,ECSE,secondary,Physician/Clinic,
+183111,EI,primary,Physician/Clinic,p
+180550,EI,primary,CAPTA,ia
+180550,ECSE,primary,Head Start,p
+181074,EI,primary,Parents/Family,ia
+181074,ECSE,primary,Parents/Family,p
+181382,EI,primary,Other,ia
+181382,EI,primary,Parents/Family,p
+187584,EI,primary,Physician/Clinic,ia
+187584,EI,primary,Other,ia
+187584,EI,primary,Other,p
+184828,EI,primary,Physician/Clinic,ia
+184828,ECSE,primary,Parents/Family,p
+184828,ECSE,secondary,Physician/Clinic,
+185738,EI,primary,Physician/Clinic,p
+189125,EI,primary,Physician/Clinic,ia
+189125,EI,primary,Other,ia
+189125,EI,primary,Other,p
+181709,EI,primary,Parents/Family,ia
+181709,ECSE,primary,Parents/Family,ia
+181709,ECSE,primary,Other,p
+187888,EI,primary,Physician/Clinic,ia
+187888,EI,primary,Other,ia
+187888,EI,primary,Physician/Clinic,p
+188839,EI,primary,Parents/Family,ia
+188839,EI,primary,Parents/Family,p
+188839,EI,secondary,Physician/Clinic,
+187039,EI,primary,Physician/Clinic,ia
+187039,EI to ECSE,primary,Physician/Clinic,p
+181897,EI,primary,Parents/Family,ia
+181897,EI,secondary,Physician/Clinic,
+181897,EI,primary,Other,p
+181153,EI,primary,Parents/Family,p
+181153,EI,secondary,CAPTA,
+181153,ECSE,primary,Parents/Family,p
+182899,EI,primary,Physician/Clinic,p
+182899,EI,primary,Parents/Family,p
+182899,EI,primary,Parents/Family,p
+186626,EI,primary,Physician/Clinic,p
+186626,EI,secondary,CAPTA,
+182657,EI,primary,CAPTA,ia
+182657,EI,primary,Physician/Clinic,p
+182853,EI to ECSE,primary,Parents/Family,ia
+182853,ECSE,primary,Childcare/Preschool,p
+182175,EI to ECSE,primary,Parents/Family,p
+189311,EI,primary,Hospital,p
+189311,EI,secondary,Physician/Clinic,
+189311,ECSE,secondary,Physician/Clinic,
+187524,EI,primary,Physician/Clinic,ia
+187524,EI,primary,Physician/Clinic,ia
+187524,EI,primary,Physician/Clinic,ia
+187524,ECSE,primary,Physician/Clinic,p
+187524,ECSE,primary,Parents/Family,p
+180086,EI,primary,Parents/Family,p
+182041,EI,primary,Parents/Family,p
+182041,ECSE,primary,Parents/Family,p
+186783,EI,primary,Parents/Family,p
+188375,EI,primary,Parents/Family,p
+188050,EI,primary,Parents/Family,p
+188050,EI,secondary,Physician/Clinic,
+185584,EI,primary,Physician/Clinic,ia
+185584,EI,primary,Parents/Family,ia
+185584,EI,primary,Parents/Family,p
+183453,EI,primary,Physician/Clinic,p
+183453,ECSE,primary,Parents/Family,ia
+183453,EI to KG,primary,Physician/Clinic,ia
+180882,EI,primary,Hospital,ia
+180882,EI,primary,Parents/Family,p
+184159,EI to ECSE,primary,Parents/Family,ia
+184159,ECSE,primary,Parents/Family,p
+184474,EI,primary,Parents/Family,p
+184611,EI,primary,Parents/Family,ia
+184611,EI,secondary,Physician/Clinic,
+184611,ECSE,primary,Parents/Family,ia
+184611,ECSE,secondary,Physician/Clinic,
+184611,ECSE,primary,Other,p
+185727,EI,primary,Physician/Clinic,ia
+185727,EI to ECSE,primary,Other,p
+186567,EI,primary,Physician/Clinic,p
+186567,EI to ECSE,primary,Physician/Clinic,p
+186567,ECSE,secondary,Healthy Families Oregon,
+186567,ECSE,secondary,Physician/Clinic,
+187461,EI,primary,Physician/Clinic,ia
+187461,ECSE,primary,Physician/Clinic,p
+186141,EI,primary,Physician/Clinic,ia
+186141,EI,primary,Parents/Family,p
+186141,ECSE,primary,Parents/Family,ia
+184872,EI,primary,Physician/Clinic,ia
+184872,EI,primary,Parents/Family,p
+187714,EI,primary,Physician/Clinic,p
+188605,EI,primary,Physician/Clinic,ia
+188605,EI,primary,Physician/Clinic,ia
+188605,ECSE,primary,Physician/Clinic,p
+188605,ECSE,secondary,Parents/Family,
+182692,EI,primary,Hospital,p
+182692,EI,secondary,Physician/Clinic,
+182704,EI to ECSE,primary,Physician/Clinic,p
+184353,EI to ECSE,primary,Parents/Family,p
+182836,EI,primary,Healthy Families Oregon,p
+180355,EI,primary,Other,ia
+180355,EI to ECSE,primary,Other,p
+180355,ECSE,secondary,Physician/Clinic,
+180398,ECSE,primary,Physician/Clinic,p
+180398,EI to ECSE,primary,Parents/Family,ia
+186726,EI,primary,Hospital,ia
+186726,EI,primary,Parents/Family,p
+181426,EI,primary,Hospital,p
+181426,EI,primary,Public Health,ia
+181426,EI,primary,Physician/Clinic,p
+181426,EI,secondary,Physician/Clinic,
+183289,EI,primary,Physician/Clinic,ia
+183289,ECSE,primary,Other DHS,ia
+183289,ECSE,primary,Physician/Clinic,p
+187109,EI,primary,Physician/Clinic,ia
+187109,EI,primary,Other,p
+189715,EI,primary,Physician/Clinic,ia
+189715,EI to KG,primary,Head Start,p
+186423,EI,primary,Parents/Family,p
+185184,EI,primary,Physician/Clinic,p
+185184,ECSE,primary,Parents/Family,p
+185184,ECSE,secondary,Physician/Clinic,
+185504,EI to ECSE,primary,Physician/Clinic,p
+180650,EI,primary,Hospital,p
+188574,EI,primary,Physician/Clinic,ia
+188574,ECSE,primary,Other DHS,p
+181553,EI,primary,Physician/Clinic,ia
+181553,EI,primary,Parents/Family,p
+181553,ECSE,primary,Parents/Family,ia
+181553,ECSE,primary,Parents/Family,p
+184271,EI,primary,CAPTA,p
+184271,ECSE,primary,Parents/Family,ia
+180181,EI,primary,CAPTA,ia
+180181,EI,primary,Other,p
+180181,EI to KG,secondary,Other DHS,
+184197,EI,primary,CAPTA,p
+184197,ECSE,secondary,Other DHS,
+186803,EI,primary,CAPTA,p
+186803,ECSE,primary,Other,p
+189049,EI,primary,CAPTA,ia
+189049,EI,primary,Other,ia
+189049,EI,primary,Other,ia
+189049,EI,primary,Head Start,ia
+189049,EI to ECSE,primary,Head Start,p
+184924,EI,primary,Hospital,p
+184155,EI to ECSE,primary,Parents/Family,p
+188507,EI,primary,Physician/Clinic,ia
+188507,EI,primary,Parents/Family,ia
+188507,EI,primary,Parents/Family,ia
+188507,EI to ECSE,primary,Parents/Family,p
+180799,EI,primary,Physician/Clinic,ia
+180799,EI to KG,primary,Parents/Family,p
+181191,EI,primary,Physician/Clinic,p
+183710,EI,primary,Parents/Family,ia
+183710,EI,primary,CAPTA,p
+183710,EI,secondary,CAPTA,
+186902,ECSE,primary,Physician/Clinic,p
+182044,ECSE,primary,Other,p
+183719,EI,primary,Physician/Clinic,p
+183719,EI,secondary,CAPTA,
+181603,EI to ECSE,primary,Other EI/ECSE program,p
+181612,EI,primary,Physician/Clinic,ia
+181612,EI,primary,Physician/Clinic,ia
+181612,EI,primary,Other,p
+181612,ECSE,secondary,Physician/Clinic,
+180909,EI,primary,Physician/Clinic,ia
+180909,EI,primary,Parents/Family,ia
+180909,ECSE,primary,Other,p
+187486,EI,primary,Parents/Family,p
+185113,EI,primary,Parents/Family,p
+184258,EI,primary,Physician/Clinic,ia
+184258,EI,primary,Parents/Family,p
+184290,EI,primary,Healthy Families Oregon,p
+184290,ECSE,secondary,Other DHS,
+187831,EI,primary,Childcare/Preschool,p
+187754,EI,primary,Parents/Family,p
+180176,EI,primary,Parents/Family,ia
+180176,EI,primary,Other,ia
+180176,EI to ECSE,primary,Parents/Family,p
+180176,EI,primary,Physician/Clinic,ia
+182822,EI,primary,Physician/Clinic,ia
+182822,EI,primary,Physician/Clinic,p
+182822,ECSE,primary,Other,ia
+182822,ECSE,secondary,Physician/Clinic,
+184784,EI,primary,Other,ia
+184784,EI,primary,Other,ia
+184784,EI,primary,Other,p
+184784,EI,primary,Physician/Clinic,ia
+180413,EI,primary,Parents/Family,p
+184705,EI,primary,Healthy Families Oregon,ia
+184705,EI,primary,Healthy Families Oregon,ia
+184705,EI to ECSE,primary,Healthy Families Oregon,p
+186828,ECSE,primary,Physician/Clinic,p
+188700,EI,primary,Physician/Clinic,ia
+188700,EI,primary,Parents/Family,p
+188700,ECSE,secondary,CAPTA,
+182597,ECSE,primary,Parents/Family,p
+185326,EI,primary,Hospital,p
+186833,EI,primary,Physician/Clinic,ia
+186833,EI,primary,Physician/Clinic,ia
+186833,EI,primary,Physician/Clinic,ia
+186833,EI,primary,Parents/Family,p
+184546,EI,primary,Parents/Family,p
+183220,EI,primary,Hospital,p
+183220,ECSE,primary,Other,ia
+183578,ECSE,primary,Physician/Clinic,ia
+183578,ECSE,primary,Physician/Clinic,ia
+183578,ECSE,primary,Parents/Family,p
+180764,EI,primary,Physician/Clinic,ia
+180764,EI,primary,Healthy Families Oregon,p
+189315,EI,primary,Physician/Clinic,ia
+189315,EI,primary,Other,ia
+189315,ECSE,primary,Physician/Clinic,ia
+189315,EI to KG,primary,Head Start,p
+180037,EI,primary,Physician/Clinic,ia
+180037,EI,primary,Other,p
+180037,EI,secondary,Physician/Clinic,
+185048,EI,primary,Parents/Family,p
+183859,EI,primary,Hospital,p
+183859,EI,secondary,EHDI,
+182554,EI,primary,Public Health,p
+182554,ECSE,primary,Head Start,ia
+185362,EI,primary,Physician/Clinic,ia
+185362,ECSE,primary,Parents/Family,p
+182060,EI,primary,Physician/Clinic,ia
+182060,EI,primary,Other,p
+182060,EI,secondary,Physician/Clinic,
+184019,EI,primary,Parents/Family,p
+184019,ECSE,primary,Parents/Family,p
+186154,EI,primary,Other,ia
+186154,ECSE,primary,Other,p
+185496,EI,primary,Hospital,p
+185496,ECSE,primary,Other,ia
+186069,EI,primary,Parents/Family,p
+183925,EI,primary,CAPTA,ia
+183925,EI,primary,Physician/Clinic,ia
+183925,ECSE,primary,Parents/Family,p
+183015,EI,primary,Physician/Clinic,ia
+183015,EI,primary,Other,p
+183015,ECSE,primary,Childcare/Preschool,p
+183874,ECSE,primary,Physician/Clinic,p
+183874,ECSE,secondary,Physician/Clinic,
+181139,ECSE,primary,Parents/Family,ia
+181139,ECSE,secondary,Physician/Clinic,
+181139,ECSE,primary,Parents/Family,p
+182649,EI,primary,Physician/Clinic,ia
+182649,EI,primary,Physician/Clinic,ia
+182649,EI to ECSE,primary,Other,ia
+182649,EI to KG,primary,Head Start,p
+188144,EI,primary,Physician/Clinic,ia
+188144,EI to ECSE,primary,Other,ia
+188144,ECSE,primary,Parents/Family,p
+189834,EI,primary,Parents/Family,ia
+189834,EI to ECSE,primary,Parents/Family,p
+183590,EI,primary,Parents/Family,ia
+183590,EI to KG,primary,Parents/Family,p
+183590,EI to KG,secondary,Physician/Clinic,
+188761,EI,primary,Parents/Family,p
+188761,ECSE,primary,Parents/Family,p
+183775,ECSE,primary,Physician/Clinic,ia
+183775,ECSE,primary,Physician/Clinic,p
+187484,EI,primary,Physician/Clinic,ia
+187484,EI,primary,Physician/Clinic,ia
+187484,EI,primary,Other,ia
+187484,EI,primary,Other,p
+180696,EI,primary,Physician/Clinic,p
+184798,EI,primary,Parents/Family,p
+187792,EI,primary,Parents/Family,ia
+187792,EI to KG,primary,Head Start,p
+188028,EI,primary,Parents/Family,p
+181919,EI to ECSE,primary,Parents/Family,ia
+181919,EI to ECSE,primary,Other,p
+188628,EI,primary,Parents/Family,p
+186019,EI,primary,CAPTA,ia
+186019,EI,primary,Other,ia
+186019,EI to ECSE,primary,Other,p
+187847,EI,primary,CAPTA,ia
+187847,EI,primary,Other,p
+189513,EI,primary,Other EI/ECSE program,p
+189513,ECSE,primary,Other,p
+186607,EI,primary,Parents/Family,ia
+186607,EI,secondary,Physician/Clinic,
+186607,EI,primary,Parents/Family,p
+186607,EI,secondary,Physician/Clinic,
+188749,ECSE,primary,Other EI/ECSE program,p
+188749,ECSE,secondary,Physician/Clinic,
+181484,ECSE,primary,Other EI/ECSE program,p
+185211,EI,primary,CAPTA,ia
+185211,EI,primary,CAPTA,ia
+185211,EI,primary,Other,p
+184877,EI,primary,Parents/Family,p
+182110,EI,primary,Physician/Clinic,ia
+182110,EI to ECSE,primary,Parents/Family,p
+184917,EI,primary,Parents/Family,ia
+184917,EI,primary,Parents/Family,p
+184752,EI,primary,CAPTA,p
+184752,EI,secondary,Hospital,
+184752,EI,primary,Parents/Family,p
+187167,EI to ECSE,primary,Other,ia
+187167,ECSE,primary,Parents/Family,p
+187167,ECSE,primary,Parents/Family,p
+182952,EI,primary,Physician/Clinic,p
+182976,EI,primary,Physician/Clinic,p
+182976,EI to KG,secondary,Physician/Clinic,
+187289,EI,primary,Physician/Clinic,p
+187289,ECSE,primary,Parents/Family,p
+187289,ECSE,primary,Physician/Clinic,p
+180148,EI,primary,Parents/Family,p
+186014,EI,primary,Physician/Clinic,p
+186014,ECSE,primary,Other,p
+187777,ECSE,primary,Head Start,p
+187258,EI,primary,Parents/Family,ia
+187258,EI,primary,Parents/Family,p
+187258,EI,secondary,Physician/Clinic,
+181519,EI,primary,Parents/Family,p
+187529,EI,primary,Parents/Family,p
+184171,EI,primary,Physician/Clinic,ia
+184171,ECSE,primary,Other,p
+183731,EI,primary,Parents/Family,ia
+183731,EI,primary,Other,ia
+183731,EI to KG,primary,Childcare/Preschool,p
+189301,EI,primary,Parents/Family,p
+183122,EI,primary,Parents/Family,ia
+183122,ECSE,primary,Other DHS,p
+183122,ECSE,secondary,Physician/Clinic,
+182247,EI,primary,Parents/Family,ia
+182247,EI,secondary,Physician/Clinic,
+182247,ECSE,primary,Other DHS,p
+189956,EI,primary,Parents/Family,p
+189956,ECSE,primary,Other,p
+181507,EI,primary,Parents/Family,p
+188608,EI,primary,Physician/Clinic,ia
+188608,EI,primary,Physician/Clinic,p
+186718,EI,primary,CAPTA,ia
+186718,EI to ECSE,primary,Parents/Family,ia
+186718,ECSE,primary,Other DHS,p
+186718,ECSE,secondary,Physician/Clinic,
+182578,EI,primary,CAPTA,ia
+182578,EI,primary,Head Start,p
+182578,EI to KG,secondary,Head Start,
+189962,EI,primary,Parents/Family,p
+189962,EI,secondary,Physician/Clinic,
+186955,EI,primary,Parents/Family,ia
+186955,ECSE,primary,Other,p
+184730,ECSE,primary,Parents/Family,p
+184730,ECSE,secondary,Physician/Clinic,
+186914,EI,primary,Hospital,p
+186914,EI,secondary,CAPTA,
+187489,EI,primary,Physician/Clinic,ia
+187489,EI,primary,Physician/Clinic,ia
+187489,EI,primary,Other,ia
+187489,EI to ECSE,primary,Parents/Family,p
+180516,ECSE,primary,Other,p
+189400,ECSE,primary,Parents/Family,p
+189400,EI,primary,Physician/Clinic,ia
+181740,EI,primary,Physician/Clinic,ia
+181740,EI,primary,Other,p
+188598,ECSE,primary,Other DHS,p
+182960,EI,primary,CAPTA,ia
+182960,EI,primary,Other,ia
+182960,EI,primary,Other,ia
+182960,EI to ECSE,primary,Parents/Family,p
+183656,ECSE,primary,Physician/Clinic,ia
+183656,ECSE,primary,Parents/Family,p
+180765,EI,primary,Physician/Clinic,ia
+180765,EI,primary,Parents/Family,ia
+180765,ECSE,primary,Head Start,p
+182134,EI,primary,Parents/Family,ia
+182134,EI,primary,Physician/Clinic,p
+182134,EI,primary,Other,p
+182134,ECSE,primary,Parents/Family,p
+181135,EI,primary,Parents/Family,p
+180779,EI,primary,Physician/Clinic,p
+187013,EI,primary,Parents/Family,p
+185803,EI,primary,Physician/Clinic,ia
+185803,EI,primary,Physician/Clinic,ia
+185803,EI,primary,Parents/Family,p
+184335,EI,primary,Physician/Clinic,ia
+184335,EI,secondary,Childcare/Preschool,
+184335,EI,primary,Parents/Family,p
+187928,ECSE,primary,Other,p
+189705,EI,primary,Parents/Family,p
+186456,EI,primary,Parents/Family,ia
+186456,EI,secondary,Physician/Clinic,
+186456,EI to ECSE,primary,Parents/Family,p
+182934,EI,primary,Physician/Clinic,ia
+182934,EI,primary,Other,ia
+182934,EI,primary,Other,p
+183671,EI,primary,Parents/Family,p
+183671,EI,secondary,Physician/Clinic,
+182401,EI,primary,Physician/Clinic,ia
+182401,EI to KG,primary,Physician/Clinic,ia
+182401,EI to KG,primary,Parents/Family,p
+181194,EI,primary,Physician/Clinic,p
+182289,EI to ECSE,primary,Physician/Clinic,p
+186706,EI,primary,Hospital,p
+186133,EI,primary,Physician/Clinic,p
+180469,ECSE,primary,Parents/Family,ia
+180469,ECSE,primary,Parents/Family,p
+183488,EI,primary,Physician/Clinic,ia
+183488,EI,primary,Parents/Family,p
+188759,EI,primary,Public Health,p
+183736,EI,primary,Physician/Clinic,p
+182923,EI,primary,Physician/Clinic,p
+180409,EI,primary,Physician/Clinic,p
+180302,EI,primary,Physician/Clinic,ia
+180302,EI,primary,Parents/Family,p
+184231,EI,primary,Physician/Clinic,ia
+184231,EI,primary,Parents/Family,ia
+184231,EI,primary,Childcare/Preschool,p
+186261,EI,primary,EHDI,p
+186807,EI to ECSE,primary,Parents/Family,ia
+186807,ECSE,primary,Parents/Family,p
+181285,EI,primary,Physician/Clinic,p
+181285,ECSE,secondary,Physician/Clinic,
+184887,EI,primary,CAPTA,p
+187647,EI,primary,Healthy Families Oregon,p
+187647,EI to ECSE,secondary,Physician/Clinic,
+187647,EI to ECSE,secondary,CAPTA,
+182319,EI,primary,Physician/Clinic,ia
+182319,EI to ECSE,primary,Other,p
+189189,EI,primary,Physician/Clinic,p
+189189,EI,secondary,Hospital,
+183091,EI,primary,Physician/Clinic,ia
+183091,EI,primary,Physician/Clinic,ia
+183091,ECSE,primary,Physician/Clinic,ia
+183091,ECSE,primary,Parents/Family,p
+186419,EI,primary,Physician/Clinic,ia
+186419,EI,primary,Other,ia
+186419,EI to ECSE,primary,Parents/Family,p
+188188,EI,primary,Parents/Family,p
+182155,EI,primary,CAPTA,p
+182155,ECSE,primary,Healthy Families Oregon,ia
+184848,EI,primary,Other,p
+183115,EI,primary,Physician/Clinic,ia
+183115,EI,primary,Physician/Clinic,ia
+183115,EI,primary,Parents/Family,p
+182194,EI,primary,Physician/Clinic,p
+182194,EI,secondary,CAPTA,
+181681,ECSE,primary,Physician/Clinic,ia
+181681,ECSE,primary,Parents/Family,ia
+181681,ECSE,primary,Head Start,p
+187829,EI,primary,Physician/Clinic,ia
+187829,EI,primary,Physician/Clinic,ia
+187829,ECSE,primary,Physician/Clinic,ia
+187829,ECSE,primary,Parents/Family,ia
+187829,ECSE,primary,Parents/Family,p
+184907,EI,primary,Move in from another state,p
+184907,EI,secondary,Physician/Clinic,
+180300,EI,primary,Physician/Clinic,ia
+180300,EI to ECSE,primary,Healthy Families Oregon,ia
+180300,ECSE,primary,Other,p
+188909,EI,primary,CAPTA,ia
+188909,EI,primary,Other,ia
+188909,ECSE,primary,Physician/Clinic,p
+180940,EI,primary,CAPTA,ia
+180940,EI,primary,Parents/Family,p
+182861,EI,primary,Parents/Family,p
+182861,EI to ECSE,primary,Head Start,p
+182861,ECSE,secondary,Other DHS,
+183510,EI to ECSE,primary,Parents/Family,ia
+183510,ECSE,primary,Parents/Family,p
+189328,ECSE,primary,Parents/Family,p
+186540,ECSE,primary,Parents/Family,ia
+186540,ECSE,primary,Parents/Family,p
+189449,ECSE,primary,Parents/Family,ia
+189449,ECSE,primary,Parents/Family,p
+185964,EI,primary,Parents/Family,p
+185964,EI,secondary,EHDI,
+185610,EI,primary,Parents/Family,ia
+185610,EI,primary,Parents/Family,p
+184013,EI,primary,Physician/Clinic,ia
+184013,EI,primary,Public Health,ia
+184013,EI,primary,Parents/Family,ia
+184013,EI,primary,Parents/Family,p
+189442,EI,primary,Physician/Clinic,ia
+189442,EI,primary,Other,p
+184989,EI,primary,Physician/Clinic,p
+184989,EI to KG,primary,Parents/Family,p
+180706,EI,primary,CAPTA,ia
+180706,EI,primary,Other,ia
+180706,EI,primary,CAPTA,ia
+180706,EI to ECSE,primary,Other,ia
+180706,ECSE,primary,Other,p
+182184,ECSE,primary,Parents/Family,ia
+182184,ECSE,primary,Parents/Family,p
+189770,EI,primary,Parents/Family,ia
+189770,EI,primary,Public Health,ia
+189770,ECSE,primary,Head Start,p
+182867,EI,primary,Physician/Clinic,ia
+182867,EI,primary,Other,p
+183214,EI,primary,Physician/Clinic,ia
+183214,EI,primary,Parents/Family,ia
+183214,ECSE,primary,Head Start,p
+195014,ECSE,primary,Childcare/Preschool,p
+196969,EI,primary,Parents/Family,p
+191447,EI,primary,Parents/Family,p
+195897,EI,primary,Physician/Clinic,ia
+195897,ECSE,primary,Physician/Clinic,p
+195438,EI,primary,Parents/Family,ia
+195438,EI,primary,Parents/Family,p
+194203,EI,primary,Physician/Clinic,ia
+194203,EI,primary,Physician/Clinic,p
+195904,EI,primary,Physician/Clinic,ia
+195904,EI,primary,Physician/Clinic,ia
+195904,EI,primary,Physician/Clinic,ia
+195904,EI,primary,Parents/Family,p
+191725,EI,primary,Physician/Clinic,ia
+191725,EI,primary,Physician/Clinic,ia
+191725,EI,primary,Physician/Clinic,ia
+191725,EI,primary,Parents/Family,ia
+191725,EI to ECSE,primary,Parents/Family,ia
+191725,EI to ECSE,primary,Parents/Family,ia
+191725,ECSE,primary,Head Start,p
+198532,EI,primary,Physician/Clinic,ia
+198532,EI,primary,Parents/Family,ia
+198532,EI,primary,Parents/Family,p
+195739,EI,primary,Parents/Family,p
+198343,EI,primary,CAPTA,p
+197287,EI,primary,Physician/Clinic,ia
+197287,EI,primary,Physician/Clinic,ia
+197287,EI,primary,Other,p
+195136,EI,primary,Parents/Family,ia
+195136,EI,secondary,Physician/Clinic,
+195136,EI to ECSE,primary,Other,p
+195915,EI,primary,Parents/Family,ia
+195915,EI,primary,Parents/Family,p
+190547,EI,primary,Physician/Clinic,p
+190361,ECSE,primary,Childcare/Preschool,p
+193118,EI,primary,Parents/Family,p
+197068,EI,primary,Parents/Family,ia
+197068,EI,primary,Other,p
+199915,EI,primary,Physician/Clinic,ia
+199915,EI,primary,Physician/Clinic,ia
+199915,ECSE,primary,Head Start,ia
+199915,EI to KG,primary,Head Start,p
+193716,EI,primary,Healthy Families Oregon,p
+193716,EI,secondary,Physician/Clinic,
+194710,EI,primary,Physician/Clinic,ia
+194710,EI,primary,Other,p
+191291,EI,primary,Physician/Clinic,ia
+191291,EI,primary,Other,p
+195301,EI,primary,Parents/Family,ia
+195301,EI to ECSE,primary,Other,p
+199099,EI,primary,Other,ia
+199099,ECSE,primary,Other,p
+198012,EI,primary,Physician/Clinic,ia
+198012,EI,primary,Parents/Family,ia
+198012,EI to ECSE,primary,Physician/Clinic,p
+199646,EI,primary,Physician/Clinic,p
+199646,ECSE,primary,Other,p
+195017,EI,primary,Parents/Family,p
+195017,ECSE,primary,Other,ia
+193243,EI,primary,Parents/Family,p
+193243,ECSE,primary,Other,ia
+194384,EI,primary,CAPTA,ia
+194384,ECSE,primary,Childcare/Preschool,p
+190391,EI,secondary,CAPTA,
+190391,EI,primary,Physician/Clinic,ia
+190391,EI,primary,Other,ia
+190391,EI,primary,CAPTA,ia
+190391,ECSE,primary,Physician/Clinic,p
+194392,ECSE,primary,Head Start,p
+192437,EI,primary,Parents/Family,ia
+192437,ECSE,primary,Parents/Family,p
+193233,EI to ECSE,primary,Parents/Family,p
+193233,ECSE,primary,Parents/Family,p
+190518,EI,primary,Parents/Family,p
+190518,EI,secondary,Physician/Clinic,
+190550,EI,primary,Physician/Clinic,ia
+190550,EI to ECSE,primary,Parents/Family,ia
+190550,ECSE,primary,Parents/Family,p
+193761,EI,primary,Physician/Clinic,ia
+193761,ECSE,primary,Head Start,p
+198688,ECSE,primary,Parents/Family,p
+198824,EI,primary,Physician/Clinic,ia
+198824,EI,primary,Other,ia
+198824,ECSE,primary,Head Start,p
+193440,EI,primary,Parents/Family,ia
+193440,EI to ECSE,primary,Parents/Family,ia
+193440,ECSE,primary,Parents/Family,p
+193440,ECSE,primary,Other,p
+193440,EI to KG,primary,Head Start,p
+191002,EI,primary,Physician/Clinic,p
+194075,EI,primary,Physician/Clinic,ia
+194075,EI to KG,primary,Childcare/Preschool,p
+192039,EI,primary,Parents/Family,ia
+192039,EI,secondary,Physician/Clinic,
+192039,EI to KG,primary,Childcare/Preschool,p
+194560,ECSE,primary,Parents/Family,p
+199622,EI,primary,Hospital,p
+199622,EI,secondary,Physician/Clinic,
+199622,EI,secondary,Hospital,
+199622,EI,secondary,Hospital,
+199622,ECSE,primary,Physician/Clinic,ia
+193475,ECSE,primary,Parents/Family,ia
+193475,ECSE,primary,Parents/Family,ia
+193475,ECSE,primary,Parents/Family,p
+191393,ECSE,primary,Physician/Clinic,p
+197520,EI,primary,CAPTA,p
+197520,EI,secondary,Physician/Clinic,
+197520,EI,secondary,Physician/Clinic,
+198603,ECSE,primary,Head Start,p
+198603,EI to KG,secondary,Physician/Clinic,
+193124,EI,primary,Parents/Family,p
+193124,ECSE,primary,Physician/Clinic,p
+193124,ECSE,primary,Other,p
+191886,EI,primary,Hospital,p
+190967,ECSE,primary,Parents/Family,p
+193480,EI,primary,Hospital,p
+193480,EI,primary,Physician/Clinic,ia
+193480,EI,primary,Physician/Clinic,p
+195445,EI,primary,Physician/Clinic,ia
+195445,ECSE,primary,Move in from another state,p
+191471,EI,primary,Physician/Clinic,ia
+191471,EI,primary,Parents/Family,p
+194575,ECSE,primary,Other DHS,ia
+194575,ECSE,primary,Other DHS,ia
+194575,ECSE,primary,Other DHS,ia
+194575,ECSE,primary,Other DHS,ia
+194575,ECSE,primary,Other DHS,ia
+194575,EI to KG,primary,Other DHS,p
+192140,EI,primary,Physician/Clinic,ia
+192140,EI,primary,Parents/Family,ia
+192140,EI to ECSE,primary,Other,p
+195149,EI,primary,Physician/Clinic,ia
+195149,EI,primary,Healthy Families Oregon,ia
+195149,EI,primary,Parents/Family,ia
+195149,EI,primary,Parents/Family,p
+195149,ECSE,primary,Parents/Family,p
+197553,EI,primary,Parents/Family,p
+197078,EI,primary,Physician/Clinic,ia
+197078,EI,primary,Parents/Family,ia
+197078,ECSE,primary,Parents/Family,p
+199381,EI,primary,Hospital,p
+199381,ECSE,primary,Other DHS,ia
+199381,ECSE,primary,Parents/Family,ia
+198683,ECSE,primary,Parents/Family,ia
+198683,ECSE,primary,Parents/Family,p
+195478,EI,primary,Parents/Family,ia
+195478,ECSE,primary,Parents/Family,p
+194466,EI,primary,Physician/Clinic,ia
+194466,EI,primary,Other,p
+192927,EI to ECSE,primary,Public Health,ia
+192927,ECSE,primary,Parents/Family,p
+194249,EI,primary,Hospital,p
+190182,EI to ECSE,primary,CAPTA,p
+190182,EI to ECSE,secondary,Physician/Clinic,
+193779,EI,primary,CAPTA,p
+193455,EI to ECSE,primary,Parents/Family,p
+193455,EI to ECSE,secondary,Physician/Clinic,
+190024,ECSE,primary,Parents/Family,p
+199140,EI,primary,Parents/Family,ia
+199140,ECSE,primary,Childcare/Preschool,p
+191882,EI,primary,Physician/Clinic,p
+196000,EI,primary,Parents/Family,p
+195925,EI,primary,Parents/Family,ia
+195925,EI to ECSE,primary,Other,p
+191265,EI,primary,Parents/Family,ia
+191265,EI,primary,Physician/Clinic,p
+191265,EI,primary,Other,p
+190014,EI,primary,Parents/Family,p
+198122,EI,primary,Parents/Family,ia
+198122,EI,primary,Parents/Family,p
+196426,EI,primary,Physician/Clinic,ia
+196426,EI,primary,Parents/Family,p
+190318,EI,primary,Physician/Clinic,ia
+190318,EI,primary,Other,p
+197088,EI,primary,Hospital,ia
+197088,EI,primary,Parents/Family,p
+197088,EI,secondary,Physician/Clinic,
+195466,EI,primary,Physician/Clinic,ia
+195466,EI,primary,Physician/Clinic,ia
+195466,ECSE,primary,Physician/Clinic,p
+193551,ECSE,primary,Other DHS,ia
+193551,ECSE,primary,Physician/Clinic,p
+193128,EI,primary,Parents/Family,p
+196277,EI,primary,Hospital,p
+190274,EI,primary,Hospital,p
+194287,EI,primary,Private Therapy,p
+194287,EI,secondary,CAPTA,
+197300,EI,primary,Public Health,ia
+197300,EI,primary,Other,p
+197300,EI,secondary,CAPTA,
+198399,EI,primary,Parents/Family,p
+196989,EI,primary,Parents/Family,ia
+196989,EI,secondary,Physician/Clinic,
+196989,EI,primary,Parents/Family,p
+196989,EI,secondary,Physician/Clinic,
+195184,ECSE,primary,Physician/Clinic,ia
+195184,ECSE,primary,Parents/Family,p
+193923,ECSE,primary,Parents/Family,p
+199792,EI,primary,Parents/Family,ia
+199792,EI,primary,Parents/Family,p
+195504,EI,primary,Physician/Clinic,p
+196080,EI,primary,Physician/Clinic,p
+196080,EI to KG,secondary,Other DHS,
+196080,EI to KG,secondary,Other DHS,
+194822,EI,primary,Physician/Clinic,p
+193236,EI,primary,Parents/Family,p
+198437,EI,primary,Hospital,p
+190938,ECSE,primary,Parents/Family,p
+190620,EI,primary,Physician/Clinic,ia
+190620,EI,primary,Physician/Clinic,p
+198390,EI,primary,Physician/Clinic,ia
+198390,EI,primary,Physician/Clinic,p
+196372,EI,primary,Healthy Families Oregon,ia
+196372,ECSE,primary,Head Start,p
+196881,EI,primary,Physician/Clinic,ia
+196881,EI,primary,Other,p
+196881,EI to ECSE,secondary,CAPTA,
+196881,ECSE,primary,Parents/Family,p
+196760,EI,primary,Hospital,p
+197567,EI to ECSE,primary,Physician/Clinic,ia
+197567,ECSE,primary,Parents/Family,p
+199106,ECSE,primary,Physician/Clinic,p
+193631,EI,primary,CAPTA,ia
+193631,EI,primary,Other,ia
+193631,EI to ECSE,primary,Childcare/Preschool,p
+194373,EI to ECSE,primary,Other DHS,p
+195124,EI,primary,CAPTA,ia
+195124,EI,primary,Childcare/Preschool,ia
+195124,ECSE,primary,Head Start,p
+193394,ECSE,primary,Parents/Family,p
+192975,ECSE,primary,Physician/Clinic,p
+197033,EI,primary,Physician/Clinic,ia
+197033,EI,primary,Other,ia
+197033,EI,primary,Parents/Family,p
+195146,EI,primary,Physician/Clinic,ia
+195146,EI,primary,Physician/Clinic,ia
+195146,ECSE,primary,Physician/Clinic,p
+193977,EI,primary,Physician/Clinic,ia
+193977,EI,primary,Physician/Clinic,ia
+193977,ECSE,primary,Physician/Clinic,ia
+193977,EI to KG,primary,Head Start,p
+192558,EI,primary,Hospital,ia
+192558,EI,primary,Parents/Family,p
+192518,EI,primary,Physician/Clinic,ia
+192518,ECSE,primary,Physician/Clinic,p
+192916,EI,primary,Parents/Family,ia
+192916,EI,secondary,Physician/Clinic,
+192916,EI,primary,Other,p
+190842,EI,primary,Physician/Clinic,ia
+190842,ECSE,primary,Parents/Family,p
+198331,EI,primary,Physician/Clinic,ia
+198331,EI to ECSE,primary,Parents/Family,p
+194934,EI,primary,Public Health,ia
+194934,EI,primary,Parents/Family,p
+194934,EI,secondary,CAPTA,
+194934,ECSE,primary,Head Start,p
+197857,EI to ECSE,primary,Parents/Family,p
+197857,ECSE,secondary,Physician/Clinic,
+195721,ECSE,primary,Physician/Clinic,p
+191853,EI,primary,Physician/Clinic,ia
+191853,EI,primary,Parents/Family,ia
+191853,EI,primary,Physician/Clinic,p
+190807,EI,primary,Parents/Family,p
+193858,EI,primary,Physician/Clinic,ia
+193858,ECSE,primary,Parents/Family,p
+196779,ECSE,primary,Childcare/Preschool,ia
+196779,ECSE,primary,Other,ia
+196779,ECSE,primary,Parents/Family,ia
+196779,ECSE,primary,Parents/Family,p
+191930,EI,primary,Hospital,ia
+191930,ECSE,primary,Physician/Clinic,p
+190304,EI,primary,Physician/Clinic,ia
+190304,EI,primary,Parents/Family,ia
+190304,ECSE,primary,Parents/Family,p
+191684,EI,primary,Physician/Clinic,ia
+191684,EI,primary,Physician/Clinic,ia
+191684,EI,primary,Parents/Family,ia
+191684,EI to ECSE,primary,Parents/Family,p
+190784,EI to ECSE,primary,Parents/Family,p
+190784,ECSE,secondary,Head Start,
+197394,ECSE,primary,Other DHS,p
+197394,ECSE,secondary,Parents/Family,
+198987,ECSE,primary,Parents/Family,p
+198987,EI to KG,secondary,Other DHS,
+198326,EI,primary,CAPTA,ia
+198326,EI,primary,CAPTA,p
+195792,EI,primary,Physician/Clinic,ia
+195792,EI,primary,Other,p
+190268,ECSE,primary,Parents/Family,ia
+190268,ECSE,primary,Parents/Family,p
+199930,EI,primary,Move in from another state,p
+190061,EI,primary,Other EI/ECSE program,p
+195939,EI,primary,Parents/Family,ia
+195939,EI to ECSE,primary,Parents/Family,ia
+195939,EI to ECSE,primary,Parents/Family,p
+199014,EI,primary,Physician/Clinic,ia
+199014,EI,primary,CAPTA,p
+199014,EI,secondary,Physician/Clinic,
+199943,EI,primary,Physician/Clinic,ia
+199943,EI to ECSE,primary,Other,p
+194062,EI,primary,Physician/Clinic,ia
+194062,ECSE,primary,Childcare/Preschool,ia
+194062,ECSE,primary,Other,p
+197237,EI,primary,Hospital,ia
+197237,EI,primary,Physician/Clinic,ia
+197237,EI,primary,Other,ia
+197237,EI,primary,Parents/Family,p
+195884,EI,primary,Physician/Clinic,ia
+195884,EI to KG,primary,Head Start,p
+190993,EI,primary,Physician/Clinic,ia
+190993,ECSE,primary,Physician/Clinic,p
+193726,EI,primary,Physician/Clinic,ia
+193726,EI,primary,Physician/Clinic,ia
+193726,ECSE,primary,Other DHS,ia
+193726,ECSE,primary,Parents/Family,p
+195310,EI,primary,Physician/Clinic,ia
+195310,EI to KG,primary,Childcare/Preschool,p
+198364,EI,primary,Physician/Clinic,ia
+198364,EI,primary,Physician/Clinic,ia
+198364,EI,primary,Physician/Clinic,p
+192250,EI,primary,Physician/Clinic,ia
+192250,EI,primary,Other,ia
+192250,ECSE,primary,Parents/Family,p
+197481,EI,primary,Physician/Clinic,p
+195776,ECSE,primary,Parents/Family,p
+192659,ECSE,primary,Physician/Clinic,p
+190147,EI,primary,Parents/Family,p
+191416,EI,primary,Physician/Clinic,p
+196455,EI,primary,Hospital,p
+196455,EI,secondary,CAPTA,
+196455,EI,secondary,Physician/Clinic,
+194592,EI to ECSE,primary,Physician/Clinic,ia
+194592,ECSE,primary,Physician/Clinic,ia
+194592,ECSE,primary,Head Start,p
+194701,EI,primary,Hospital,p
+193330,EI,primary,Physician/Clinic,ia
+193330,EI to ECSE,primary,Other,p
+194139,EI,primary,CAPTA,ia
+194139,EI,primary,Other,p
+194139,EI,secondary,Physician/Clinic,
+194258,EI,primary,CAPTA,ia
+194258,EI,primary,Physician/Clinic,ia
+194258,EI,primary,CAPTA,ia
+194258,EI,primary,Parents/Family,ia
+194258,ECSE,primary,Physician/Clinic,p
+194784,EI,primary,Physician/Clinic,ia
+194784,EI to ECSE,primary,Parents/Family,p
+199403,EI to ECSE,primary,Parents/Family,ia
+199403,ECSE,primary,Parents/Family,ia
+199403,ECSE,primary,Other,p
+199699,ECSE,primary,Childcare/Preschool,p
+194184,ECSE,primary,Parents/Family,p
+192355,ECSE,primary,Parents/Family,p
+191174,ECSE,primary,Healthy Families Oregon,p
+197156,EI,primary,Public Health,ia
+197156,EI,primary,Parents/Family,ia
+197156,EI,primary,Physician/Clinic,ia
+197156,EI,primary,Parents/Family,p
+193586,EI,primary,Public Health,ia
+193586,EI,primary,Parents/Family,ia
+193586,EI,secondary,Physician/Clinic,
+193586,EI,primary,Parents/Family,p
+198863,EI,primary,Hospital,p
+198863,EI,secondary,Hospital,
+190507,ECSE,primary,Childcare/Preschool,p
+196373,EI,primary,Physician/Clinic,p
+196373,EI,secondary,CAPTA,
+192060,EI,primary,CAPTA,p
+197161,EI,primary,CAPTA,ia
+197161,EI,primary,Parents/Family,ia
+197161,EI to ECSE,primary,Other,p
+193730,EI,primary,Physician/Clinic,ia
+193730,ECSE,primary,Physician/Clinic,ia
+193730,ECSE,primary,Parents/Family,p
+194903,EI,primary,Parents/Family,p
+196158,EI,primary,Physician/Clinic,ia
+196158,EI,primary,Physician/Clinic,ia
+196158,EI,primary,Parents/Family,ia
+196158,ECSE,primary,Parents/Family,p
+191759,EI,primary,Physician/Clinic,ia
+191759,EI,primary,Parents/Family,p
+191759,ECSE,primary,Other,ia
+199589,EI,primary,Physician/Clinic,ia
+199589,ECSE,primary,Childcare/Preschool,p
+198979,EI,primary,CAPTA,p
+194841,EI,primary,Physician/Clinic,p
+191063,EI,primary,Physician/Clinic,p
+194884,EI,primary,Hospital,p
+194884,EI,secondary,CAPTA,
+198112,EI,primary,EHDI,p
+198112,EI,secondary,Physician/Clinic,
+194111,EI,primary,Physician/Clinic,p
+190629,EI,primary,Healthy Families Oregon,ia
+190629,EI,primary,Physician/Clinic,p
+190541,EI,primary,Parents/Family,ia
+190541,ECSE,primary,Parents/Family,p
+191600,ECSE,primary,Parents/Family,p
+199985,EI,primary,Parents/Family,p
+199474,EI,primary,Physician/Clinic,p
+192471,EI,primary,CAPTA,ia
+192471,EI,primary,Private Therapy,ia
+192471,EI,primary,CAPTA,ia
+192471,EI,primary,CAPTA,p
+192471,ECSE,secondary,Other DHS,
+192758,EI,primary,Parents/Family,p
+197588,EI,primary,Physician/Clinic,ia
+197588,EI,primary,Parents/Family,p
+190775,EI,primary,Hospital,p
+190775,EI,secondary,CAPTA,
+196976,ECSE,primary,Parents/Family,p
+196976,ECSE,secondary,Physician/Clinic,
+192784,ECSE,primary,Physician/Clinic,p
+195177,EI to ECSE,primary,Parents/Family,p
+195177,ECSE,secondary,EHDI,
+199220,EI,primary,Parents/Family,p
+196018,EI,primary,CAPTA,ia
+196018,EI,primary,CAPTA,ia
+196018,ECSE,primary,Parents/Family,p
+196018,ECSE,secondary,Physician/Clinic,
+198387,ECSE,primary,Parents/Family,p
+198632,EI to ECSE,primary,Parents/Family,p
+190112,ECSE,primary,Move in from another state,p
+197649,EI,primary,Parents/Family,p
+197649,EI to ECSE,primary,Parents/Family,p
+190732,EI,primary,Parents/Family,p
+190043,EI to ECSE,primary,Physician/Clinic,ia
+190043,ECSE,primary,Head Start,p
+199426,EI,primary,Physician/Clinic,p
+193198,EI,primary,Physician/Clinic,ia
+193198,EI,primary,Other,p
+196855,EI,primary,Hospital,p
+196855,EI,secondary,CAPTA,
+196855,EI,secondary,Physician/Clinic,
+196855,EI,primary,Parents/Family,p
+198982,EI,primary,Hospital,p
+198982,EI,secondary,CAPTA,
+198982,EI,secondary,Physician/Clinic,
+198982,EI,primary,Parents/Family,p
+191690,EI to ECSE,primary,Parents/Family,p
+196247,EI,primary,Parents/Family,ia
+196247,EI to KG,primary,Childcare/Preschool,p
+194659,EI,primary,Healthy Families Oregon,p
+195914,EI,primary,Healthy Families Oregon,ia
+195914,EI,primary,Healthy Families Oregon,p
+198713,EI,primary,Physician/Clinic,ia
+198713,ECSE,primary,Other,p
+191680,EI,primary,Physician/Clinic,p
+196633,EI,primary,CAPTA,ia
+196633,EI,primary,CAPTA,p
+198295,ECSE,primary,Physician/Clinic,p
+196443,EI,primary,Physician/Clinic,ia
+196443,ECSE,primary,Healthy Families Oregon,p
+199264,EI,primary,Physician/Clinic,ia
+199264,ECSE,primary,Physician/Clinic,p
+199010,EI,primary,Healthy Families Oregon,p
+199010,EI,secondary,Physician/Clinic,
+193927,EI,primary,Parents/Family,ia
+193927,ECSE,primary,Other DHS,p
+197355,EI,primary,CAPTA,ia
+197355,EI,primary,CAPTA,ia
+197355,EI,primary,Parents/Family,p
+192316,EI,primary,CAPTA,p
+192316,EI,secondary,CAPTA,
+192316,EI,secondary,Physician/Clinic,
+192316,EI,secondary,CAPTA,
+198684,ECSE,primary,Physician/Clinic,ia
+198684,ECSE,primary,Head Start,p
+199440,ECSE,primary,Childcare/Preschool,p
+195361,ECSE,primary,Childcare/Preschool,p
+195786,EI,primary,Other,ia
+195786,EI,primary,Physician/Clinic,ia
+195786,ECSE,primary,Parents/Family,p
+195786,ECSE,primary,Parents/Family,p
+192578,ECSE,primary,Other DHS,p
+199472,EI,primary,Physician/Clinic,ia
+199472,EI,primary,Physician/Clinic,ia
+199472,EI,primary,Healthy Families Oregon,ia
+199472,EI,primary,Parents/Family,p
+199951,EI to ECSE,primary,Physician/Clinic,ia
+199951,ECSE,primary,Parents/Family,p
+199055,EI,primary,Physician/Clinic,ia
+199055,EI,primary,Physician/Clinic,p
+199055,EI to KG,primary,Parents/Family,p
+196955,EI,primary,Parents/Family,p
+199388,ECSE,primary,Childcare/Preschool,p
+190498,EI,primary,Physician/Clinic,ia
+190498,EI,primary,Parents/Family,ia
+190498,EI,primary,Parents/Family,p
+192631,ECSE,primary,Childcare/Preschool,p
+197977,ECSE,primary,Physician/Clinic,p
+197292,EI,primary,Physician/Clinic,p
+192798,EI,primary,Physician/Clinic,ia
+192798,EI,primary,Physician/Clinic,ia
+192798,ECSE,primary,Physician/Clinic,ia
+192798,ECSE,primary,Head Start,p
+192798,EI to KG,primary,Other DHS,etm
+192516,ECSE,primary,Childcare/Preschool,p
+192601,ECSE,primary,Parents/Family,p
+193385,EI,primary,Physician/Clinic,ia
+193385,EI to ECSE,primary,Physician/Clinic,p
+191720,EI,primary,Physician/Clinic,ia
+191720,EI,primary,Physician/Clinic,ia
+191720,EI,primary,Physician/Clinic,ia
+191720,EI,primary,Physician/Clinic,p
+191726,ECSE,primary,Childcare/Preschool,p
+194576,ECSE,primary,Head Start,p
+194178,ECSE,primary,Childcare/Preschool,p
+191376,ECSE,primary,Parents/Family,ia
+191376,ECSE,primary,Parents/Family,p
+195261,ECSE,primary,Parents/Family,p
+191985,EI,primary,Parents/Family,ia
+191985,EI,primary,Head Start,p
+191985,EI,secondary,Physician/Clinic,
+193617,EI,primary,Physician/Clinic,ia
+193617,EI,primary,Other EI/ECSE program,p
+194545,EI,primary,Physician/Clinic,ia
+194545,EI,primary,Other EI/ECSE program,p
+193639,EI,primary,Hospital,p
+193639,EI,secondary,CAPTA,
+193594,EI,primary,Physician/Clinic,ia
+193594,ECSE,primary,Parents/Family,p
+194259,EI,primary,Physician/Clinic,ia
+194259,ECSE,primary,Parents/Family,p
+195665,EI,primary,Parents/Family,ia
+195665,ECSE,primary,Parents/Family,p
+196421,EI,primary,Healthy Families Oregon,ia
+196421,ECSE,primary,Other,p
+192727,ECSE,primary,Head Start,p
+198082,ECSE,primary,Head Start,p
+198517,ECSE,primary,Parents/Family,p
+198517,ECSE,secondary,Physician/Clinic,
+198941,EI,primary,Hospital,p
+196508,EI,primary,Hospital,p
+192012,EI,primary,Hospital,p
+198041,ECSE,primary,Childcare/Preschool,p
+192507,ECSE,primary,Head Start,p
+195450,EI,primary,Parents/Family,p
+195450,EI,secondary,Physician/Clinic,
+194509,ECSE,primary,Parents/Family,p
+193625,EI,primary,Parents/Family,p
+193437,ECSE,primary,Parents/Family,p
+191390,EI to ECSE,primary,Physician/Clinic,ia
+191390,ECSE,primary,Physician/Clinic,p
+197025,EI,primary,EHDI,ia
+197025,EI,primary,EHDI,ia
+197025,EI,primary,EHDI,ia
+197025,EI,primary,Parents/Family,p
+195627,EI,primary,Hospital,ia
+195627,EI,primary,Parents/Family,p
+191345,EI,primary,Physician/Clinic,ia
+191345,EI,primary,Parents/Family,p
+193188,EI,primary,EHDI,ia
+193188,EI to ECSE,primary,Physician/Clinic,p
+197129,EI,primary,Hospital,p
+197031,EI,primary,Hospital,p
+194722,EI,primary,Physician/Clinic,ia
+194722,ECSE,primary,Childcare/Preschool,p
+199321,ECSE,primary,Childcare/Preschool,p
+199669,EI to ECSE,primary,Other,p
+191244,ECSE,primary,Parents/Family,p
+197715,ECSE,primary,Childcare/Preschool,p
+197715,ECSE,secondary,Physician/Clinic,
+192702,EI,primary,Parents/Family,ia
+192702,EI,secondary,Physician/Clinic,
+192702,EI,primary,Parents/Family,ia
+192702,EI,primary,Physician/Clinic,p
+192999,EI,primary,Physician/Clinic,ia
+192999,EI,primary,Physician/Clinic,ia
+192999,EI,primary,Parents/Family,p
+193867,ECSE,primary,Head Start,p
+190990,ECSE,primary,Head Start,p
+193018,ECSE,primary,Head Start,p
+195155,ECSE,primary,Other DHS,ia
+195155,EI to KG,primary,Head Start,p
+193071,EI,primary,CAPTA,p
+193071,EI,primary,Physician/Clinic,p
+193071,EI,primary,Parents/Family,p
+195687,EI,primary,CAPTA,p
+195687,ECSE,primary,Physician/Clinic,r
+191124,EI,primary,Parents/Family,p
+198886,ECSE,primary,Head Start,p
+199545,ECSE,primary,Parents/Family,ia
+199545,ECSE,primary,Parents/Family,p
+198259,EI,primary,CAPTA,ia
+198259,EI,primary,CAPTA,p
+194820,EI,primary,CAPTA,p
+194820,ECSE,secondary,Other DHS,
+198777,EI to ECSE,primary,CAPTA,ia
+198777,ECSE,primary,Other DHS,p
+199531,EI,primary,Physician/Clinic,p
+198133,EI,primary,Physician/Clinic,ia
+198133,EI,primary,Parents/Family,p
+197944,ECSE,primary,Head Start,p
+192594,EI,primary,Physician/Clinic,ia
+192594,ECSE,primary,Parents/Family,p
+196944,EI,primary,Physician/Clinic,ia
+196944,EI,primary,Other,p
+199074,EI,primary,Physician/Clinic,ia
+199074,EI,primary,Physician/Clinic,ia
+199074,EI,primary,Physician/Clinic,p
+194943,EI to ECSE,primary,Parents/Family,p
+194943,EI to KG,primary,Parents/Family,p
+197119,ECSE,primary,Head Start,ia
+197119,EI to KG,primary,Physician/Clinic,p
+191732,EI,primary,Physician/Clinic,p
+191422,EI,primary,Physician/Clinic,ia
+191422,EI,primary,Other,p
+196452,EI,primary,Parents/Family,p
+193908,ECSE,primary,Parents/Family,p
+197049,ECSE,primary,Head Start,p
+196288,ECSE,primary,Head Start,p
+191659,ECSE,primary,Parents/Family,p
+194588,EI,primary,Public Health,ia
+194588,EI,primary,Other DHS,p
+194588,EI,primary,Public Health,p
+194588,EI,secondary,Physician/Clinic,
+194588,EI,secondary,Public Health,
+194588,EI,secondary,EHDI,
+194588,EI,secondary,Physician/Clinic,
+194588,EI,secondary,Hospital,
+193698,ECSE,primary,Physician/Clinic,p
+191901,ECSE,primary,Head Start,p
+193840,ECSE,primary,Head Start,p
+193840,ECSE,secondary,Physician/Clinic,
+192964,EI,primary,Physician/Clinic,ia
+192964,EI,primary,Parents/Family,ia
+192964,EI,primary,Physician/Clinic,ia
+192964,EI,primary,Physician/Clinic,ia
+192964,EI,primary,CAPTA,ia
+192964,EI,primary,Other,p
+196057,EI,primary,Physician/Clinic,ia
+196057,ECSE,primary,Parents/Family,p
+197453,EI,primary,Physician/Clinic,ia
+197453,EI,primary,Healthy Families Oregon,ia
+197453,EI to ECSE,primary,Parents/Family,p
+193378,EI,primary,Parents/Family,ia
+193378,ECSE,primary,Physician/Clinic,p
+190986,ECSE,primary,Parents/Family,p
+192630,ECSE,primary,Head Start,p
+194013,EI,primary,Parents/Family,ia
+194013,EI,secondary,Physician/Clinic,
+194013,EI,primary,Parents/Family,p
+193524,EI,primary,Physician/Clinic,p
+191953,EI,primary,CAPTA,p
+190312,EI to ECSE,primary,Parents/Family,p
+192499,ECSE,primary,Childcare/Preschool,p
+192439,ECSE,primary,Parents/Family,p
+192703,ECSE,primary,Parents/Family,p
+198003,EI,primary,Physician/Clinic,ia
+198003,EI,primary,Physician/Clinic,p
+190974,EI,primary,Parents/Family,ia
+190974,ECSE,primary,Other,ia
+190974,ECSE,primary,Parents/Family,ia
+190974,ECSE,primary,Other,ia
+190974,ECSE,primary,Parents/Family,p
+197808,ECSE,primary,Head Start,p
+202393,EI,primary,Hospital,p
+202393,EI,primary,CAPTA,p
+209058,EI,primary,Parents/Family,p
+200386,ECSE,primary,Childcare/Preschool,p
+203967,ECSE,primary,Head Start,p
+207100,EI to ECSE,primary,Healthy Families Oregon,ia
+207100,ECSE,primary,Parents/Family,p
+207100,ECSE,secondary,Physician/Clinic,
+205034,ECSE,primary,Parents/Family,p
+205741,EI,primary,Physician/Clinic,ia
+205741,EI,primary,Physician/Clinic,ia
+205741,EI,primary,Parents/Family,p
+206047,EI,primary,Childcare/Preschool,p
+204496,EI,primary,Head Start,ia
+204496,EI to ECSE,primary,Other,p
+204496,ECSE,secondary,Physician/Clinic,
+208950,EI,primary,Parents/Family,ia
+208950,EI,primary,Other,p
+205897,ECSE,primary,Physician/Clinic,ia
+205897,ECSE,primary,Physician/Clinic,ia
+205897,ECSE,primary,Parents/Family,ia
+205897,ECSE,primary,Parents/Family,p
+205919,EI,primary,Physician/Clinic,ia
+205919,ECSE,primary,Head Start,p
+205438,ECSE,primary,Childcare/Preschool,p
+207876,ECSE,primary,Childcare/Preschool,p
+202891,EI,primary,Parents/Family,p
+207817,EI,primary,Physician/Clinic,p
+207817,EI,primary,CAPTA,ia
+208118,EI,primary,Parents/Family,p
+208118,EI,secondary,Physician/Clinic,
+205350,ECSE,primary,Childcare/Preschool,p
+203147,ECSE,primary,Parents/Family,p
+203147,ECSE,primary,Physician/Clinic,ia
+203147,EI to KG,primary,Other,p
+201031,EI,primary,Hospital,p
+207351,EI,primary,Hospital,p
+200027,EI,primary,Parents/Family,p
+207537,EI,primary,Parents/Family,p
+205318,EI,primary,Parents/Family,p
+201887,EI,primary,Physician/Clinic,p
+208380,EI,primary,Physician/Clinic,ia
+208380,EI,primary,Other,p
+209282,EI,primary,Physician/Clinic,p
+206662,ECSE,primary,Childcare/Preschool,p
+204014,ECSE,primary,Childcare/Preschool,p
+204097,ECSE,primary,Physician/Clinic,p
+200777,EI,primary,Parents/Family,ia
+200777,EI,primary,Physician/Clinic,ia
+200777,EI,primary,Physician/Clinic,ia
+200777,EI,primary,Physician/Clinic,ia
+200777,ECSE,primary,Physician/Clinic,p
+200780,ECSE,primary,Parents/Family,p
+201902,EI,primary,Physician/Clinic,ia
+201902,EI,primary,Parents/Family,p
+203767,EI,primary,Hospital,p
+203767,EI,primary,CAPTA,p
+200052,ECSE,primary,Physician/Clinic,p
+200052,ECSE,secondary,Public Health,
+204236,EI,primary,Parents/Family,ia
+204236,EI,primary,Childcare/Preschool,p
+209155,EI,primary,Hospital,p
+200825,EI,primary,Physician/Clinic,ia
+200825,EI,primary,Parents/Family,p
+208429,EI,primary,Hospital,p
+208414,ECSE,primary,Physician/Clinic,p
+200423,ECSE,primary,Parents/Family,p
+204901,EI,primary,Physician/Clinic,ia
+204901,EI,primary,Physician/Clinic,p
+209062,ECSE,primary,Parents/Family,p
+205289,EI,primary,Hospital,ia
+205289,EI,primary,Private Therapy,p
+205289,EI,primary,Parents/Family,p
+208449,EI,primary,Parents/Family,p
+207852,EI,primary,Parents/Family,p
+207969,EI,primary,Hospital,p
+204795,EI,primary,Hospital,p
+204343,EI,primary,Physician/Clinic,p
+208508,EI,primary,Parents/Family,p
+203996,ECSE,primary,Other,p
+203410,EI,primary,Physician/Clinic,p
+206793,ECSE,primary,Private Therapy,p
+208833,ECSE,primary,Other DHS,ia
+208833,EI to KG,primary,Head Start,p
+202002,EI,primary,Parents/Family,ia
+202002,EI,primary,Parents/Family,p
+202002,EI,secondary,Physician/Clinic,
+202002,EI,primary,Physician/Clinic,p
+202104,EI,primary,Parents/Family,ia
+202104,EI,primary,Other,p
+202104,EI,secondary,Physician/Clinic,
+204384,EI,primary,Physician/Clinic,ia
+204384,EI,primary,Physician/Clinic,p
+204058,EI,primary,Parents/Family,ia
+204058,ECSE,primary,Parents/Family,p
+205284,ECSE,primary,Parents/Family,p
+201455,EI,primary,Physician/Clinic,p
+208170,ECSE,primary,Physician/Clinic,p
+208803,EI,primary,CAPTA,p
+208813,EI,primary,CAPTA,ia
+208813,EI to KG,primary,Parents/Family,p
+200859,EI,primary,Hospital,p
+200859,EI,primary,Parents/Family,p
+202426,EI,primary,Physician/Clinic,p
+202426,EI,secondary,Physician/Clinic,
+202426,EI,secondary,Physician/Clinic,
+203224,EI,primary,Parents/Family,ia
+203224,EI,primary,Parents/Family,ia
+203224,EI,primary,Parents/Family,p
+205608,EI,primary,Physician/Clinic,ia
+205608,EI to KG,primary,Parents/Family,p
+204470,EI,primary,Physician/Clinic,p
+208894,EI,primary,Physician/Clinic,ia
+208894,ECSE,primary,Parents/Family,p
+206854,EI,primary,Physician/Clinic,ia
+206854,ECSE,primary,Parents/Family,p
+206716,EI,primary,Physician/Clinic,ia
+206716,EI,primary,CAPTA,p
+206716,EI,primary,Physician/Clinic,ia
+205971,EI,primary,Move in from another state,p
+205971,EI,secondary,Physician/Clinic,
+205971,ECSE,secondary,Physician/Clinic,
+208518,EI,primary,EHDI,p
+208518,EI,secondary,Physician/Clinic,
+207331,ECSE,primary,Other DHS,p
+207719,ECSE,primary,Parents/Family,p
+201246,ECSE,primary,Head Start,p
+202569,ECSE,primary,Childcare/Preschool,p
+203095,EI,primary,Parents/Family,p
+200666,EI,primary,CAPTA,ia
+200666,EI,secondary,Public Health,
+200666,ECSE,primary,Other,ia
+200666,ECSE,primary,Parents/Family,p
+204977,EI,primary,Physician/Clinic,p
+202130,EI,primary,Parents/Family,p
+203008,EI,primary,CAPTA,ia
+203008,EI,primary,Physician/Clinic,ia
+203008,EI,primary,Parents/Family,p
+204611,EI,primary,CAPTA,ia
+204611,EI,primary,Physician/Clinic,ia
+204611,EI,primary,Other,ia
+204611,EI to ECSE,primary,Parents/Family,ia
+204611,ECSE,primary,Other,p
+203941,EI,primary,Parents/Family,ia
+203941,EI,primary,Parents/Family,ia
+203941,EI,secondary,Physician/Clinic,
+203941,EI to ECSE,primary,Other,ia
+203941,ECSE,primary,Physician/Clinic,p
+206000,EI,primary,Physician/Clinic,ia
+206000,EI,primary,Public Health,ia
+206000,EI,primary,Public Health,ia
+206000,EI,primary,Physician/Clinic,ia
+206000,ECSE,primary,Physician/Clinic,ia
+206000,ECSE,primary,Parents/Family,p
+205969,EI,primary,Parents/Family,ia
+205969,ECSE,primary,Head Start,p
+202037,EI,primary,Physician/Clinic,ia
+202037,EI,primary,Physician/Clinic,ia
+202037,EI,primary,Physician/Clinic,p
+202737,EI,primary,Hospital,p
+208067,EI,primary,Hospital,p
+201232,EI,primary,Parents/Family,p
+207461,ECSE,primary,Other EI/ECSE program,p
+201328,EI,primary,Physician/Clinic,ia
+201328,ECSE,primary,Parents/Family,p
+203975,EI,primary,Physician/Clinic,ia
+203975,EI,primary,Other,ia
+203975,EI,primary,Parents/Family,ia
+203975,EI,primary,Other,p
+203449,EI,primary,Public Health,p
+204587,ECSE,primary,Physician/Clinic,ia
+204587,ECSE,primary,Parents/Family,ia
+204587,ECSE,primary,Parents/Family,p
+202951,ECSE,primary,Parents/Family,p
+204988,EI to ECSE,primary,Parents/Family,p
+203287,EI to ECSE,primary,Parents/Family,p
+204549,EI,primary,Hospital,ia
+204549,EI to ECSE,primary,Parents/Family,p
+207937,EI,primary,Physician/Clinic,ia
+207937,EI,primary,Physician/Clinic,ia
+207937,ECSE,primary,Physician/Clinic,ia
+207937,ECSE,primary,Physician/Clinic,p
+202345,EI,primary,Physician/Clinic,p
+204997,EI,primary,Physician/Clinic,p
+204997,EI,secondary,Physician/Clinic,
+201287,EI,primary,Parents/Family,ia
+201287,EI,primary,Parents/Family,p
+203230,EI,primary,Parents/Family,p
+202214,EI,primary,Hospital,ia
+202214,EI,primary,Physician/Clinic,ia
+202214,EI,primary,Parents/Family,p
+204163,EI,primary,Physician/Clinic,ia
+204163,EI,primary,Healthy Families Oregon,ia
+204163,ECSE,primary,Healthy Families Oregon,p
+205639,EI,primary,Physician/Clinic,ia
+205639,EI,primary,Physician/Clinic,ia
+205639,EI,primary,Parents/Family,p
+206356,ECSE,primary,Parents/Family,p
+200857,EI,primary,Parents/Family,p
+203991,ECSE,primary,Physician/Clinic,p
+203860,EI,primary,CAPTA,ia
+203860,EI,primary,CAPTA,p
+201642,EI,primary,CAPTA,ia
+201642,EI,primary,CAPTA,ia
+201642,EI to ECSE,primary,Other,ia
+201642,ECSE,primary,Physician/Clinic,p
+208855,ECSE,primary,Parents/Family,ia
+208855,ECSE,primary,Other,ia
+208855,EI to KG,primary,Parents/Family,p
+200621,EI,primary,Physician/Clinic,p
+205910,ECSE,primary,Parents/Family,p
+205910,ECSE,secondary,Physician/Clinic,
+205308,EI,primary,CAPTA,p
+200633,EI,primary,Physician/Clinic,ia
+200633,ECSE,primary,Physician/Clinic,ia
+200633,EI to KG,primary,Parents/Family,p
+205881,EI,primary,Physician/Clinic,p
+205881,ECSE,primary,Parents/Family,p
+204156,EI,primary,Physician/Clinic,p
+206323,EI to ECSE,primary,Physician/Clinic,ia
+206323,EI to ECSE,primary,Physician/Clinic,p
+200991,ECSE,primary,Parents/Family,p
+206265,EI,primary,Physician/Clinic,p
+206265,EI,primary,Physician/Clinic,ia
+206265,EI,primary,Parents/Family,p
+204822,ECSE,primary,Head Start,p
+207710,ECSE,primary,Parents/Family,p
+202995,EI,primary,Healthy Families Oregon,ia
+202995,ECSE,primary,Healthy Families Oregon,p
+207380,ECSE,primary,Parents/Family,p
+209049,EI,primary,Private Therapy,p
+207587,EI,primary,Hospital,p
+205238,EI,primary,Physician/Clinic,ia
+205238,EI to ECSE,primary,Parents/Family,p
+200333,ECSE,primary,Parents/Family,ia
+200333,ECSE,primary,Parents/Family,p
+201667,ECSE,primary,Head Start,p
+205476,ECSE,primary,Parents/Family,p
+205476,ECSE,secondary,Physician/Clinic,
+201261,EI,primary,Physician/Clinic,ia
+201261,ECSE,primary,Physician/Clinic,ia
+201261,ECSE,primary,Parents/Family,p
+200842,EI,primary,Physician/Clinic,ia
+200842,EI,primary,Parents/Family,p
+200842,ECSE,primary,Other,p
+206024,EI,primary,Physician/Clinic,ia
+206024,ECSE,primary,Physician/Clinic,ia
+206024,ECSE,primary,Other,p
+206985,EI,primary,Hospital,p
+205142,EI,primary,Hospital,p
+206728,EI,primary,Hospital,p
+206728,EI,secondary,Physician/Clinic,
+200527,EI,primary,Hospital,p
+205162,EI,primary,Physician/Clinic,ia
+205162,EI,primary,Physician/Clinic,ia
+205162,EI,primary,Physician/Clinic,ia
+205162,ECSE,primary,Parents/Family,p
+200680,EI,primary,Parents/Family,ia
+200680,EI,secondary,Physician/Clinic,
+200680,EI,primary,Other,p
+203771,EI,primary,Hospital,p
+203771,EI,secondary,Physician/Clinic,
+203771,ECSE,secondary,"Public Health, WIC",
+209900,ECSE,primary,Physician/Clinic,p
+205040,EI,primary,Parents/Family,p
+205420,EI,primary,Hospital,p
+206805,EI,primary,Parents/Family,ia
+206805,EI,primary,Parents/Family,ia
+206805,EI,primary,Parents/Family,p
+206805,ECSE,primary,Parents/Family,ia
+203710,EI,primary,Physician/Clinic,p
+206902,EI,primary,Parents/Family,p
+208280,EI,primary,Parents/Family,p
+208280,EI,secondary,Parents/Family,
+208607,ECSE,primary,Childcare/Preschool,p
+201229,EI,primary,Parents/Family,ia
+201229,EI,primary,Parents/Family,p
+202047,ECSE,primary,Parents/Family,p
+208326,EI,primary,Physician/Clinic,ia
+208326,EI,primary,Physician/Clinic,p
+208011,EI,primary,Physician/Clinic,ia
+208011,EI,primary,Parents/Family,ia
+208011,ECSE,primary,Parents/Family,ia
+208011,EI to KG,primary,Physician/Clinic,p
+202771,EI,primary,Hospital,ia
+202771,EI,primary,CAPTA,ia
+202771,EI,primary,CAPTA,p
+202771,EI,secondary,Physician/Clinic,
+208370,EI to ECSE,primary,Hospital,p
+205923,ECSE,primary,Childcare/Preschool,p
+203556,EI,primary,Hospital,p
+205181,EI,primary,Parents/Family,p
+205181,EI,secondary,Physician/Clinic,
+203938,EI,primary,CAPTA,ia
+203938,EI,primary,CAPTA,ia
+203938,EI,primary,Other,ia
+203938,EI to ECSE,primary,CAPTA,p
+208785,ECSE,primary,Other DHS,p
+204046,EI to ECSE,primary,Parents/Family,p
+200368,EI,primary,Physician/Clinic,ia
+200368,EI,primary,Physician/Clinic,p
+209797,EI,primary,Physician/Clinic,ia
+209797,EI,primary,Parents/Family,p
+209797,EI,secondary,Physician/Clinic,
+205553,EI,primary,Physician/Clinic,p
+204945,EI,primary,Physician/Clinic,p
+209001,EI,primary,Physician/Clinic,p
+202335,EI,primary,CAPTA,p
+202335,EI,secondary,CAPTA,
+207634,EI,primary,Parents/Family,p
+201951,EI,primary,Parents/Family,p
+200582,EI,primary,Hospital,p
+200582,EI,secondary,CAPTA,
+200582,EI,secondary,CAPTA,
+208369,EI,primary,Physician/Clinic,p
+208369,EI to KG,secondary,Physician/Clinic,
+202435,EI,primary,Physician/Clinic,ia
+202435,EI to ECSE,primary,Other,ia
+202435,ECSE,primary,Other,p
+205554,ECSE,primary,Parents/Family,p
+209506,EI,primary,Parents/Family,ia
+209506,EI,primary,Parents/Family,p
+206605,EI,primary,Parents/Family,p
+206605,EI,secondary,CAPTA,
+204741,EI,primary,Parents/Family,ia
+204741,EI,primary,Other,ia
+204741,EI to ECSE,primary,Healthy Families Oregon,p
+202684,ECSE,primary,Other EI/ECSE program,p
+204705,ECSE,primary,Physician/Clinic,ia
+204705,ECSE,primary,Physician/Clinic,p
+208837,EI,primary,Physician/Clinic,ia
+208837,EI,primary,Parents/Family,p
+200351,EI,primary,Parents/Family,p
+205629,EI,primary,Parents/Family,p
+206828,EI,primary,Physician/Clinic,p
+200944,EI,primary,Parents/Family,ia
+200944,EI,primary,Parents/Family,p
+200944,EI,secondary,Physician/Clinic,
+209090,EI to ECSE,primary,Other EI/ECSE program,p
+207962,EI,primary,Parents/Family,p
+207617,EI,primary,Parents/Family,ia
+207617,EI,primary,Parents/Family,ia
+207617,EI,primary,Parents/Family,p
+209221,EI,primary,Parents/Family,p
+208068,ECSE,primary,Parents/Family,p
+204970,EI,primary,Parents/Family,p
+201755,EI,primary,Parents/Family,ia
+201755,EI,secondary,Physician/Clinic,
+201755,EI,primary,Parents/Family,p
+201755,EI,secondary,CAPTA,
+201755,EI,secondary,Physician/Clinic,
+205051,ECSE,primary,Head Start,p
+205775,EI,primary,Parents/Family,p
+201307,EI,primary,Physician/Clinic,p
+201307,ECSE,primary,Parents/Family,p
+209262,EI,primary,Parents/Family,ia
+209262,EI to ECSE,primary,Physician/Clinic,ia
+209262,EI to ECSE,primary,Parents/Family,ia
+209262,ECSE,primary,Other,ia
+209262,ECSE,primary,Physician/Clinic,p
+202567,EI,primary,Physician/Clinic,ia
+202567,EI,primary,Parents/Family,p
+201748,EI to ECSE,primary,Childcare/Preschool,ia
+201748,EI to KG,primary,Parents/Family,p
+206236,EI,primary,Parents/Family,p
+203708,EI,primary,Physician/Clinic,p
+208554,EI,primary,Parents/Family,p
+203813,EI,primary,Hospital,p
+203813,EI,primary,CAPTA,p
+201391,ECSE,primary,Parents/Family,p
+209755,EI,primary,Physician/Clinic,ia
+209755,EI,primary,Physician/Clinic,ia
+209755,ECSE,primary,Physician/Clinic,p
+208381,ECSE,primary,Move in from another state,p
+208112,EI,primary,Physician/Clinic,ia
+208112,EI,primary,Parents/Family,p
+208112,EI,secondary,Physician/Clinic,
+204813,ECSE,primary,Parents/Family,ia
+204813,ECSE,primary,Parents/Family,ia
+204813,ECSE,primary,Parents/Family,p
+209237,EI to ECSE,primary,Physician/Clinic,ia
+209237,ECSE,primary,Parents/Family,p
+209237,ECSE,secondary,Physician/Clinic,
+209237,EI to KG,secondary,Physician/Clinic,
+207317,EI,primary,CAPTA,p
+207317,EI,secondary,Physician/Clinic,
+205599,ECSE,primary,Parents/Family,p
+203545,ECSE,primary,Parents/Family,p
+201502,EI,primary,CAPTA,ia
+201502,ECSE,primary,Childcare/Preschool,p
+205829,EI,primary,Hospital,p
+206050,ECSE,primary,Childcare/Preschool,p
+203818,ECSE,primary,Childcare/Preschool,p
+201019,EI,primary,Childcare/Preschool,ia
+201019,ECSE,primary,Parents/Family,p
+205760,EI,primary,Physician/Clinic,ia
+205760,EI,primary,Other,ia
+205760,EI to ECSE,primary,Parents/Family,p
+205882,ECSE,primary,Physician/Clinic,p
+209254,ECSE,primary,Hospital,ia
+209254,ECSE,primary,Hospital,ia
+209254,EI to KG,primary,Head Start,p
+209898,EI to ECSE,primary,CAPTA,p
+206648,EI to ECSE,primary,CAPTA,p
+209697,EI,primary,Physician/Clinic,ia
+209697,EI,primary,Parents/Family,p
+209253,EI,primary,Physician/Clinic,ia
+209253,ECSE,primary,Childcare/Preschool,p
+202909,EI,primary,CAPTA,p
+208030,ECSE,primary,Parents/Family,p
+207148,EI,primary,Parents/Family,p
+203434,ECSE,primary,Parents/Family,p
+209771,EI,primary,EHDI,p
+206744,EI,primary,Physician/Clinic,ia
+206744,ECSE,primary,Parents/Family,p
+206744,ECSE,secondary,Other DHS,
+205352,EI,primary,Parents/Family,ia
+205352,ECSE,primary,Other,ia
+205352,ECSE,primary,Parents/Family,p
+206604,EI,primary,Parents/Family,p
+208540,EI,primary,Parents/Family,p
+208540,ECSE,primary,Childcare/Preschool,ia
+202011,ECSE,primary,Parents/Family,p
+200933,EI to ECSE,primary,Parents/Family,p
+207649,ECSE,primary,Physician/Clinic,p
+207223,EI,primary,Physician/Clinic,p
+209117,EI,primary,Private Therapy,p
+207075,EI,primary,Physician/Clinic,ia
+207075,EI,primary,Parents/Family,p
+207075,ECSE,primary,Other DHS,ia
+207075,ECSE,primary,Parents/Family,ia
+207075,EI to KG,primary,Other,ia
+206961,EI,primary,Physician/Clinic,ia
+206961,EI,primary,Parents/Family,ia
+206961,EI to ECSE,primary,Physician/Clinic,p
+208285,EI,primary,Physician/Clinic,p
+202169,ECSE,primary,Parents/Family,p
+204798,EI,primary,Physician/Clinic,ia
+204798,EI,primary,Other,p
+201892,EI,primary,Hospital,p
+201892,EI,secondary,CAPTA,
+201776,EI,primary,Other EI/ECSE program,ia
+201776,EI,primary,Parents/Family,ia
+201776,EI,primary,Parents/Family,ia
+201776,EI,primary,Other,p
+203187,ECSE,primary,Parents/Family,p
+202328,EI,primary,Physician/Clinic,ia
+202328,EI,primary,Other,p
+203469,EI,primary,Parents/Family,ia
+203469,EI,primary,Parents/Family,ia
+203469,ECSE,primary,Parents/Family,p
+204054,ECSE,primary,Healthy Families Oregon,ia
+204054,ECSE,primary,Physician/Clinic,ia
+204054,ECSE,primary,Parents/Family,ia
+204054,EI to KG,primary,Childcare/Preschool,p
+208477,EI,primary,CAPTA,p
+208477,EI,secondary,Hospital,
+208477,EI,secondary,Physician/Clinic,
+208477,EI,secondary,Physician/Clinic,
+201601,EI,primary,Physician/Clinic,ia
+201601,ECSE,primary,Physician/Clinic,ia
+201601,ECSE,primary,Parents/Family,p
+200187,EI,primary,Parents/Family,ia
+200187,EI,primary,Other,p
+207766,EI,primary,Physician/Clinic,ia
+207766,EI to ECSE,primary,Other,p
+200029,EI,primary,Physician/Clinic,ia
+200029,EI,primary,Parents/Family,ia
+200029,EI to ECSE,primary,Parents/Family,p
+203387,EI,primary,Physician/Clinic,ia
+203387,EI to ECSE,primary,Parents/Family,ia
+203387,ECSE,primary,Parents/Family,p
+204666,EI,primary,Parents/Family,p
+206017,ECSE,primary,Head Start,p
+206709,EI,primary,Parents/Family,p
+206709,EI,secondary,Physician/Clinic,
+206669,ECSE,primary,Physician/Clinic,p
+203554,EI,primary,Physician/Clinic,ia
+203554,EI to ECSE,primary,Parents/Family,p
+200148,EI,primary,CAPTA,p
+200657,ECSE,primary,Physician/Clinic,p
+203106,ECSE,primary,Physician/Clinic,p
+205981,EI,primary,Physician/Clinic,ia
+205981,ECSE,primary,Physician/Clinic,p
+209829,EI,primary,Physician/Clinic,ia
+209829,EI to ECSE,primary,Other,p
+208985,EI,primary,Physician/Clinic,ia
+208985,EI,primary,Parents/Family,p
+208928,ECSE,primary,Parents/Family,p
+207017,EI,primary,Parents/Family,ia
+207017,EI,secondary,CAPTA,
+207017,EI to ECSE,primary,Other,ia
+207017,ECSE,primary,Head Start,p
+205220,ECSE,primary,Childcare/Preschool,p
+209437,ECSE,primary,Parents/Family,p
+202310,EI,primary,Physician/Clinic,ia
+202310,ECSE,primary,Parents/Family,p
+202310,ECSE,secondary,Physician/Clinic,
+204130,EI,primary,Parents/Family,ia
+204130,EI,primary,Parents/Family,p
+204130,ECSE,primary,Head Start,p
+209736,ECSE,primary,Parents/Family,p
+207832,ECSE,primary,Physician/Clinic,p
+204453,ECSE,primary,Physician/Clinic,p
+204572,EI,primary,Parents/Family,p
+207736,EI,primary,Physician/Clinic,ia
+207736,EI,primary,Physician/Clinic,p
+206839,EI to ECSE,primary,Parents/Family,p
+209199,EI,primary,Physician/Clinic,ia
+209199,EI,primary,Physician/Clinic,p
+205698,EI,primary,Physician/Clinic,ia
+205698,EI,primary,Other,ia
+205698,EI to ECSE,primary,Physician/Clinic,ia
+205698,EI to ECSE,primary,Parents/Family,p
+209696,ECSE,primary,Healthy Families Oregon,p
+200253,EI to ECSE,primary,CAPTA,ia
+200253,ECSE,primary,Head Start,p
+206029,EI,primary,Physician/Clinic,ia
+206029,EI,primary,Physician/Clinic,p
+207008,EI,primary,Physician/Clinic,ia
+207008,EI,primary,Physician/Clinic,p
+208044,ECSE,primary,Childcare/Preschool,p
+205809,EI,primary,Parents/Family,p
+205809,EI,secondary,Physician/Clinic,
+206925,ECSE,primary,Parents/Family,p
+208448,EI,primary,CAPTA,ia
+208448,EI,secondary,Physician/Clinic,
+208448,EI,primary,Other,ia
+208448,EI,primary,Other,ia
+208448,EI,primary,Parents/Family,ia
+208448,EI,primary,Parents/Family,p
+202625,EI,primary,Physician/Clinic,ia
+202625,EI,primary,Physician/Clinic,p
+206188,ECSE,primary,Head Start,p
+202390,EI,secondary,Parents/Family,
+202390,EI,primary,CAPTA,p
+209831,EI,primary,Parents/Family,ia
+209831,EI,primary,Parents/Family,p
+204668,EI,primary,Parents/Family,ia
+204668,EI,primary,Physician/Clinic,p
+202939,EI,primary,Parents/Family,p
+202450,EI,primary,Parents/Family,p
+202450,EI,secondary,Physician/Clinic,
+206503,ECSE,primary,Head Start,p
+207150,ECSE,primary,Head Start,ia
+207150,EI to KG,primary,Head Start,p
+203639,ECSE,primary,Healthy Families Oregon,p
+200458,EI,primary,Physician/Clinic,p
+207760,ECSE,primary,Parents/Family,ia
+207760,EI to KG,primary,Childcare/Preschool,p
+209998,EI to ECSE,primary,Parents/Family,p
+208082,EI,primary,Physician/Clinic,p
+208082,ECSE,primary,Parents/Family,p
+207306,ECSE,primary,Parents/Family,p
+209631,EI,primary,Physician/Clinic,ia
+209631,EI to ECSE,primary,Parents/Family,p
+208498,ECSE,primary,Physician/Clinic,ia
+208498,ECSE,primary,Parents/Family,ia
+208498,ECSE,primary,Parents/Family,p
+207083,ECSE,primary,Head Start,p
+203293,ECSE,primary,Head Start,p
+205550,ECSE,primary,Physician/Clinic,p
+205450,EI,primary,CAPTA,ia
+205450,EI,primary,CAPTA,ia
+205450,EI,primary,Other,p
+203634,EI,primary,Hospital,ia
+203634,EI,secondary,Physician/Clinic,
+203634,EI,primary,Physician/Clinic,p
+205986,ECSE,primary,Parents/Family,p
+200942,EI,primary,Parents/Family,ia
+200942,EI,primary,Parents/Family,p
+207859,EI,primary,CAPTA,ia
+207859,EI,primary,CAPTA,ia
+207859,EI,primary,Parents/Family,ia
+207859,EI,primary,Physician/Clinic,ia
+207859,EI,primary,CAPTA,p
+208524,ECSE,primary,Parents/Family,ia
+208524,ECSE,primary,Hospital,p
+206834,EI,primary,Parents/Family,ia
+206834,ECSE,primary,Parents/Family,p
+205833,EI,primary,Physician/Clinic,ia
+205833,EI,primary,Other,ia
+205833,EI to ECSE,primary,Other,ia
+205833,ECSE,primary,Parents/Family,p
+205833,ECSE,secondary,Other DHS,
+205833,ECSE,secondary,Other DHS,
+207884,EI,primary,Move in from another state,p
+207325,EI,primary,Move in from another state,p
+201476,EI,primary,Physician/Clinic,ia
+201476,EI,primary,Other,p
+205332,ECSE,primary,Parents/Family,p
+203505,EI,primary,Parents/Family,ia
+203505,ECSE,primary,Parents/Family,p
+200443,EI,primary,Hospital,p
+200443,EI,primary,Physician/Clinic,p
+200443,EI,primary,Parents/Family,p
+206098,EI,primary,Physician/Clinic,p
+201687,EI,primary,Private Therapy,ia
+201687,EI,primary,CAPTA,p
+202183,ECSE,primary,Parents/Family,p
+203399,ECSE,primary,Parents/Family,p
+209350,ECSE,primary,Physician/Clinic,p
+209626,EI,primary,Physician/Clinic,ia
+209626,EI,primary,Parents/Family,p
+209626,ECSE,primary,Parents/Family,ia
+206509,EI,primary,Parents/Family,p
+203736,EI,primary,Parents/Family,p
+203736,ECSE,primary,Parents/Family,p
+207175,EI,primary,Physician/Clinic,ia
+207175,ECSE,primary,Physician/Clinic,p
+200534,EI,primary,Public Health,ia
+200534,EI to ECSE,primary,Parents/Family,p
+200786,EI,primary,Physician/Clinic,ia
+200786,EI,primary,Physician/Clinic,ia
+200786,ECSE,primary,Physician/Clinic,p
+203496,EI,primary,CAPTA,ia
+203496,EI,primary,Healthy Families Oregon,p
+200282,EI,primary,Public Health,ia
+200282,EI,primary,Physician/Clinic,p
+203249,EI,primary,Hospital,ia
+203249,EI,primary,Parents/Family,p
+203249,EI,secondary,CAPTA,
+206807,EI,primary,Parents/Family,ia
+206807,EI,primary,Other,p
+200134,ECSE,primary,Hospital,p
+202154,EI,primary,Physician/Clinic,p
+204349,EI,primary,Hospital,p
+203442,EI,primary,Move in from another state,p
+208764,EI,primary,Physician/Clinic,ia
+208764,EI to ECSE,primary,Physician/Clinic,p
+201736,EI,primary,Hospital,p
+201736,EI,secondary,CAPTA,
+204457,EI,primary,Parents/Family,p
+201554,EI,primary,EHDI,p
+201554,EI,secondary,Physician/Clinic,
+202753,EI,primary,Physician/Clinic,ia
+202753,ECSE,primary,Physician/Clinic,ia
+202753,ECSE,primary,Other,p
+203649,EI,primary,Hospital,p
+203649,EI,secondary,CAPTA,
+201485,EI,primary,Hospital,p
+203223,EI,primary,Physician/Clinic,ia
+203223,EI,primary,Physician/Clinic,ia
+203223,EI,primary,Physician/Clinic,p
+200726,EI,primary,Parents/Family,p
+205016,ECSE,primary,Move in from another state,p
+204879,ECSE,primary,Parents/Family,ia
+204879,ECSE,primary,Parents/Family,p
+209873,ECSE,primary,Parents/Family,p
+204057,EI,primary,Physician/Clinic,p
+208807,EI,primary,Physician/Clinic,ia
+208807,EI,secondary,Other DHS,
+208807,EI,primary,Parents/Family,p
+202611,EI,primary,Hospital,ia
+202611,EI,primary,CAPTA,p
+202611,EI to ECSE,secondary,CAPTA,
+206612,EI,primary,Physician/Clinic,ia
+206612,ECSE,primary,Childcare/Preschool,p
+203491,EI,primary,Hospital,p
+201438,EI,primary,Physician/Clinic,p
+202439,EI,primary,Physician/Clinic,p
+202557,EI,primary,Physician/Clinic,p
+206843,EI,primary,Physician/Clinic,ia
+206843,EI,primary,Parents/Family,p
+208360,ECSE,primary,Physician/Clinic,ia
+208360,ECSE,primary,Parents/Family,p
+200676,EI,primary,Physician/Clinic,p
+200676,EI,secondary,Physician/Clinic,
+200676,EI,secondary,CAPTA,
+209399,EI,primary,CAPTA,ia
+209399,EI,primary,CAPTA,p
+209399,EI,primary,Parents/Family,p
+209790,ECSE,primary,Parents/Family,p
+219921,EI,primary,CAPTA,ia
+219921,ECSE,primary,Head Start,p
+210937,EI,primary,Other EI/ECSE program,p
+211848,EI,primary,Parents/Family,p
+211848,EI,secondary,Physician/Clinic,
+213229,EI,primary,Parents/Family,p
+213229,EI,primary,Physician/Clinic,p
+213229,ECSE,primary,Head Start,e
+210040,EI,primary,Healthy Families Oregon,p
+210467,ECSE,primary,Move in from another state,p
+215495,ECSE,primary,Head Start,p
+212617,EI,primary,Head Start,ia
+212617,ECSE,primary,Head Start,p
+212495,EI,primary,Hospital,p
+212495,EI,secondary,CAPTA,
+215371,EI,primary,Parents/Family,p
+216068,EI,primary,Parents/Family,p
+218525,EI,primary,Parents/Family,ia
+218525,EI,secondary,Physician/Clinic,
+218525,EI,primary,Parents/Family,p
+211725,ECSE,primary,Other,p
+210669,EI to ECSE,primary,Parents/Family,p
+210669,ECSE,secondary,Other DHS,
+210669,ECSE,secondary,Physician/Clinic,
+217351,ECSE,primary,Parents/Family,p
+217351,ECSE,secondary,Physician/Clinic,
+218401,EI,primary,Physician/Clinic,ia
+218401,EI,primary,Physician/Clinic,p
+219298,EI,primary,Hospital,p
+218590,EI,primary,Parents/Family,ia
+218590,EI,secondary,Physician/Clinic,
+218590,EI,primary,Other,p
+216517,EI,primary,Physician/Clinic,p
+213820,EI,primary,Parents/Family,p
+215029,EI,primary,Physician/Clinic,ia
+215029,EI,primary,Physician/Clinic,ia
+215029,EI,primary,Other,p
+219367,EI,primary,Parents/Family,p
+219991,EI,primary,Physician/Clinic,p
+219991,EI,secondary,Physician/Clinic,
+219583,EI,primary,Physician/Clinic,ia
+219583,EI,primary,Parents/Family,p
+219583,EI,secondary,Physician/Clinic,
+217798,EI,primary,Physician/Clinic,ia
+217798,EI,primary,Parents/Family,p
+217798,EI,secondary,Physician/Clinic,
+212381,EI,primary,Parents/Family,p
+211056,EI,primary,Physician/Clinic,ia
+211056,ECSE,primary,Other,ia
+211056,EI to KG,primary,Head Start,p
+214477,EI,primary,Parents/Family,p
+212394,EI,primary,Hospital,ia
+212394,EI,primary,Physician/Clinic,ia
+212394,EI,primary,Other,p
+219670,EI,primary,Physician/Clinic,ia
+219670,EI,primary,Parents/Family,ia
+219670,EI,primary,Physician/Clinic,p
+219670,ECSE,secondary,Physician/Clinic,
+217344,EI,primary,Physician/Clinic,ia
+217344,ECSE,primary,Parents/Family,p
+213880,ECSE,primary,Physician/Clinic,p
+213672,EI,primary,Physician/Clinic,p
+210978,ECSE,primary,Parents/Family,p
+216590,EI,primary,Parents/Family,ia
+216590,ECSE,primary,Physician/Clinic,p
+217407,ECSE,primary,Parents/Family,p
+216070,ECSE,primary,Parents/Family,p
+214795,EI,primary,Physician/Clinic,ia
+214795,EI,primary,Parents/Family,ia
+214795,EI to KG,primary,Physician/Clinic,p
+215117,EI,primary,Parents/Family,p
+215117,EI,secondary,Physician/Clinic,
+218514,EI,primary,Parents/Family,ia
+218514,EI,primary,Other,ia
+218514,EI,primary,Other,p
+218514,ECSE,primary,Parents/Family,p
+217158,EI,primary,Physician/Clinic,ia
+217158,EI to ECSE,primary,Physician/Clinic,p
+216235,EI,primary,Physician/Clinic,ia
+216235,ECSE,primary,Parents/Family,p
+214995,ECSE,primary,Parents/Family,p
+217043,EI,primary,Physician/Clinic,ia
+217043,EI,primary,Physician/Clinic,ia
+217043,EI,primary,Other,p
+217043,EI,secondary,Physician/Clinic,
+218147,ECSE,primary,Parents/Family,ia
+218147,EI to KG,primary,Childcare/Preschool,p
+214607,EI,primary,CAPTA,p
+210973,EI,primary,Physician/Clinic,p
+215414,EI,primary,CAPTA,p
+211940,EI,primary,Hospital,p
+211940,EI,secondary,CAPTA,
+211940,EI,secondary,Physician/Clinic,
+218027,ECSE,primary,Childcare/Preschool,p
+210123,ECSE,primary,Parents/Family,p
+216159,EI,primary,CAPTA,p
+216501,EI,primary,Parents/Family,p
+217253,EI,primary,Parents/Family,p
+217253,EI,secondary,Physician/Clinic,
+210325,EI,primary,Parents/Family,p
+210618,EI,primary,Other EI/ECSE program,p
+210618,EI,secondary,Physician/Clinic,
+218202,ECSE,primary,Physician/Clinic,p
+212845,ECSE,primary,Parents/Family,p
+218686,EI,primary,Parents/Family,ia
+218686,EI,primary,Parents/Family,p
+210924,EI,primary,Parents/Family,ia
+210924,EI,primary,Other,ia
+210924,EI,primary,Physician/Clinic,p
+216785,EI,primary,Physician/Clinic,ia
+216785,EI,primary,Parents/Family,p
+218168,EI to ECSE,primary,Physician/Clinic,ia
+218168,ECSE,primary,Other DHS,p
+219084,EI,primary,Physician/Clinic,ia
+219084,EI,primary,Physician/Clinic,ia
+219084,ECSE,primary,Parents/Family,p
+218698,ECSE,primary,Parents/Family,p
+214214,EI,primary,Parents/Family,ia
+214214,EI to ECSE,primary,Parents/Family,ia
+214214,EI to KG,primary,Head Start,p
+217520,EI,primary,Physician/Clinic,ia
+217520,EI to KG,primary,Childcare/Preschool,p
+214499,EI,primary,Parents/Family,p
+219820,EI,primary,Physician/Clinic,ia
+219820,EI,primary,Other,p
+219819,EI,primary,Physician/Clinic,p
+219663,ECSE,primary,Physician/Clinic,ia
+219663,ECSE,primary,Parents/Family,p
+215903,EI,primary,CAPTA,ia
+215903,EI,secondary,Physician/Clinic,
+215903,EI,primary,Parents/Family,p
+215903,EI,secondary,CAPTA,
+217746,EI,primary,Physician/Clinic,p
+213506,ECSE,primary,Move in from another state,p
+213506,ECSE,secondary,Physician/Clinic,
+212885,ECSE,primary,Parents/Family,ia
+212885,ECSE,primary,Other,p
+211744,EI,primary,Parents/Family,p
+218954,EI to ECSE,primary,Parents/Family,ia
+218954,ECSE,primary,Parents/Family,p
+216127,EI,primary,Physician/Clinic,p
+211481,ECSE,primary,Other DHS,ia
+211481,ECSE,primary,Parents/Family,ia
+211481,EI to KG,primary,Head Start,p
+211210,EI,primary,Parents/Family,ia
+211210,EI,secondary,Physician/Clinic,
+211210,EI,primary,Parents/Family,ia
+211210,EI,primary,Other,p
+217679,EI,primary,Physician/Clinic,ia
+217679,EI,primary,Physician/Clinic,p
+212447,EI,primary,Physician/Clinic,ia
+212447,EI,primary,Parents/Family,p
+213208,EI,primary,Parents/Family,p
+213208,EI,secondary,Hospital,
+213208,EI,secondary,EHDI,
+217071,EI,primary,Parents/Family,p
+217071,EI,secondary,Physician/Clinic,
+216582,EI,primary,Parents/Family,p
+215296,EI,primary,Physician/Clinic,ia
+215296,EI,primary,Parents/Family,p
+219056,EI,primary,Physician/Clinic,p
+219584,EI,primary,Physician/Clinic,p
+213616,EI,primary,Parents/Family,ia
+213616,EI,secondary,Physician/Clinic,
+213616,EI,primary,Other,p
+213616,ECSE,primary,Physician/Clinic,p
+217011,EI,primary,Parents/Family,ia
+217011,EI,secondary,Physician/Clinic,
+217011,EI,primary,Parents/Family,ia
+217011,EI to ECSE,primary,Parents/Family,p
+217011,ECSE,secondary,Physician/Clinic,
+210210,EI,primary,Physician/Clinic,ia
+210210,EI,secondary,Healthy Families Oregon,
+210210,EI,primary,Physician/Clinic,p
+213003,EI,primary,Physician/Clinic,ia
+213003,EI,primary,Physician/Clinic,p
+219312,EI,primary,Physician/Clinic,ia
+219312,ECSE,primary,Parents/Family,p
+216917,EI,primary,Physician/Clinic,ia
+216917,EI,primary,Other,p
+217513,EI,primary,Healthy Families Oregon,p
+211343,ECSE,primary,Childcare/Preschool,p
+217352,ECSE,primary,Physician/Clinic,ia
+217352,EI to KG,primary,Physician/Clinic,p
+211282,ECSE,primary,Physician/Clinic,ia
+211282,EI to KG,primary,Childcare/Preschool,p
+213860,ECSE,primary,Head Start,p
+210047,EI,primary,Parents/Family,p
+211239,EI to ECSE,primary,Parents/Family,p
+219672,ECSE,primary,Parents/Family,p
+217248,EI,primary,Physician/Clinic,ia
+217248,ECSE,primary,Physician/Clinic,p
+218330,EI,primary,Physician/Clinic,p
+214275,EI,primary,Physician/Clinic,p
+214723,EI,primary,Parents/Family,ia
+214723,ECSE,primary,Parents/Family,p
+217603,ECSE,primary,Head Start,p
+212543,EI,primary,Physician/Clinic,ia
+212543,EI,primary,Parents/Family,p
+211825,ECSE,primary,Physician/Clinic,ia
+211825,ECSE,primary,Parents/Family,p
+213608,EI,primary,Parents/Family,p
+214728,ECSE,primary,Physician/Clinic,ia
+214728,ECSE,secondary,CAPTA,
+214728,ECSE,primary,Other,p
+213558,EI,primary,Hospital,p
+219759,EI,primary,Parents/Family,p
+213597,ECSE,primary,Parents/Family,ia
+213597,ECSE,primary,Parents/Family,p
+217629,ECSE,primary,Parents/Family,p
+213109,EI,primary,Physician/Clinic,ia
+213109,EI,primary,Parents/Family,p
+215418,EI,primary,Physician/Clinic,p
+215567,EI,primary,CAPTA,ia
+215567,EI,primary,CAPTA,p
+215567,EI,secondary,CAPTA,
+216884,EI,primary,Physician/Clinic,ia
+216884,EI,primary,Other,ia
+216884,EI,primary,Parents/Family,p
+210715,ECSE,primary,Parents/Family,ia
+210715,ECSE,primary,Other,ia
+210715,EI to KG,primary,Parents/Family,p
+215985,EI to ECSE,primary,Physician/Clinic,ia
+215985,ECSE,primary,Physician/Clinic,p
+214898,EI,primary,Parents/Family,p
+215870,EI,primary,Parents/Family,p
+219905,EI,primary,Physician/Clinic,ia
+219905,EI,primary,Other,p
+212452,EI,primary,Physician/Clinic,ia
+212452,EI,primary,Other,p
+216313,EI,primary,Physician/Clinic,ia
+216313,EI,primary,Hospital,ia
+216313,EI,primary,Healthy Families Oregon,p
+219900,ECSE,primary,Childcare/Preschool,p
+217590,ECSE,primary,Head Start,p
+210268,EI,primary,Physician/Clinic,ia
+210268,EI,primary,Parents/Family,p
+210989,EI,primary,Physician/Clinic,ia
+210989,EI to ECSE,primary,Parents/Family,ia
+210989,ECSE,primary,Physician/Clinic,p
+216790,ECSE,primary,Physician/Clinic,p
+219003,EI,primary,Physician/Clinic,p
+213349,ECSE,primary,Childcare/Preschool,p
+215670,EI,primary,Physician/Clinic,ia
+215670,ECSE,primary,Physician/Clinic,ia
+215670,ECSE,primary,Parents/Family,p
+210871,ECSE,primary,Physician/Clinic,p
+213719,EI,primary,Physician/Clinic,ia
+213719,EI,primary,Parents/Family,ia
+213719,EI to ECSE,primary,Parents/Family,ia
+213719,EI to ECSE,primary,Other,p
+217709,ECSE,primary,Head Start,p
+212889,EI,primary,Other,p
+213955,EI,primary,Parents/Family,p
+210836,ECSE,primary,Parents/Family,p
+212997,EI to KG,primary,Parents/Family,p
+214883,ECSE,primary,Parents/Family,p
+214883,ECSE,secondary,Physician/Clinic,
+217677,EI,primary,Physician/Clinic,p
+217677,EI,primary,Parents/Family,p
+211568,EI,primary,Parents/Family,ia
+211568,EI to ECSE,primary,Parents/Family,p
+212375,EI,primary,Physician/Clinic,ia
+212375,EI,primary,Physician/Clinic,ia
+212375,EI,primary,Physician/Clinic,ia
+212375,EI,primary,Physician/Clinic,ia
+212375,EI,primary,Physician/Clinic,ia
+212375,EI to ECSE,primary,Physician/Clinic,p
+216593,EI,primary,Physician/Clinic,p
+219014,EI,primary,Parents/Family,ia
+219014,EI to ECSE,primary,Other,p
+212870,ECSE,primary,Parents/Family,p
+210743,EI,primary,Physician/Clinic,p
+217581,EI,primary,Parents/Family,p
+217581,EI,secondary,Physician/Clinic,
+210582,EI,primary,Physician/Clinic,ia
+210582,EI,primary,Physician/Clinic,ia
+210582,EI,primary,Physician/Clinic,p
+215798,EI,primary,Physician/Clinic,ia
+215798,ECSE,primary,Parents/Family,p
+213830,EI,primary,Childcare/Preschool,ia
+213830,EI,primary,Parents/Family,ia
+213830,EI to ECSE,primary,Childcare/Preschool,p
+216458,EI to KG,primary,Head Start,p
+212272,ECSE,primary,Head Start,p
+212731,EI to ECSE,primary,Childcare/Preschool,p
+214895,ECSE,primary,Physician/Clinic,p
+214895,ECSE,primary,Childcare/Preschool,p
+210075,EI,primary,Physician/Clinic,p
+218002,EI,primary,Physician/Clinic,p
+218992,EI,primary,Physician/Clinic,ia
+218992,EI,primary,Physician/Clinic,p
+210794,EI,primary,Physician/Clinic,ia
+210794,EI,primary,Physician/Clinic,ia
+210794,EI,primary,Parents/Family,ia
+210794,EI,primary,Other,p
+214806,ECSE,primary,Head Start,p
+214806,EI to KG,primary,Head Start,p
+216046,ECSE,primary,Childcare/Preschool,p
+211490,EI,primary,Physician/Clinic,ia
+211490,EI,primary,Parents/Family,p
+217431,ECSE,primary,Private Therapy,p
+214810,EI,primary,Other EI/ECSE program,p
+216906,EI,primary,Physician/Clinic,p
+216906,EI,secondary,Physician/Clinic,
+215578,ECSE,primary,Head Start,p
+218554,ECSE,primary,Head Start,p
+210728,EI to ECSE,primary,Parents/Family,p
+215761,ECSE,primary,Childcare/Preschool,p
+213443,ECSE,primary,Parents/Family,p
+215677,ECSE,primary,Physician/Clinic,p
+211891,EI,primary,Physician/Clinic,p
+211891,ECSE,secondary,Physician/Clinic,
+217771,EI,primary,Physician/Clinic,ia
+217771,EI to ECSE,primary,Physician/Clinic,p
+213303,EI,primary,Hospital,p
+216273,EI,primary,Parents/Family,ia
+216273,ECSE,primary,Parents/Family,p
+216660,EI,primary,Physician/Clinic,p
+217613,EI,primary,Physician/Clinic,p
+217775,EI,primary,Hospital,p
+217775,EI,secondary,EHDI,
+216050,EI,primary,Parents/Family,p
+216050,EI,secondary,Physician/Clinic,
+212445,ECSE,primary,Parents/Family,p
+213015,EI,primary,Head Start,p
+217313,EI,primary,Childcare/Preschool,p
+214973,EI,primary,Parents/Family,ia
+214973,EI,secondary,Physician/Clinic,
+214973,EI,primary,Physician/Clinic,p
+218026,ECSE,primary,Childcare/Preschool,p
+211978,ECSE,primary,Physician/Clinic,p
+212903,EI,primary,Physician/Clinic,p
+211936,EI,primary,Physician/Clinic,ia
+211936,EI,primary,"Public Health, WIC",ia
+211936,EI to ECSE,primary,Parents/Family,ia
+211936,ECSE,primary,Parents/Family,p
+215353,EI,primary,Other EI/ECSE program,p
+215358,ECSE,primary,Healthy Families Oregon,p
+213916,EI,primary,Parents/Family,p
+216274,ECSE,primary,Physician/Clinic,ia
+216274,ECSE,primary,Parents/Family,p
+213434,EI to KG,primary,Childcare/Preschool,p
+216962,ECSE,primary,Head Start,p
+210330,EI,primary,Physician/Clinic,ia
+210330,EI,primary,Parents/Family,ia
+210330,EI,primary,Physician/Clinic,p
+214318,EI to KG,primary,Healthy Families Oregon,p
+215532,EI,primary,Hospital,p
+210245,ECSE,primary,Move in from another state,p
+218105,EI,primary,Parents/Family,p
+218105,EI,secondary,Physician/Clinic,
+216021,EI,primary,Parents/Family,ia
+216021,EI,primary,Parents/Family,ia
+216021,ECSE,primary,Parents/Family,p
+210948,EI,primary,Childcare/Preschool,p
+215000,ECSE,primary,Healthy Families Oregon,p
+219742,EI,primary,CAPTA,ia
+219742,EI,primary,Parents/Family,ia
+219742,EI,primary,Other,ia
+219742,EI,primary,Other,p
+214346,EI,primary,Physician/Clinic,ia
+214346,EI,secondary,CAPTA,
+214346,EI,primary,CAPTA,p
+219555,EI,primary,Physician/Clinic,ia
+219555,EI,primary,Other,p
+219555,EI to ECSE,secondary,Physician/Clinic,
+215270,EI,primary,Physician/Clinic,p
+214067,ECSE,primary,Head Start,p
+219207,ECSE,primary,Physician/Clinic,ia
+219207,ECSE,primary,Parents/Family,p
+216028,EI to ECSE,primary,Parents/Family,p
+217243,EI,primary,Physician/Clinic,ia
+217243,EI,primary,Other,p
+213187,EI,primary,Parents/Family,p
+215281,ECSE,primary,Childcare/Preschool,p
+217990,ECSE,primary,Head Start,p
+216700,EI to KG,primary,Parents/Family,p
+216537,EI,primary,Physician/Clinic,p
+217766,ECSE,primary,Parents/Family,p
+215279,EI,primary,CAPTA,p
+215279,ECSE,secondary,Physician/Clinic,
+215279,ECSE,secondary,Other DHS,
+219187,EI to KG,primary,Physician/Clinic,p
+218301,ECSE,primary,Parents/Family,p
+210914,EI,primary,Physician/Clinic,p
+210914,EI,primary,Parents/Family,p
+214666,EI to KG,primary,Other EI/ECSE program,p
+211594,ECSE,primary,Move in from another state,p
+217258,EI to KG,primary,Healthy Families Oregon,p
+210895,EI,primary,Hospital,p
+210895,EI,secondary,CAPTA,
+219508,EI,primary,Physician/Clinic,p
+217973,EI,primary,Parents/Family,p
+215082,ECSE,primary,Physician/Clinic,p
+211694,EI to KG,primary,Parents/Family,p
+211425,EI,primary,Physician/Clinic,p
+215768,EI,primary,Physician/Clinic,p
+215768,ECSE,primary,Parents/Family,p
+218664,EI,primary,Physician/Clinic,p
+218696,EI,primary,Physician/Clinic,ia
+218696,EI,primary,Physician/Clinic,p
+219178,EI,primary,Parents/Family,p
+210741,EI,primary,Hospital,p
+216740,EI to KG,primary,Parents/Family,p
+214130,EI,primary,Physician/Clinic,p
+215197,EI to KG,primary,Physician/Clinic,p
+211833,ECSE,primary,Physician/Clinic,p
+213352,EI,primary,Physician/Clinic,p
+210253,EI to KG,primary,Childcare/Preschool,p
+216998,ECSE,primary,Physician/Clinic,ia
+216998,ECSE,primary,Physician/Clinic,p
+218528,EI to KG,primary,Physician/Clinic,ia
+218528,EI to KG,primary,Parents/Family,p
+218989,EI,primary,Hospital,ia
+218989,EI,primary,Parents/Family,p
+216883,EI,primary,Physician/Clinic,p
+218448,ECSE,primary,Physician/Clinic,p
+217690,EI,primary,Physician/Clinic,ia
+217690,EI,primary,Other,ia
+217690,EI to ECSE,primary,Parents/Family,p
+217042,ECSE,primary,Childcare/Preschool,p
+212575,EI,primary,Physician/Clinic,ia
+212575,EI,primary,Other,p
+212575,ECSE,secondary,Physician/Clinic,
+216503,EI,primary,Parents/Family,p
+211966,EI,primary,Parents/Family,p
+210869,EI to ECSE,primary,Physician/Clinic,p
+217460,EI to KG,primary,Parents/Family,p
+214266,EI to ECSE,primary,Parents/Family,ia
+214266,ECSE,primary,Other,p
+210921,ECSE,primary,Parents/Family,p
+216178,EI to ECSE,primary,Parents/Family,p
+218179,ECSE,primary,Childcare/Preschool,p
+214655,EI,primary,Physician/Clinic,ia
+214655,EI,primary,Parents/Family,p
+215550,ECSE,primary,Physician/Clinic,p
+210624,EI,primary,Hospital,p
+213437,EI,primary,Hospital,p
+213437,EI,secondary,CAPTA,
+219436,EI,primary,Hospital,p
+214256,EI,primary,Physician/Clinic,p
+214100,EI,primary,Physician/Clinic,p
+212779,EI to KG,primary,Childcare/Preschool,p
+219141,EI,primary,Hospital,p
+210942,ECSE,primary,Other DHS,ia
+210942,ECSE,primary,Parents/Family,p
+217001,EI,primary,Physician/Clinic,ia
+217001,EI,primary,Parents/Family,ia
+217001,ECSE,primary,Other,ia
+217001,ECSE,primary,Other,p
+213785,EI,secondary,CAPTA,
+213785,EI,primary,Hospital,p
+213785,EI,secondary,Physician/Clinic,
+218872,ECSE,primary,Parents/Family,p
+211390,EI,primary,Physician/Clinic,p
+218157,EI,primary,Physician/Clinic,p
+219835,EI,primary,Physician/Clinic,ia
+219835,EI,primary,Parents/Family,ia
+219835,EI to ECSE,primary,Parents/Family,p
+211893,EI,primary,Parents/Family,p
+218524,ECSE,primary,Physician/Clinic,p
+211591,ECSE,primary,Physician/Clinic,p
+217606,ECSE,primary,Parents/Family,p
+218829,EI to KG,primary,Other EI/ECSE program,p
+216980,ECSE,primary,Head Start,p
+217864,ECSE,primary,Physician/Clinic,p
+213585,ECSE,primary,Childcare/Preschool,p
+218146,ECSE,primary,Childcare/Preschool,p
+210430,ECSE,primary,Head Start,p
+213197,EI,primary,Physician/Clinic,p
+216010,ECSE,primary,Childcare/Preschool,ia
+216010,EI to KG,primary,Childcare/Preschool,p
+212542,EI,primary,Physician/Clinic,p
+211707,EI,primary,Physician/Clinic,ia
+211707,EI,primary,Other,p
+215528,EI,primary,Physician/Clinic,ia
+215528,EI,primary,Other,p
+210962,EI,primary,Physician/Clinic,p
+210962,ECSE,primary,Physician/Clinic,p
+210962,ECSE,primary,Parents/Family,p
+213867,ECSE,primary,Parents/Family,p
+219868,EI,primary,Public Health,ia
+219868,EI,primary,Parents/Family,p
+211856,EI,primary,EHDI,p
+215433,ECSE,primary,Parents/Family,p
+215433,ECSE,secondary,Physician/Clinic,
+213759,EI,primary,Parents/Family,p
+212325,EI,primary,Physician/Clinic,ia
+212325,EI,primary,Physician/Clinic,p
+212325,EI,primary,Physician/Clinic,ia
+219287,EI,primary,Physician/Clinic,p
+219350,ECSE,primary,Head Start,p
+212742,EI,primary,CAPTA,p
+218759,EI to KG,primary,Childcare/Preschool,p
+214140,EI to KG,primary,Head Start,p
+219626,EI,primary,Parents/Family,p
+219720,EI,primary,Parents/Family,p
+218638,ECSE,primary,Parents/Family,ia
+218638,ECSE,primary,Parents/Family,p
+214231,EI,primary,Physician/Clinic,ia
+214231,EI,primary,Physician/Clinic,ia
+214231,EI,primary,Physician/Clinic,ia
+214231,EI,primary,Parents/Family,p
+214231,EI,secondary,Physician/Clinic,
+216261,EI,primary,Physician/Clinic,ia
+216261,EI,primary,Parents/Family,ia
+216261,EI,primary,Parents/Family,p
+210534,EI,primary,Physician/Clinic,ia
+210534,EI,primary,Parents/Family,ia
+210534,EI,primary,Parents/Family,p
+219227,EI,primary,Physician/Clinic,ia
+219227,EI,primary,Parents/Family,p
+214881,EI,primary,Parents/Family,p
+218718,ECSE,primary,Childcare/Preschool,p
+217291,EI,primary,Parents/Family,p
+217291,EI,secondary,Physician/Clinic,
+217291,EI,primary,Parents/Family,p
+211508,ECSE,primary,Childcare/Preschool,ia
+211508,ECSE,primary,Childcare/Preschool,p
+210851,EI,primary,Hospital,p
+217647,EI,primary,Parents/Family,ia
+217647,EI,primary,Physician/Clinic,p
+217647,EI,primary,Parents/Family,p
+212232,EI,primary,Parents/Family,p
+213733,ECSE,primary,Childcare/Preschool,p
+211908,ECSE,primary,Physician/Clinic,p
+211737,EI,primary,Physician/Clinic,ia
+211737,EI,primary,Parents/Family,ia
+211737,ECSE,primary,Parents/Family,p
+218358,ECSE,primary,Parents/Family,p
+218896,ECSE,primary,Childcare/Preschool,p
+215544,EI,primary,CAPTA,ia
+215544,EI to ECSE,primary,Other,ia
+215544,ECSE,primary,Head Start,p
+216880,ECSE,primary,Other DHS,p
+216880,ECSE,secondary,Head Start,
+217670,EI,primary,Physician/Clinic,p
+213503,ECSE,primary,Move in from another state,p
+219138,EI,primary,Physician/Clinic,p
+215346,EI,primary,Physician/Clinic,p
+213915,EI,primary,Parents/Family,p
+216751,EI,primary,Parents/Family,p
+212337,ECSE,primary,Childcare/Preschool,p
+217360,ECSE,primary,Parents/Family,p
+217991,ECSE,primary,Parents/Family,ia
+217991,EI to KG,primary,Parents/Family,p
+218490,EI,primary,Physician/Clinic,ia
+218490,EI,primary,Physician/Clinic,ia
+218490,EI,primary,Physician/Clinic,p
+214879,ECSE,primary,Physician/Clinic,ia
+214879,ECSE,primary,Childcare/Preschool,p
+211306,EI,primary,Physician/Clinic,ia
+211306,EI to ECSE,primary,Parents/Family,ia
+211306,ECSE,secondary,Physician/Clinic,
+211306,ECSE,primary,Parents/Family,p
+215516,ECSE,primary,Childcare/Preschool,p
+217116,ECSE,primary,Parents/Family,p
+217116,ECSE,secondary,Physician/Clinic,
+213679,EI,primary,Other,p
+211448,EI,primary,Parents/Family,ia
+211448,EI,secondary,CAPTA,
+211448,EI,primary,CAPTA,ia
+211448,EI to ECSE,primary,Other,p
+218807,EI to KG,primary,Childcare/Preschool,p
+210744,ECSE,primary,Childcare/Preschool,p
+210367,EI,primary,Physician/Clinic,p
+210367,EI,secondary,Physician/Clinic,
+211811,ECSE,primary,Childcare/Preschool,p
+213491,ECSE,primary,Physician/Clinic,p
+217625,EI to KG,primary,Physician/Clinic,p
+212439,EI to ECSE,primary,Parents/Family,p
+214460,EI,primary,CAPTA,p
+212102,ECSE,primary,Parents/Family,p
+219015,EI,primary,Physician/Clinic,p
+213751,EI,primary,Physician/Clinic,p
+213751,ECSE,secondary,Physician/Clinic,
+215631,ECSE,primary,Physician/Clinic,p
+213081,EI,primary,Physician/Clinic,p
+225458,EI,primary,CAPTA,p
+223229,EI,primary,Parents/Family,ia
+223229,EI,primary,Parents/Family,p
+223229,ECSE,primary,Parents/Family,ia
+223229,ECSE,primary,Parents/Family,s
+221127,ECSE,primary,Parents/Family,p
+221127,EI to KG,primary,Parents/Family,p
+223255,ECSE,primary,Physician/Clinic,p
+226410,EI,primary,Physician/Clinic,ia
+226410,EI,primary,Other,ia
+226410,ECSE,primary,Physician/Clinic,p
+226254,ECSE,primary,Parents/Family,p
+223943,EI,primary,Physician/Clinic,p
+228732,EI,primary,Hospital,p
+224104,EI,primary,Hospital,p
+224936,EI,primary,Physician/Clinic,p
+226331,EI,primary,Physician/Clinic,ia
+226331,EI,primary,Other,p
+229608,ECSE,primary,Parents/Family,p
+226657,ECSE,primary,Parents/Family,p
+221510,EI,primary,Parents/Family,ia
+221510,ECSE,primary,Parents/Family,p
+228728,ECSE,primary,Physician/Clinic,ia
+228728,EI to KG,primary,Parents/Family,p
+226960,EI,primary,Physician/Clinic,ia
+226960,EI,primary,Other,ia
+226960,EI,primary,Parents/Family,p
+229909,EI,primary,Hospital,p
+229909,EI,secondary,Physician/Clinic,
+229991,EI,primary,Parents/Family,p
+229991,EI,secondary,Physician/Clinic,
+229991,EI,secondary,Physician/Clinic,
+222958,EI,primary,Hospital,p
+223628,EI,primary,Physician/Clinic,ia
+223628,EI,primary,Parents/Family,p
+227798,EI,primary,Hospital,p
+226151,ECSE,primary,"Public Health, WIC",p
+220152,EI,primary,Physician/Clinic,ia
+229372,EI,primary,Physician/Clinic,p
+229372,EI,secondary,Physician/Clinic,
+221348,EI,primary,Physician/Clinic,p
+221348,EI,secondary,Physician/Clinic,
+222217,EI,primary,Parents/Family,p
+229251,EI,primary,Physician/Clinic,ia
+229251,EI,primary,CAPTA,ia
+229251,EI,primary,CAPTA,p
+228799,EI,primary,Hospital,p
+224796,EI,primary,Parents/Family,ia
+224796,EI,primary,Other,ia
+224796,ECSE,primary,Other,p
+226611,ECSE,primary,Move in from another state,p
+223132,ECSE,primary,Healthy Families Oregon,p
+224933,EI to ECSE,primary,Parents/Family,p
+223495,ECSE,primary,Parents/Family,p
+228025,ECSE,primary,Parents/Family,ia
+228025,EI to KG,primary,Parents/Family,ia
+228025,EI to KG,primary,Parents/Family,p
+220566,EI,primary,Physician/Clinic,ia
+220566,EI to ECSE,primary,Physician/Clinic,p
+222816,EI,primary,Physician/Clinic,p
+228508,ECSE,primary,Physician/Clinic,p
+227068,EI,primary,CAPTA,p
+222723,ECSE,primary,Parents/Family,ia
+222723,EI to KG,primary,Other,p
+229439,EI,primary,Physician/Clinic,ia
+229439,EI,primary,Parents/Family,p
+224126,EI,primary,Parents/Family,p
+224126,EI,secondary,Physician/Clinic,
+224126,EI,secondary,Public Health,
+220123,EI,primary,Physician/Clinic,ia
+220123,EI,primary,Parents/Family,ia
+220123,EI to ECSE,primary,Parents/Family,ia
+220123,ECSE,primary,Head Start,p
+229646,EI,primary,Physician/Clinic,ia
+229646,EI,primary,Physician/Clinic,ia
+229646,EI,primary,Parents/Family,p
+225114,EI,primary,Physician/Clinic,ia
+225114,EI,primary,Physician/Clinic,ia
+225114,EI to ECSE,primary,Parents/Family,ia
+225114,ECSE,primary,Parents/Family,p
+227525,EI,primary,Parents/Family,p
+227525,EI,secondary,Physician/Clinic,
+220618,ECSE,primary,Head Start,p
+224697,ECSE,primary,Parents/Family,p
+225647,EI,primary,Physician/Clinic,p
+225002,EI to KG,primary,Head Start,p
+223901,ECSE,primary,Healthy Families Oregon,p
+220550,EI,primary,Physician/Clinic,ia
+220550,EI,primary,Parents/Family,p
+225115,ECSE,primary,Childcare/Preschool,ia
+225115,ECSE,primary,Parents/Family,p
+224198,EI,primary,Physician/Clinic,ia
+224198,EI,primary,Other,p
+228824,ECSE,primary,Physician/Clinic,ia
+228824,ECSE,primary,Physician/Clinic,ia
+228824,ECSE,primary,Parents/Family,ia
+228824,ECSE,primary,Parents/Family,ia
+228824,ECSE,primary,Parents/Family,ia
+228824,ECSE,primary,Physician/Clinic,p
+223165,EI,primary,Physician/Clinic,p
+226678,EI,primary,Hospital,p
+226678,EI,secondary,CAPTA,
+220132,ECSE,primary,Move in from another state,ia
+220132,ECSE,primary,Move in from another state,p
+225597,ECSE,primary,Physician/Clinic,p
+225562,EI to ECSE,primary,Physician/Clinic,p
+228951,EI,primary,CAPTA,p
+221992,ECSE,primary,Parents/Family,ia
+221992,EI to KG,primary,Parents/Family,p
+220919,ECSE,primary,Parents/Family,p
+227456,EI,primary,Physician/Clinic,p
+222539,EI to ECSE,primary,Parents/Family,p
+224856,ECSE,primary,Physician/Clinic,ia
+224856,ECSE,secondary,EHDI,
+224856,ECSE,primary,Parents/Family,p
+221406,ECSE,primary,Physician/Clinic,p
+228999,ECSE,primary,Parents/Family,p
+226534,EI,primary,Parents/Family,p
+226534,EI,secondary,Physician/Clinic,
+221277,EI,primary,Parents/Family,p
+221277,EI,secondary,Physician/Clinic,
+225328,EI,primary,Physician/Clinic,p
+223801,EI,primary,Parents/Family,ia
+223801,ECSE,primary,Parents/Family,ia
+223801,ECSE,primary,Physician/Clinic,p
+223534,EI,primary,Physician/Clinic,ia
+223534,EI,primary,Parents/Family,p
+228115,ECSE,primary,Other DHS,p
+228624,ECSE,primary,Parents/Family,p
+222140,ECSE,primary,Physician/Clinic,ia
+222140,ECSE,primary,Parents/Family,ia
+222140,ECSE,primary,Parents/Family,p
+225355,ECSE,primary,Parents/Family,p
+225355,ECSE,secondary,Physician/Clinic,
+228284,EI,primary,Physician/Clinic,p
+228385,EI,primary,EHDI,p
+221520,ECSE,primary,Physician/Clinic,ia
+221520,EI to KG,primary,Physician/Clinic,ia
+221520,EI to KG,primary,Parents/Family,p
+228318,EI,primary,Physician/Clinic,ia
+228318,EI to ECSE,primary,Parents/Family,p
+226521,EI,primary,Parents/Family,p
+222179,ECSE,primary,Parents/Family,p
+220835,ECSE,primary,Parents/Family,ia
+220835,ECSE,primary,Physician/Clinic,p
+221273,EI to ECSE,primary,Parents/Family,ia
+221273,EI to ECSE,primary,Parents/Family,ia
+221273,ECSE,primary,Other,p
+222045,ECSE,primary,Physician/Clinic,p
+228954,EI to ECSE,primary,Parents/Family,p
+228954,ECSE,primary,Physician/Clinic,ia
+228954,ECSE,primary,Parents/Family,p
+229553,EI,primary,Other,p
+221351,ECSE,primary,Physician/Clinic,p
+227776,EI to KG,primary,Childcare/Preschool,p
+227720,EI,primary,Parents/Family,p
+220466,EI,primary,Physician/Clinic,p
+228211,EI,primary,Parents/Family,p
+228211,EI,secondary,Physician/Clinic,
+225581,ECSE,primary,Parents/Family,p
+220882,EI,primary,Hospital,ia
+220882,EI,primary,Other,p
+222318,EI,primary,Physician/Clinic,p
+223816,ECSE,primary,Other,p
+229332,ECSE,primary,Physician/Clinic,ia
+229332,ECSE,primary,Parents/Family,p
+226786,ECSE,primary,Parents/Family,p
+229657,EI,primary,Physician/Clinic,p
+226663,EI to ECSE,primary,Physician/Clinic,p
+224976,ECSE,primary,Parents/Family,p
+225724,EI,primary,Other EI/ECSE program,p
+220216,ECSE,primary,Parents/Family,p
+228892,EI,primary,CAPTA,p
+229342,EI,primary,Physician/Clinic,ia
+229342,EI,primary,Other,ia
+229342,EI,primary,Physician/Clinic,p
+228247,EI,primary,Physician/Clinic,p
+226594,ECSE,primary,Parents/Family,p
+220375,EI,primary,EHDI,p
+222109,EI,primary,CAPTA,p
+222109,EI,secondary,Physician/Clinic,
+229312,ECSE,primary,Parents/Family,p
+221287,EI,primary,Physician/Clinic,p
+226496,EI,primary,Physician/Clinic,p
+225822,EI,primary,Physician/Clinic,p
+223674,EI,primary,Physician/Clinic,ia
+223674,EI,primary,Physician/Clinic,p
+223674,EI,secondary,CAPTA,
+223966,EI,primary,Physician/Clinic,p
+223966,EI,secondary,Physician/Clinic,
+222219,ECSE,primary,Parents/Family,p
+223422,EI,primary,Parents/Family,ia
+223422,EI,primary,CAPTA,p
+226191,EI to KG,primary,Move in from another state,p
+224048,ECSE,primary,Parents/Family,p
+224663,EI,primary,Physician/Clinic,p
+228930,ECSE,primary,Head Start,p
+221404,EI,primary,Parents/Family,p
+225902,ECSE,primary,Other,p
+224223,ECSE,primary,Childcare/Preschool,p
+229223,ECSE,primary,Parents/Family,p
+226714,EI,primary,Physician/Clinic,ia
+226714,EI,primary,Parents/Family,p
+225577,EI,primary,Physician/Clinic,p
+225577,EI,secondary,Physician/Clinic,
+220500,EI,primary,Physician/Clinic,ia
+220500,EI,primary,Parents/Family,p
+228993,EI,primary,Physician/Clinic,ia
+228993,ECSE,primary,Physician/Clinic,p
+222141,EI,primary,Hospital,p
+220503,EI,primary,Parents/Family,p
+220503,EI,secondary,Public Health,
+225685,EI,primary,Parents/Family,ia
+225685,EI,primary,Other,ia
+225685,EI,primary,Other,p
+228217,ECSE,primary,Parents/Family,p
+224994,ECSE,primary,Physician/Clinic,p
+223211,EI,primary,Physician/Clinic,ia
+223211,EI,primary,Other,ia
+223211,EI,primary,Parents/Family,ia
+223211,ECSE,primary,Physician/Clinic,p
+221430,EI,primary,Physician/Clinic,p
+223129,EI,primary,Physician/Clinic,ia
+223129,EI,primary,Parents/Family,p
+225525,ECSE,primary,Physician/Clinic,p
+220583,EI,primary,Parents/Family,ia
+220583,EI,primary,Parents/Family,p
+225068,EI,primary,Parents/Family,ia
+225068,EI,primary,Parents/Family,p
+221011,EI,primary,Parents/Family,ia
+221011,ECSE,primary,Parents/Family,p
+221592,ECSE,primary,Parents/Family,p
+222722,ECSE,primary,Childcare/Preschool,p
+224160,ECSE,primary,Other EI/ECSE program,p
+228501,ECSE,primary,Physician/Clinic,p
+228501,ECSE,secondary,Physician/Clinic,
+229047,EI,primary,Physician/Clinic,p
+229957,EI,primary,Physician/Clinic,p
+227672,ECSE,primary,Physician/Clinic,p
+226416,EI,primary,Healthy Families Oregon,p
+229614,EI to ECSE,primary,Parents/Family,ia
+229614,ECSE,primary,Parents/Family,p
+224544,EI,primary,Physician/Clinic,ia
+224544,EI,primary,Other,p
+229410,EI,primary,Physician/Clinic,p
+224375,EI,primary,Physician/Clinic,ia
+224375,EI,primary,Other,p
+224225,EI,primary,Other,ia
+224225,EI,primary,Other,ia
+224225,EI,primary,Other,ia
+224225,ECSE,primary,Other,p
+223747,EI,primary,Parents/Family,p
+223747,EI,secondary,Physician/Clinic,
+227284,EI,primary,Physician/Clinic,ia
+227284,EI,primary,Other,p
+226715,EI,primary,Physician/Clinic,ia
+226715,EI,primary,Parents/Family,p
+224957,EI,primary,Physician/Clinic,p
+221619,EI,primary,CAPTA,p
+220799,EI,primary,CAPTA,p
+227340,EI,primary,Public Health,p
+222574,EI,primary,Parents/Family,p
+227448,EI to ECSE,primary,Parents/Family,p
+222819,ECSE,primary,Move in from another state,p
+222819,ECSE,secondary,Physician/Clinic,
+227249,EI,primary,Parents/Family,p
+220260,EI,primary,Parents/Family,p
+220260,EI,secondary,Healthy Families Oregon,
+220260,EI,secondary,CAPTA,
+222793,EI,primary,Parents/Family,p
+222793,ECSE,secondary,CAPTA,
+222858,ECSE,primary,Parents/Family,p
+223981,EI,primary,CAPTA,p
+223981,EI,primary,Physician/Clinic,ia
+227101,ECSE,primary,Physician/Clinic,ia
+227101,ECSE,primary,Physician/Clinic,p
+226084,ECSE,primary,Physician/Clinic,p
+225416,ECSE,primary,Other EI/ECSE program,p
+228814,ECSE,primary,Parents/Family,ia
+228814,ECSE,primary,Parents/Family,p
+220237,EI,primary,Move in from another state,p
+220237,EI,secondary,Physician/Clinic,
+220272,ECSE,primary,Head Start,p
+226111,ECSE,primary,Head Start,ia
+226111,EI to KG,primary,Head Start,p
+229152,ECSE,primary,Parents/Family,p
+229723,ECSE,primary,Parents/Family,p
+226896,ECSE,primary,Parents/Family,p
+223239,ECSE,primary,Parents/Family,p
+227099,EI,primary,Physician/Clinic,ia
+227099,EI,primary,Other,ia
+227099,EI,primary,Other,p
+228747,ECSE,primary,Physician/Clinic,ia
+228747,EI to KG,primary,Childcare/Preschool,p
+221651,EI to ECSE,primary,Physician/Clinic,ia
+221651,ECSE,primary,Parents/Family,ia
+221651,ECSE,primary,Physician/Clinic,p
+221651,ECSE,primary,Parents/Family,p
+224339,ECSE,primary,Physician/Clinic,ia
+224339,ECSE,primary,Parents/Family,p
+228298,EI,primary,Parents/Family,p
+221121,EI,primary,Public Health,p
+221568,EI,primary,Public Health,ia
+221568,EI,primary,Parents/Family,p
+221596,EI,primary,CAPTA,p
+227026,ECSE,primary,Other DHS,ia
+227026,EI to KG,primary,Childcare/Preschool,p
+224439,EI,primary,Physician/Clinic,ia
+224439,EI,primary,Other,p
+226145,ECSE,primary,Childcare/Preschool,p
+225554,ECSE,primary,Parents/Family,p
+225554,ECSE,secondary,Physician/Clinic,
+229506,EI,primary,Parents/Family,p
+225817,EI,primary,Physician/Clinic,ia
+225817,EI,primary,Parents/Family,p
+229424,EI,primary,Physician/Clinic,ia
+229424,EI,primary,Other,p
+228066,EI,primary,Physician/Clinic,ia
+228066,EI,primary,Other,p
+226395,EI to ECSE,primary,Parents/Family,p
+223851,ECSE,primary,Other DHS,ia
+223851,ECSE,primary,Head Start,p
+224279,ECSE,primary,Move in from another state,p
+222244,EI to ECSE,primary,Parents/Family,p
+225326,ECSE,primary,Physician/Clinic,p
+222355,EI,primary,Physician/Clinic,ia
+222355,EI,primary,Parents/Family,p
+223983,ECSE,primary,Physician/Clinic,p
+226341,ECSE,primary,Parents/Family,p
+226666,ECSE,primary,Parents/Family,p
+229577,EI,primary,Hospital,p
+223456,EI,primary,Physician/Clinic,p
+220849,EI,primary,Physician/Clinic,ia
+220849,EI,primary,Parents/Family,p
+220849,ECSE,secondary,Physician/Clinic,
+220849,ECSE,secondary,Healthy Families Oregon,
+228423,ECSE,primary,Parents/Family,p
+223441,ECSE,primary,Parents/Family,p
+223441,ECSE,secondary,Physician/Clinic,
+220411,EI,primary,CAPTA,ia
+220411,EI,primary,CAPTA,ia
+220411,EI,primary,Hospital,p
+220411,EI,secondary,EHDI,
+228554,EI,primary,Parents/Family,p
+224174,ECSE,primary,Healthy Families Oregon,p
+228871,EI,primary,Parents/Family,p
+228621,ECSE,primary,Other EI/ECSE program,p
+223362,EI,primary,Parents/Family,ia
+223362,ECSE,primary,Other,p
+228979,ECSE,primary,Parents/Family,p
+223110,EI to ECSE,primary,Parents/Family,ia
+223110,ECSE,primary,Parents/Family,ia
+223110,ECSE,primary,Parents/Family,p
+227307,ECSE,primary,Parents/Family,ia
+227307,EI to KG,primary,Parents/Family,p
+222223,EI,primary,Physician/Clinic,p
+220626,EI,primary,Physician/Clinic,p
+220626,EI,secondary,Physician/Clinic,
+224884,EI,primary,Hospital,p
+222275,EI,primary,Physician/Clinic,p
+227138,ECSE,primary,Parents/Family,p
+226451,EI,primary,Parents/Family,p
+221335,EI,primary,Hospital,p
+223267,EI,primary,Healthy Families Oregon,p
+227646,EI,primary,Physician/Clinic,ia
+227646,EI,primary,Other,p
+223925,EI,primary,Physician/Clinic,ia
+223925,EI,primary,Physician/Clinic,p
+220393,EI to ECSE,primary,Other EI/ECSE program,p
+220393,ECSE,primary,Parents/Family,p
+221019,ECSE,primary,Hospital,p
+221615,EI,primary,Physician/Clinic,ia
+221615,EI,primary,Physician/Clinic,ia
+221615,EI,primary,Physician/Clinic,ia
+221615,EI,primary,Other,p
+221615,EI,secondary,Physician/Clinic,
+225021,ECSE,primary,Parents/Family,p
+222034,EI to ECSE,primary,Head Start,p
+228307,ECSE,primary,Parents/Family,p
+225217,ECSE,primary,Physician/Clinic,p
+222940,ECSE,primary,Other EI/ECSE program,p
+228978,ECSE,primary,Other EI/ECSE program,p
+224637,EI,primary,Parents/Family,p
+222500,EI,primary,Other,ia
+222500,EI,primary,Parents/Family,p
+224790,EI,primary,Parents/Family,ia
+224790,EI,primary,Parents/Family,p
+220178,ECSE,primary,Parents/Family,p
+224419,EI,primary,Parents/Family,p
+224419,ECSE,primary,Physician/Clinic,ia
+225683,EI,primary,Physician/Clinic,p
+223611,EI,primary,Hospital,p
+228030,EI,primary,Physician/Clinic,p
+222195,ECSE,primary,Other EI/ECSE program,p
+220528,EI,primary,Physician/Clinic,ia
+220528,EI,primary,Parents/Family,p
+226333,ECSE,primary,Other DHS,p
+222241,EI,primary,Physician/Clinic,p
+222241,EI,secondary,Physician/Clinic,
+222629,EI,primary,Physician/Clinic,ia
+222629,EI,primary,Physician/Clinic,p
+228645,EI,primary,Physician/Clinic,ia
+228645,EI,primary,Physician/Clinic,p
+228645,EI,secondary,CAPTA,
+224042,EI,primary,Physician/Clinic,p
+224042,EI,secondary,CAPTA,
+224042,EI,secondary,Physician/Clinic,
+221454,ECSE,primary,Physician/Clinic,ia
+221454,ECSE,primary,Parents/Family,p
+228565,EI to ECSE,primary,Parents/Family,p
+228565,ECSE,secondary,Head Start,
+226119,EI,primary,CAPTA,p
+227182,EI,primary,CAPTA,p
+227182,EI,secondary,CAPTA,
+220451,ECSE,primary,Other DHS,ia
+220451,ECSE,primary,Other,ia
+220451,ECSE,primary,Parents/Family,p
+224951,EI,primary,CAPTA,ia
+224951,EI,primary,CAPTA,p
+222881,EI,primary,Physician/Clinic,ia
+222881,EI,primary,Physician/Clinic,p
+222477,ECSE,primary,Other EI/ECSE program,p
+228009,EI,primary,Parents/Family,ia
+228009,EI,secondary,Physician/Clinic,
+228009,EI,primary,Other,p
+228220,EI,primary,Physician/Clinic,ia
+228220,EI,primary,Other,p
+225987,EI,primary,CAPTA,p
+229398,EI,primary,Physician/Clinic,ia
+229398,ECSE,primary,Parents/Family,p
+225388,EI,primary,Move in from another state,p
+222887,EI,primary,Physician/Clinic,ia
+222887,EI,primary,Parents/Family,ia
+222887,EI,primary,Parents/Family,p
+228933,ECSE,primary,Healthy Families Oregon,ia
+228933,ECSE,primary,Childcare/Preschool,p
+224151,ECSE,primary,Other EI/ECSE program,p
+226445,EI,primary,Hospital,p
+229116,ECSE,primary,Physician/Clinic,p
+229284,EI,primary,CAPTA,ia
+229284,EI,primary,Other,ia
+229284,EI,primary,Other,p
+227509,ECSE,primary,Other,ia
+227509,ECSE,primary,Other,p
+220081,EI,primary,Parents/Family,p
+220081,EI to ECSE,secondary,CAPTA,
+220081,ECSE,secondary,Other DHS,
+225063,EI,primary,Physician/Clinic,ia
+225063,ECSE,primary,Physician/Clinic,p
+225063,ECSE,secondary,Physician/Clinic,
+226700,EI,primary,Physician/Clinic,p
+223030,EI,primary,Hospital,p
+226921,EI,primary,Physician/Clinic,p
+226056,EI,primary,Other,ia
+226056,EI,primary,Parents/Family,p
+221379,EI to ECSE,primary,Parents/Family,p
+228521,ECSE,primary,Parents/Family,p
+228521,ECSE,secondary,Physician/Clinic,
+227238,EI,primary,Physician/Clinic,ia
+227238,EI,primary,Physician/Clinic,ia
+227238,EI,primary,Parents/Family,ia
+227238,EI,primary,Parents/Family,p
+229508,EI,primary,Physician/Clinic,ia
+229508,EI,primary,Parents/Family,p
+228546,EI,primary,CAPTA,ia
+228546,ECSE,primary,Other DHS,p
+220994,EI,primary,Hospital,p
+228340,EI,primary,Parents/Family,p
+229823,EI,primary,Parents/Family,p
+225912,EI,primary,Parents/Family,ia
+225912,EI,secondary,Physician/Clinic,
+225912,EI,primary,Parents/Family,p
+225912,ECSE,primary,Physician/Clinic,p
+224942,EI,primary,Parents/Family,p
+224942,EI,secondary,Physician/Clinic,
+229151,ECSE,primary,Physician/Clinic,p
+221649,ECSE,primary,Parents/Family,p
+227671,EI,primary,Parents/Family,p
+221935,EI,primary,Physician/Clinic,p
+221935,EI,secondary,Physician/Clinic,
+224359,ECSE,primary,Parents/Family,p
+228846,EI,primary,Physician/Clinic,ia
+228846,EI,primary,Parents/Family,p
+222029,ECSE,primary,Physician/Clinic,p
+225061,EI,primary,Physician/Clinic,p
+223753,EI,primary,Physician/Clinic,ia
+223753,EI,primary,Parents/Family,p
+224453,EI to ECSE,primary,CAPTA,p
+224453,EI to ECSE,secondary,Physician/Clinic,
+225299,EI,primary,CAPTA,ia
+225299,EI,primary,CAPTA,ia
+225299,EI,primary,CAPTA,p
+227919,EI,primary,CAPTA,ia
+227919,EI,primary,CAPTA,p
+229660,ECSE,primary,Other EI/ECSE program,p
+225748,ECSE,primary,Parents/Family,p
+228556,EI,primary,CAPTA,p
+228444,ECSE,primary,Move in from another state,ia
+228444,ECSE,primary,Head Start,p
+227794,ECSE,primary,Parents/Family,p
+227794,EI to KG,primary,Other DHS,p
+222632,ECSE,primary,Parents/Family,p
+223952,ECSE,primary,Parents/Family,p
+227319,ECSE,primary,Parents/Family,p
+224987,EI,primary,Physician/Clinic,ia
+224987,ECSE,primary,Other,p
+228037,ECSE,primary,Childcare/Preschool,p
+221159,ECSE,primary,Parents/Family,p
+222448,ECSE,primary,Physician/Clinic,p
+222448,ECSE,secondary,Physician/Clinic,
+227977,EI to KG,primary,Physician/Clinic,p
+228707,EI,primary,Hospital,ia
+228707,EI,primary,Parents/Family,p
+228707,EI,secondary,CAPTA,
+221858,ECSE,primary,Other,p
+220843,EI to ECSE,primary,Parents/Family,p
+222717,EI to KG,primary,Parents/Family,p
+221186,EI to KG,primary,Head Start,p
+221186,EI to KG,secondary,Other DHS,
+225747,ECSE,primary,Parents/Family,p
+226503,ECSE,primary,Parents/Family,p
+224447,EI,primary,Physician/Clinic,p
+224447,EI,secondary,Physician/Clinic,
+223012,EI,primary,Physician/Clinic,p
+222339,EI,primary,Hospital,ia
+222339,EI,primary,Physician/Clinic,p
+221923,EI to KG,primary,Physician/Clinic,p
+223757,EI,primary,CAPTA,p
+220779,EI to KG,primary,Parents/Family,p
+224896,EI,primary,Head Start,p
+225900,EI,primary,Physician/Clinic,p
+221757,EI,primary,CAPTA,p
+225221,ECSE,primary,Parents/Family,p
+226203,EI,primary,Physician/Clinic,p
+228428,EI to KG,primary,Childcare/Preschool,p
+224263,EI,primary,Physician/Clinic,p
+224263,EI,secondary,Parents/Family,
+229958,EI,primary,Physician/Clinic,p
+220612,ECSE,primary,Physician/Clinic,p
+228498,ECSE,primary,Physician/Clinic,p
+224492,EI,primary,Hospital,ia
+224492,EI,primary,Parents/Family,p
+225998,EI to KG,primary,Physician/Clinic,p
+227151,ECSE,primary,Physician/Clinic,p
+225168,EI,primary,Physician/Clinic,p
+229656,EI to KG,primary,Childcare/Preschool,p
+226310,ECSE,primary,Head Start,p
+225633,EI,primary,Physician/Clinic,p
+220827,ECSE,primary,Parents/Family,p
+229705,ECSE,primary,Childcare/Preschool,p
+227499,ECSE,primary,Head Start,p
+229760,EI,primary,Physician/Clinic,ia
+229760,EI,primary,Parents/Family,ia
+229760,EI,primary,Parents/Family,p
+229760,EI,secondary,Physician/Clinic,
+228141,EI,primary,Hospital,ia
+228141,EI,primary,Parents/Family,p
+228141,EI,secondary,CAPTA,
+225157,EI,primary,Physician/Clinic,ia
+225157,EI,primary,Physician/Clinic,p
+226749,EI,primary,Physician/Clinic,ia
+226749,EI,primary,Parents/Family,p
+229787,ECSE,primary,Head Start,p
+224039,EI to KG,primary,Head Start,p
+220298,EI to KG,primary,Head Start,p
+229172,EI,primary,Parents/Family,p
+223188,EI to KG,primary,Childcare/Preschool,p
+221201,EI to KG,primary,Parents/Family,p
+220125,EI to KG,primary,Parents/Family,p
+229669,EI to KG,primary,Parents/Family,p
+224500,EI,primary,Parents/Family,p
+226251,ECSE,primary,Childcare/Preschool,p
+222654,EI,primary,Physician/Clinic,ia
+222654,ECSE,primary,Parents/Family,p
+222654,ECSE,secondary,Physician/Clinic,
+228620,EI,primary,Physician/Clinic,ia
+228620,ECSE,primary,Physician/Clinic,p
+222470,EI,primary,CAPTA,p
+228657,ECSE,primary,Childcare/Preschool,p
+226547,ECSE,primary,Other,p
+221407,ECSE,primary,Other,p
+220468,ECSE,primary,Parents/Family,ia
+220468,ECSE,primary,Parents/Family,p
+222923,ECSE,primary,Childcare/Preschool,p
+224023,ECSE,primary,Childcare/Preschool,p
+229795,ECSE,primary,Childcare/Preschool,p
+221030,ECSE,primary,Childcare/Preschool,p
+220496,ECSE,primary,Head Start,p
+224051,EI,primary,CAPTA,ia
+224051,ECSE,primary,Parents/Family,p
+229807,EI,primary,CAPTA,p
+226261,EI,primary,Physician/Clinic,ia
+226261,EI to ECSE,primary,Parents/Family,p
+225696,EI to KG,primary,Physician/Clinic,p
+229545,EI,primary,Physician/Clinic,p
+229545,EI,primary,Hospital,p
+228538,EI,primary,Physician/Clinic,p
+229320,EI to ECSE,primary,Other EI/ECSE program,p
+220982,EI to KG,primary,Head Start,p
+220514,EI to KG,primary,Head Start,p
+229531,EI to KG,primary,Childcare/Preschool,p
+229936,EI to KG,primary,Childcare/Preschool,p
+222232,ECSE,primary,Head Start,p
+220645,EI,primary,Physician/Clinic,ia
+220645,EI,primary,Other,p
+229734,EI to KG,primary,Head Start,p
+224414,EI to KG,primary,Head Start,p
+226756,ECSE,primary,Head Start,p
+221908,EI to KG,primary,Childcare/Preschool,p
+223427,ECSE,primary,Childcare/Preschool,p
+221516,EI to KG,primary,Childcare/Preschool,p
+222679,ECSE,primary,Head Start,p
+227255,EI to KG,primary,Head Start,p
+222760,ECSE,primary,Parents/Family,p
+222600,ECSE,primary,Parents/Family,p
+220722,EI to KG,primary,Head Start,p
+226797,ECSE,primary,Head Start,p
+229967,ECSE,primary,Head Start,p
+228439,ECSE,primary,Head Start,p
+220693,EI,primary,Parents/Family,p
+227910,EI to KG,primary,Childcare/Preschool,p
+220073,EI to KG,primary,Childcare/Preschool,p
+228248,EI,primary,Hospital,p
+226827,ECSE,primary,Childcare/Preschool,p
+224588,EI to KG,primary,Childcare/Preschool,p
+222403,EI,primary,Physician/Clinic,p
+228490,ECSE,primary,Head Start,p
+223636,EI,primary,Physician/Clinic,p
+224345,EI to KG,primary,Childcare/Preschool,p
+226722,ECSE,primary,Head Start,p
+220770,ECSE,primary,Head Start,p
+229774,ECSE,primary,Childcare/Preschool,p
+227206,EI to ECSE,primary,Healthy Families Oregon,p
+222498,EI to KG,primary,Childcare/Preschool,p
+226690,ECSE,primary,Head Start,p
+223621,EI to KG,primary,Head Start,p
+221140,EI,primary,Hospital,p
+223602,EI to KG,primary,Head Start,p
+227480,EI,primary,Physician/Clinic,p
+223811,EI,primary,Physician/Clinic,p
+223319,ECSE,primary,Parents/Family,p
+227733,EI to KG,primary,Parents/Family,p
+226354,EI,primary,Parents/Family,p
+226766,EI to KG,primary,Head Start,p
+225151,EI to KG,primary,Childcare/Preschool,p
+231824,ECSE,primary,Physician/Clinic,p
+231225,ECSE,primary,Head Start,p
+235097,ECSE,primary,Childcare/Preschool,p
+235014,EI,primary,Parents/Family,ia
+235014,ECSE,primary,Other,p
+235014,ECSE,secondary,Physician/Clinic,
+238093,EI to KG,primary,Head Start,p
+231116,ECSE,primary,Parents/Family,ia
+231116,ECSE,primary,Other,p
+230467,EI,primary,Parents/Family,p
+232787,EI to KG,primary,Childcare/Preschool,p
+231446,ECSE,primary,Childcare/Preschool,p
+233140,ECSE,primary,Parents/Family,ia
+233140,ECSE,primary,Other,p
+236410,EI,primary,Physician/Clinic,p
+235206,EI,primary,Parents/Family,ia
+235206,EI,primary,Parents/Family,p
+231365,EI,primary,Physician/Clinic,p
+238792,EI,primary,Parents/Family,p
+237876,ECSE,primary,Parents/Family,p
+237381,ECSE,primary,Childcare/Preschool,p
+232891,EI,primary,Physician/Clinic,ia
+232891,EI to ECSE,primary,Other,p
+231896,ECSE,primary,Childcare/Preschool,p
+238532,ECSE,primary,Parents/Family,p
+235350,ECSE,primary,Head Start,p
+237986,EI to KG,primary,Parents/Family,p
+239591,EI,primary,Physician/Clinic,p
+237885,EI,primary,Physician/Clinic,p
+234358,ECSE,primary,Childcare/Preschool,p
+237749,EI to KG,primary,Childcare/Preschool,p
+233343,EI to KG,primary,Head Start,p
+231810,EI,primary,Physician/Clinic,p
+238732,ECSE,primary,Childcare/Preschool,p
+234146,EI,primary,Parents/Family,p
+238908,EI,primary,Physician/Clinic,ia
+238908,ECSE,primary,Parents/Family,p
+236060,EI,primary,Parents/Family,p
+236060,EI,secondary,CAPTA,
+233666,EI to KG,primary,Head Start,p
+230907,ECSE,primary,Childcare/Preschool,p
+230901,EI,primary,Hospital,p
+239642,EI,primary,Physician/Clinic,ia
+239642,EI,primary,Parents/Family,ia
+239642,EI,primary,Other,ia
+239642,EI,primary,Other,p
+231424,EI,primary,Physician/Clinic,ia
+231424,EI,primary,Parents/Family,p
+239477,EI to KG,primary,Parents/Family,p
+237848,EI,primary,Parents/Family,p
+235915,ECSE,primary,Childcare/Preschool,p
+239909,ECSE,primary,Childcare/Preschool,p
+234711,EI,primary,Parents/Family,p
+237256,EI,primary,CAPTA,p
+239273,EI,primary,Parents/Family,ia
+239273,ECSE,primary,Other,p
+232394,EI,primary,Other EI/ECSE program,p
+230255,EI to ECSE,primary,Parents/Family,p
+233508,EI,primary,Physician/Clinic,p
+236185,EI to KG,primary,Childcare/Preschool,p
+239861,ECSE,primary,Parents/Family,p
+238391,EI,primary,Physician/Clinic,p
+231007,EI,primary,Hospital,p
+231007,EI,secondary,Physician/Clinic,
+230428,EI,primary,Hospital,p
+238126,EI,primary,Physician/Clinic,p
+235413,ECSE,primary,Physician/Clinic,ia
+235413,ECSE,primary,Parents/Family,ia
+235413,ECSE,primary,Parents/Family,p
+230275,EI,primary,Physician/Clinic,p
+238255,ECSE,primary,Childcare/Preschool,p
+239008,EI,primary,Physician/Clinic,p
+236282,EI,primary,Physician/Clinic,p
+238119,EI,primary,Move in from another state,p
+235942,EI to KG,primary,Childcare/Preschool,p
+235644,ECSE,primary,Physician/Clinic,p
+234690,ECSE,primary,Physician/Clinic,p
+231630,EI,primary,Physician/Clinic,p
+237791,EI to KG,primary,Childcare/Preschool,p
+232485,ECSE,primary,Other EI/ECSE program,p
+232485,ECSE,secondary,Physician/Clinic,
+239179,EI,primary,Physician/Clinic,p
+230575,ECSE,primary,Childcare/Preschool,p
+233386,EI,primary,Other EI/ECSE program,p
+230658,EI,primary,CAPTA,ia
+230034,ECSE,primary,Childcare/Preschool,p
+235638,ECSE,primary,Parents/Family,p
+237823,EI,primary,Physician/Clinic,p
+230461,ECSE,primary,Childcare/Preschool,p
+238254,EI to KG,primary,Head Start,p
+237003,ECSE,primary,Childcare/Preschool,p
+236378,ECSE,primary,Parents/Family,p
+234440,ECSE,primary,Parents/Family,p
+230224,ECSE,primary,Head Start,p
+235002,ECSE,primary,Head Start,p
+235351,ECSE,primary,Head Start,p
+233233,EI,primary,Physician/Clinic,ia
+233233,EI,primary,Other,ia
+233233,EI to ECSE,primary,Other,p
+233161,EI to KG,primary,Head Start,p
+231455,EI,primary,Physician/Clinic,p
+235459,EI,primary,Parents/Family,ia
+235459,EI to ECSE,primary,Physician/Clinic,ia
+235459,ECSE,primary,Other,p
+231040,EI,primary,Parents/Family,ia
+231040,EI,secondary,Physician/Clinic,
+231040,EI,primary,Physician/Clinic,ia
+231040,EI,primary,Other,p
+231415,EI,primary,Other,p
+234861,EI to KG,primary,Head Start,p
+235280,ECSE,primary,Head Start,p
+238113,ECSE,primary,Head Start,p
+231301,EI to KG,primary,Parents/Family,p
+233833,EI,primary,Hospital,p
+234551,EI,primary,Physician/Clinic,p
+238463,EI,primary,Physician/Clinic,p
+232404,ECSE,primary,Healthy Families Oregon,p
+230859,EI to KG,primary,Childcare/Preschool,p
+231178,EI to KG,primary,Head Start,p
+234368,ECSE,primary,Head Start,p
+236924,ECSE,primary,Childcare/Preschool,p
+233642,EI,primary,Hospital,p
+239460,EI to KG,primary,Childcare/Preschool,p
+235056,EI,primary,Physician/Clinic,p
+232212,ECSE,primary,Head Start,p
+232915,ECSE,primary,Head Start,p
+238798,EI to KG,primary,Head Start,p
+238798,EI to KG,secondary,Physician/Clinic,
+234974,EI to KG,primary,Childcare/Preschool,p
+237009,EI,primary,Parents/Family,p
+239763,ECSE,primary,Parents/Family,p
+237873,ECSE,primary,Parents/Family,p
+239704,EI to KG,primary,Childcare/Preschool,p
+238999,EI to KG,primary,Head Start,p
+235978,EI,primary,Parents/Family,p
+235978,EI,secondary,Physician/Clinic,
+239033,ECSE,primary,Parents/Family,p
+237294,EI,primary,Physician/Clinic,ia
+237294,ECSE,primary,Other,p
+236142,ECSE,primary,Childcare/Preschool,p
+230868,EI to KG,primary,Physician/Clinic,p
+239702,EI,primary,Parents/Family,p
+235084,EI,primary,Parents/Family,ia
+235084,ECSE,primary,Parents/Family,p
+237387,ECSE,primary,Head Start,p
+239650,EI,primary,Parents/Family,ia
+239650,EI,primary,Parents/Family,p
+236561,ECSE,primary,Move in from another state,p
+238585,EI to KG,primary,Parents/Family,p
+233411,EI to KG,primary,Childcare/Preschool,p
+230935,EI,primary,Physician/Clinic,p
+231909,ECSE,primary,Parents/Family,p
+230240,ECSE,primary,Parents/Family,p
+231797,ECSE,primary,Childcare/Preschool,p
+232681,ECSE,primary,Childcare/Preschool,p
+234519,EI to ECSE,primary,Physician/Clinic,ia
+234519,ECSE,primary,Childcare/Preschool,p
+234519,ECSE,secondary,Physician/Clinic,
+233779,ECSE,primary,Parents/Family,p
+233779,ECSE,secondary,Physician/Clinic,
+233779,EI to KG,secondary,Physician/Clinic,
+235263,EI to KG,primary,Parents/Family,p
+238211,EI,primary,Parents/Family,p
+235255,EI,primary,Physician/Clinic,p
+233208,EI,primary,Physician/Clinic,p
+239307,ECSE,primary,Physician/Clinic,p
+230230,EI to KG,primary,Head Start,p
+233941,ECSE,primary,Parents/Family,p
+237028,EI,primary,Physician/Clinic,p
+237006,EI,primary,CAPTA,p
+233144,EI,primary,CAPTA,p
+230038,EI,primary,Physician/Clinic,p
+230232,EI,primary,Physician/Clinic,p
+230232,EI,secondary,Healthy Families Oregon,
+234737,EI,primary,Parents/Family,p
+234737,EI,secondary,Healthy Families Oregon,
+237088,EI,primary,Physician/Clinic,p
+237326,ECSE,primary,Private Therapy,p
+239379,ECSE,primary,Parents/Family,p
+235822,EI,primary,Physician/Clinic,p
+232857,ECSE,primary,Parents/Family,p
+230857,EI,primary,EHDI,p
+230857,EI,secondary,Parents/Family,
+235941,EI,primary,Hospital,p
+239885,ECSE,primary,Childcare/Preschool,ia
+239885,ECSE,primary,Parents/Family,p
+230911,ECSE,primary,Physician/Clinic,p
+231075,ECSE,primary,Physician/Clinic,p
+233605,EI to ECSE,primary,Physician/Clinic,p
+233155,EI,primary,Physician/Clinic,p
+230475,EI,primary,Parents/Family,ia
+230475,EI,primary,Other,p
+237562,EI,primary,Parents/Family,p
+231320,EI to ECSE,primary,Parents/Family,p
+239776,ECSE,primary,Parents/Family,p
+236919,EI,primary,Hospital,p
+236919,EI,secondary,CAPTA,
+236919,EI,primary,Parents/Family,p
+236919,EI,secondary,CAPTA,
+233729,EI,primary,Hospital,p
+237218,EI,primary,Physician/Clinic,ia
+237218,EI,primary,Parents/Family,p
+231498,ECSE,primary,Head Start,p
+234822,ECSE,primary,Head Start,p
+232817,EI to KG,primary,Childcare/Preschool,p
+236840,EI,primary,Parents/Family,p
+230650,ECSE,primary,Parents/Family,p
+231592,EI to KG,primary,Childcare/Preschool,p
+234738,EI,primary,Parents/Family,p
+236038,EI,primary,Physician/Clinic,p
+231224,EI,primary,Hospital,p
+233608,EI,primary,Hospital,p
+235654,EI,primary,Parents/Family,ia
+235654,EI,secondary,Physician/Clinic,
+235654,EI,primary,Parents/Family,p
+237780,ECSE,primary,Physician/Clinic,p
+234975,ECSE,primary,Parents/Family,p
+236789,EI,primary,Physician/Clinic,p
+239612,ECSE,primary,Physician/Clinic,ia
+239612,ECSE,primary,Other,ia
+239612,ECSE,primary,Physician/Clinic,p
+231760,ECSE,primary,Parents/Family,ia
+231760,ECSE,primary,Other,p
+230013,ECSE,primary,Physician/Clinic,ia
+230013,ECSE,primary,Childcare/Preschool,p
+237415,ECSE,primary,Physician/Clinic,ia
+237415,ECSE,primary,Parents/Family,p
+238522,EI to KG,primary,Childcare/Preschool,p
+231504,ECSE,primary,EHDI,p
+238446,EI,primary,Parents/Family,p
+231971,ECSE,primary,Head Start,p
+235271,EI to ECSE,primary,Other EI/ECSE program,p
+238741,ECSE,primary,Physician/Clinic,p
+235354,EI,primary,Parents/Family,p
+232340,EI,primary,Parents/Family,p
+232340,EI,secondary,Physician/Clinic,
+235461,ECSE,primary,Parents/Family,p
+236034,EI,primary,Physician/Clinic,p
+234535,EI,primary,CAPTA,p
+234535,EI,secondary,Hospital,
+232073,ECSE,primary,Parents/Family,p
+235169,EI,primary,Physician/Clinic,p
+230508,ECSE,primary,Parents/Family,p
+238820,ECSE,primary,Childcare/Preschool,p
+234660,ECSE,primary,Childcare/Preschool,ia
+234660,ECSE,primary,Parents/Family,p
+231032,EI,primary,Physician/Clinic,p
+232415,EI to KG,primary,Other,p
+235494,EI,primary,CAPTA,p
+230976,EI,primary,CAPTA,p
+235416,ECSE,primary,Parents/Family,p
+238011,EI to KG,primary,Move in from another state,p
+231292,EI,primary,CAPTA,p
+238631,ECSE,primary,Childcare/Preschool,p
+233036,EI,primary,Childcare/Preschool,p
+239331,ECSE,primary,Childcare/Preschool,p
+234765,EI,primary,Hospital,p
+230831,EI,primary,Hospital,p
+237954,EI,primary,Hospital,p
+237677,EI to KG,primary,Childcare/Preschool,p
+239183,EI to KG,primary,Parents/Family,p
+239390,EI to KG,primary,Other EI/ECSE program,p
+239950,ECSE,primary,Head Start,p
+230213,ECSE,primary,Childcare/Preschool,p
+234242,ECSE,primary,Childcare/Preschool,p
+235123,EI,primary,Parents/Family,ia
+235123,EI,primary,Parents/Family,p
+232626,EI to KG,primary,Parents/Family,p
+239143,ECSE,primary,Parents/Family,p
+230674,EI,primary,Parents/Family,p
+232937,ECSE,primary,Parents/Family,p
+238972,EI to KG,primary,Childcare/Preschool,p
+238407,ECSE,primary,Move in from another state,p
+234507,EI,primary,Parents/Family,ia
+234507,EI,primary,Other,p
+236262,EI to ECSE,primary,CAPTA,ia
+236262,EI to ECSE,primary,CAPTA,ia
+236262,ECSE,primary,Parents/Family,p
+235940,ECSE,primary,Healthy Families Oregon,ia
+235940,ECSE,primary,Healthy Families Oregon,p
+235895,EI,primary,Physician/Clinic,ia
+235895,EI,primary,Parents/Family,ia
+235895,EI to ECSE,primary,Other,ia
+235895,EI to ECSE,primary,Physician/Clinic,p
+231820,EI,primary,Hospital,ia
+231820,EI,primary,CAPTA,p
+235264,ECSE,primary,Head Start,p
+231949,EI,primary,Parents/Family,ia
+231949,EI,primary,CAPTA,p
+231100,EI,primary,Parents/Family,ia
+231100,EI,primary,CAPTA,p
+235538,EI,primary,Physician/Clinic,p
+234423,ECSE,primary,Parents/Family,p
+232731,EI,primary,Parents/Family,p
+239732,EI to KG,primary,Parents/Family,p
+238320,EI to ECSE,primary,Physician/Clinic,p
+234908,EI,primary,Parents/Family,p
+234908,ECSE,primary,Healthy Families Oregon,ia
+235828,EI,primary,Public Health,p
+238863,EI,primary,Public Health,p
+230635,ECSE,primary,Childcare/Preschool,p
+230552,ECSE,primary,Physician/Clinic,p
+231257,EI,primary,CAPTA,p
+239132,EI,primary,Hospital,p
+239132,EI,secondary,Hospital,
+232433,ECSE,primary,Move in from another state,p
+236166,EI,primary,CAPTA,p
+236575,EI,primary,Parents/Family,p
+236575,EI,secondary,Physician/Clinic,
+232698,ECSE,primary,Physician/Clinic,ia
+232698,ECSE,primary,Physician/Clinic,p
+234523,EI,primary,Parents/Family,p
+234523,EI,secondary,Physician/Clinic,
+234904,EI,primary,Parents/Family,p
+234904,EI,secondary,Physician/Clinic,
+235219,EI,primary,Physician/Clinic,p
+232554,ECSE,primary,Parents/Family,ia
+232554,EI to KG,primary,Parents/Family,p
+238117,EI to ECSE,primary,Parents/Family,p
+239636,ECSE,primary,Physician/Clinic,p
+238581,ECSE,primary,Parents/Family,p
+234515,EI,primary,Hospital,p
+234884,EI,primary,Physician/Clinic,p
+230117,EI,primary,Hospital,p
+236753,ECSE,primary,Head Start,p
+238890,EI,primary,Physician/Clinic,p
+235829,EI,primary,Physician/Clinic,p
+231600,EI,primary,Parents/Family,ia
+231600,ECSE,primary,Other,p
+233855,EI,primary,Hospital,ia
+233855,EI,primary,Parents/Family,p
+238526,ECSE,primary,Other,p
+238526,ECSE,secondary,Physician/Clinic,
+234973,EI,primary,Parents/Family,p
+239466,EI,primary,Physician/Clinic,p
+239466,EI,secondary,EHDI,
+230917,EI,primary,Hospital,p
+237557,EI,primary,Head Start,p
+235278,ECSE,primary,Childcare/Preschool,p
+238108,EI,primary,Physician/Clinic,p
+238880,EI,primary,Physician/Clinic,p
+234602,ECSE,primary,Other DHS,p
+233797,ECSE,primary,Childcare/Preschool,p
+231454,EI,primary,Healthy Families Oregon,ia
+231454,EI,primary,Other,p
+235000,EI,primary,Physician/Clinic,p
+239655,ECSE,primary,Other EI/ECSE program,p
+232234,ECSE,primary,Childcare/Preschool,p
+231889,EI,primary,Physician/Clinic,ia
+231889,EI,primary,Physician/Clinic,p
+231889,EI,primary,Other,p
+238565,EI,primary,Parents/Family,p
+238565,EI,secondary,Physician/Clinic,
+234352,ECSE,primary,Head Start,p
+238431,EI,primary,Parents/Family,p
+233324,ECSE,primary,Parents/Family,p
+231741,ECSE,primary,Physician/Clinic,p
+238006,EI,primary,Physician/Clinic,ia
+238006,EI,primary,Parents/Family,p
+237522,EI,primary,Physician/Clinic,ia
+237522,EI,primary,Physician/Clinic,p
+234172,EI,primary,Hospital,ia
+234172,EI,primary,Parents/Family,p
+235672,EI,primary,Hospital,p
+239471,EI,primary,Hospital,p
+236417,EI,primary,Hospital,ia
+236417,EI,primary,Parents/Family,p
+234789,EI,primary,Physician/Clinic,ia
+234789,EI,primary,Parents/Family,p
+238588,EI,primary,CAPTA,ia
+238588,EI,primary,CAPTA,p
+236365,ECSE,primary,Other DHS,p
+236365,ECSE,secondary,Physician/Clinic,
+236037,EI to KG,primary,Other DHS,p
+236037,EI to KG,secondary,Physician/Clinic,
+231685,EI,primary,CAPTA,ia
+231685,EI,primary,Parents/Family,p
+239124,EI,primary,Hospital,p
+239124,EI,secondary,CAPTA,
+237880,EI,primary,Hospital,p
+237880,EI,secondary,CAPTA,
+235468,EI,primary,Physician/Clinic,p
+230170,EI,primary,Physician/Clinic,p
+237509,EI,primary,Hospital,p
+231695,EI,primary,Parents/Family,p
+231381,ECSE,primary,Physician/Clinic,p
+239615,ECSE,primary,Physician/Clinic,p
+234491,EI,primary,Parents/Family,ia
+234491,EI,primary,Childcare/Preschool,p
+239365,EI,primary,Hospital,p
+234909,ECSE,primary,Other DHS,ia
+234909,ECSE,primary,Other DHS,p
+234909,ECSE,secondary,Physician/Clinic,
+238749,EI,primary,CAPTA,ia
+238749,EI,primary,Parents/Family,p
+233445,EI to KG,primary,Physician/Clinic,p
+230258,EI,primary,Physician/Clinic,p
+231594,EI,primary,Hospital,p
+231961,EI,primary,CAPTA,ia
+231961,EI,primary,Physician/Clinic,p
+234300,ECSE,primary,Parents/Family,p
+232254,EI,primary,CAPTA,ia
+232254,EI,primary,CAPTA,p
+230289,EI,primary,CAPTA,ia
+230289,EI,primary,CAPTA,p
+236153,EI,primary,Parents/Family,ia
+236153,EI,primary,Head Start,p
+233893,EI,primary,Parents/Family,p
+233893,EI,secondary,Physician/Clinic,
+236201,EI,primary,Physician/Clinic,p
+237644,EI,primary,Physician/Clinic,ia
+237644,EI,primary,Parents/Family,p
+238142,EI,primary,Physician/Clinic,ia
+238142,EI,primary,Physician/Clinic,p
+231507,ECSE,primary,Physician/Clinic,p
+236308,EI,primary,Physician/Clinic,p
+233286,EI,primary,Parents/Family,p
+237788,EI,primary,Physician/Clinic,ia
+237788,EI,primary,Physician/Clinic,p
+231729,ECSE,primary,Parents/Family,p
+238185,ECSE,primary,Other EI/ECSE program,p
+234026,EI,primary,Physician/Clinic,p
+234166,EI,primary,Physician/Clinic,p
+232796,EI,primary,EHDI,p
+231740,EI,primary,Parents/Family,p
+235045,ECSE,primary,Other DHS,p
+236011,ECSE,primary,Parents/Family,p
+238427,EI,primary,Hospital,p
+238427,EI,secondary,CAPTA,
+233637,EI,primary,Hospital,p
+236691,EI,primary,Physician/Clinic,p
+235523,EI to ECSE,primary,Move in from another state,p
+236346,EI,primary,Physician/Clinic,ia
+236346,EI,primary,Other,p
+232620,ECSE,primary,Parents/Family,p
+239456,ECSE,primary,Parents/Family,p
+234138,EI,primary,Parents/Family,p
+235643,EI,primary,Physician/Clinic,ia
+235643,EI,primary,Parents/Family,p
+234590,EI to ECSE,primary,Move in from another state,p
+237263,ECSE,primary,Physician/Clinic,p
+232553,EI,primary,Hospital,p
+236720,EI,primary,CAPTA,p
+233045,ECSE,primary,Parents/Family,p
+232772,ECSE,primary,Parents/Family,p
+237422,ECSE,primary,Physician/Clinic,ia
+237422,ECSE,primary,Parents/Family,p
+238517,EI,primary,Physician/Clinic,p
+235092,ECSE,primary,Parents/Family,p
+231300,EI,primary,Physician/Clinic,p
+231617,EI,primary,Parents/Family,p
+231547,EI,primary,EHDI,p
+238757,EI,primary,Parents/Family,p
+234335,EI,primary,CAPTA,p
+234335,EI,secondary,Physician/Clinic,
+234335,EI,secondary,CAPTA,
+239631,EI,primary,Hospital,p
+232507,EI to ECSE,primary,Physician/Clinic,p
+233634,EI,primary,Physician/Clinic,p
+235317,ECSE,primary,Physician/Clinic,p
+237195,ECSE,primary,Physician/Clinic,p
+235744,EI,primary,CAPTA,ia
+235744,EI,primary,Physician/Clinic,p
+230942,EI,primary,CAPTA,p
+235998,EI,primary,Hospital,ia
+235998,EI,primary,Parents/Family,p
+235604,EI,primary,Physician/Clinic,p
+231405,EI,primary,Physician/Clinic,p
+235811,ECSE,primary,Parents/Family,p
+235811,ECSE,secondary,Physician/Clinic,
+239835,ECSE,primary,Parents/Family,p
+231636,ECSE,primary,Physician/Clinic,p
+238944,EI,primary,Hospital,p
+238944,EI,secondary,CAPTA,
+231893,ECSE,primary,Parents/Family,ia
+231893,ECSE,primary,Parents/Family,p
+233262,EI,primary,Physician/Clinic,p
+230697,EI,primary,EHDI,p
+236552,ECSE,primary,Parents/Family,ia
+236552,ECSE,primary,Parents/Family,p
+230183,ECSE,primary,Parents/Family,p
+237227,EI to ECSE,primary,Physician/Clinic,p
+238891,EI,primary,Physician/Clinic,p
+238891,EI,secondary,CAPTA,
+238777,ECSE,primary,Other,p
+232568,EI,primary,Parents/Family,p
+238372,EI,primary,CAPTA,p
+238372,EI,secondary,Hospital,
+236943,EI,primary,Physician/Clinic,ia
+236943,EI to ECSE,primary,Parents/Family,p
+233934,EI,primary,Public Health,p
+230722,EI,primary,Physician/Clinic,p
+237393,EI,primary,Physician/Clinic,p
+230932,EI,primary,Hospital,p
+230932,EI,secondary,CAPTA,
+235956,ECSE,primary,Parents/Family,p
+232243,EI,primary,Physician/Clinic,p
+230407,EI,primary,Physician/Clinic,p
+231196,EI,primary,Parents/Family,p
+231765,EI,primary,Physician/Clinic,p
+235740,ECSE,primary,Parents/Family,p
+239422,EI,primary,Hospital,p
+236176,EI to ECSE,primary,Move in from another state,p
+237981,ECSE,primary,Move in from another state,p
+238347,ECSE,primary,Parents/Family,p
+238203,ECSE,primary,Parents/Family,p
+239449,ECSE,primary,Move in from another state,p
+230312,ECSE,primary,Other EI/ECSE program,p
+239485,EI,primary,Physician/Clinic,p
+239808,ECSE,primary,Move in from another state,p
+237384,ECSE,primary,Physician/Clinic,p
+232645,EI to ECSE,primary,Parents/Family,ia
+232645,ECSE,primary,Parents/Family,p
+233081,EI,primary,Physician/Clinic,p
+246131,ECSE,primary,Physician/Clinic,p
+246653,EI to KG,primary,Parents/Family,p
+245499,ECSE,primary,Physician/Clinic,p
+247749,ECSE,primary,Other,p
+243756,EI,primary,Physician/Clinic,p
+243756,EI,secondary,Parents/Family,
+249256,EI,primary,Physician/Clinic,p
+241838,ECSE,primary,Move in from another state,p
+240654,EI,primary,Physician/Clinic,p
+246358,ECSE,primary,Physician/Clinic,p
+243648,EI,primary,Physician/Clinic,p
+240783,ECSE,primary,Parents/Family,p
+240783,ECSE,secondary,Physician/Clinic,
+245428,EI,primary,Parents/Family,p
+245428,EI,secondary,Physician/Clinic,
+246977,ECSE,primary,Move in from another state,p
+244128,EI,primary,Hospital,p
+242949,EI,primary,Hospital,p
+245621,EI,primary,Physician/Clinic,p
+249749,ECSE,primary,Other,p
+243533,EI,primary,Hospital,p
+245942,ECSE,primary,Childcare/Preschool,p
+246040,EI to KG,primary,Parents/Family,p
+243375,EI to ECSE,primary,Physician/Clinic,p
+243882,EI,primary,Physician/Clinic,p
+245932,EI,primary,Private Therapy,ia
+245932,EI,primary,Parents/Family,p
+247043,ECSE,primary,Other DHS,p
+243703,EI to KG,primary,Parents/Family,p
+240426,ECSE,primary,Parents/Family,p
+241370,ECSE,primary,Physician/Clinic,p
+249613,EI,primary,Hospital,p
+248833,EI,primary,Physician/Clinic,p
+242847,EI,primary,Hospital,p
+249961,EI,primary,Parents/Family,p
+247445,EI,primary,CAPTA,p
+249277,EI,primary,Private Therapy,p
+242865,ECSE,primary,Other EI/ECSE program,p
+245017,EI to KG,primary,Parents/Family,p
+243243,EI,primary,Parents/Family,p
+246501,ECSE,primary,Parents/Family,p
+248618,EI,primary,Physician/Clinic,p
+240071,EI,primary,Physician/Clinic,p
+244448,ECSE,primary,Physician/Clinic,ia
+244448,ECSE,primary,Parents/Family,p
+249911,EI,primary,CAPTA,ia
+249911,EI,primary,CAPTA,p
+247359,EI,primary,Childcare/Preschool,p
+245887,EI,primary,Parents/Family,p
+246752,EI,primary,Parents/Family,p
+240958,EI,primary,Parents/Family,p
+241074,EI to KG,primary,Childcare/Preschool,p
+249236,EI,primary,Parents/Family,p
+249236,EI,secondary,Physician/Clinic,
+249271,EI to KG,primary,Healthy Families Oregon,p
+243406,EI,primary,Physician/Clinic,p
+243833,ECSE,primary,Physician/Clinic,p
+245372,EI,primary,Physician/Clinic,p
+245372,EI,secondary,Physician/Clinic,
+243323,EI to KG,primary,Parents/Family,p
+249484,ECSE,primary,Head Start,p
+243085,EI,primary,Physician/Clinic,p
+245008,EI,primary,Physician/Clinic,p
+249883,ECSE,primary,Parents/Family,p
+240686,EI to KG,primary,Physician/Clinic,p
+245766,EI,primary,Parents/Family,p
+244499,ECSE,primary,Physician/Clinic,p
+242714,ECSE,primary,Physician/Clinic,p
+241766,ECSE,primary,Physician/Clinic,p
+243863,EI,primary,CAPTA,p
+246716,EI to KG,primary,Head Start,p
+240868,EI,primary,Physician/Clinic,ia
+240868,EI,primary,Parents/Family,p
+244455,EI,primary,Parents/Family,p
+248743,EI,primary,EHDI,p
+248624,ECSE,primary,Childcare/Preschool,p
+242140,EI,primary,Physician/Clinic,p
+247054,ECSE,primary,Physician/Clinic,p
+249381,ECSE,primary,Parents/Family,p
+249381,ECSE,secondary,Physician/Clinic,
+240086,ECSE,primary,Parents/Family,p
+245208,EI to KG,primary,Other EI/ECSE program,p
+243588,ECSE,primary,Head Start,p
+249850,EI to ECSE,primary,Parents/Family,p
+241743,EI,primary,Physician/Clinic,p
+246127,EI,primary,CAPTA,p
+245031,EI,primary,Hospital,p
+245031,EI,secondary,CAPTA,
+248634,EI to KG,primary,Parents/Family,p
+248634,EI to KG,secondary,Physician/Clinic,
+242465,ECSE,primary,Head Start,p
+248655,EI to KG,primary,Parents/Family,p
+248655,EI to KG,secondary,Physician/Clinic,
+249553,ECSE,primary,Head Start,p
+244825,EI to ECSE,primary,Physician/Clinic,p
+248116,ECSE,primary,Childcare/Preschool,p
+249527,EI to KG,primary,Other DHS,p
+249068,ECSE,primary,Childcare/Preschool,p
+245360,EI to KG,primary,Move in from another state,p
+240616,ECSE,primary,Other,p
+240093,ECSE,primary,Childcare/Preschool,p
+248883,ECSE,primary,Head Start,p
+242908,ECSE,primary,Parents/Family,p
+241232,EI to KG,primary,Head Start,p
+241067,EI,primary,CAPTA,p
+244490,ECSE,primary,Head Start,p
+247699,EI to KG,primary,Childcare/Preschool,p
+249026,EI to KG,primary,Childcare/Preschool,p
+243217,EI,primary,Childcare/Preschool,p
+248270,ECSE,primary,Head Start,p
+243661,ECSE,primary,Physician/Clinic,p
+244408,EI,primary,Hospital,p
+244408,EI,secondary,CAPTA,
+240038,EI,primary,Physician/Clinic,p
+241715,EI,primary,Parents/Family,p
+248892,ECSE,primary,Childcare/Preschool,p
+246334,EI to KG,primary,Head Start,p
+249327,EI to KG,primary,Parents/Family,p
+246787,EI,primary,Hospital,p
+246787,EI,secondary,Physician/Clinic,
+247714,ECSE,primary,Physician/Clinic,p
+246337,ECSE,primary,Other EI/ECSE program,p
+243104,ECSE,primary,Childcare/Preschool,p
+243104,ECSE,secondary,Physician/Clinic,
+241860,EI,primary,Physician/Clinic,p
+245730,EI to KG,primary,Head Start,p
+242658,EI,primary,Healthy Families Oregon,p
+246309,ECSE,primary,Parents/Family,p
+243614,EI to KG,primary,Parents/Family,p
+240579,EI,primary,Healthy Families Oregon,p
+246025,EI,primary,Hospital,p

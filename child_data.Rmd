@@ -66,7 +66,7 @@ child_data <- merge(child_data1, child_data2)
 
 
 ```{r, eligibility}
-child_eligibility1 <- child_eligibility %>%
+child_eligibility_cond <- child_eligibility %>%
   separate(elig_date, into = c("year", "month", "day", sep = "-")) %>%
   filter(year >= 2015) %>%
   mutate(elig_code = recode(elig_code,
@@ -90,7 +90,7 @@ child_eligibility1 <- child_eligibility %>%
 ```
 
 ```{r, eligibility}
-plot_elig <- ggplot(child_eligibility1, aes(year, n, 
+plot_elig <- ggplot(child_eligibility_cond, aes(year, n, 
                                             fill = elig_code)) +
   scale_fill_manual(values=c("#4c4c4c", "#86BB8D", 
                              "#68a4bd", "#ff9900","#ff0000")) +
@@ -110,12 +110,14 @@ ggplotly(plot_elig)
 
 ```
 ```{r}
-child_eligibility1 %>%
+child_eligibility_cond %>%
   pivot_wider(names_from = elig_code,
-              values_from = n)%>%
-  reactable()
+              values_from = n)
 ```
 
+```{r}
+#rio::export(child_eligibility_cond, here::here("data", "child_eligibility_cond.csv"))
+```
 
 ```{r, joining datasets}
 #child_data <- merge(child_data1, child_data2)
@@ -125,7 +127,7 @@ child_eligibility1 %>%
 ```
 
 ```{r}
-child_data_a <- child_data1 %>%
+child_data_foster <- child_data1 %>%
   select(project_child_id, age_class, has_medicaid_id, 
          has_foster_parent) %>%
   mutate_at(c("has_medicaid_id", 
@@ -144,15 +146,16 @@ child_data_a <- child_data1 %>%
     medi_fost %in% "has_foster_parent" ~ "Has Foster Parent",
     medi_fost %in% "has_medicaid_id" ~ "Has Medicaid ID"))
   
+child_data_foster
 
-
-plot_foster <- ggplot(child_data_a,
-                      aes(x = medi_fost, y = percent, fill = catebory)) +
+plot_foster <- ggplot(child_data_foster,
+                      aes(x = medi_fost, y = percent)) +
   geom_col(aes(fill = category), width = 0.1) +
   scale_fill_manual(values=c("#CC79A7", "#68a4bd")) +
   theme_economist() +
   theme(axis.title.x = element_blank(),
-        legend.title = element_blank()) +
+        legend.title = element_blank(),
+        plot.title = element_text(hjust = 0.5, size = 12)) +
   labs(title = "Number of children in foster care and with medicaid",
        y = "Percent")
 ggplotly(plot_foster)
@@ -163,7 +166,12 @@ ggplotly(plot_foster)
 
 ```
 
+
 ```{r}
+#rio::export(child_data_foster, here::here("data", "child_data_foster.csv"))
+```
+
+```{r, done}
 
 child_placement1 <- child_placement %>%
   separate(placement_date, into = c("year", "month", "day", sep = "-")) %>%
@@ -222,7 +230,7 @@ ggplotly(plot_placement)
 
 
 
-```{r, Quaterly Placement data}
+```{r, Quaterly Placement data, done}
 #str(child_placement)
 library(zoo)
 library(lubridate)
@@ -261,27 +269,38 @@ child_placement_qtr <- child_placement_qtr %>%
 ```{r}
 # Export dataset: child_placement_qtr for quaterly placement outcome representation
 
-rio::export(child_placement_qtr, here("data", "child_placement_qtr.csv"))
+#rio::export(child_placement_qtr, here("data", "child_placement_qtr.csv"))
 
 ```
 
 
-```{r, Quaterly Placement table}
+```{r, Quaterly Placement table, done}
 
-child_placement_qtr %>%
+child_placement_qtr_tbl <- child_placement_qtr %>%
   select(year, qtr, Outcome, n) %>%
   pivot_wider(names_from = Outcome,
               values_from = n) %>%
   group_by(year) %>%
   summarize_all(mean) %>%
-  select(-qtr, -typ_peer_or_tution)
+  select(-qtr, -typ_peer_or_tution) %>%
+  rename("evaluation(mean)" = evaluation,
+         "inactive(mean)" = inactive,
+         "notification(mean)" = notification,
+         "placement(mean)" = placement,
+         "referral(mean)" = referral,
+         "screening(mean)" = screening,
+         "elig_team_meeting(mean)" = elig_team_meet)
  
-    
+  child_placement_qtr_tbl
+
+```
+```{r}
+
 
 ```
 
 
-```{r, Quaterly Placement plot}
+```{r, Quaterly Placement plot, done}
 
 plot_placement<- ggplot(child_placement_qtr, aes(reorder(qtr, n), n,
                                                  fill = Outcome)) +
@@ -369,10 +388,14 @@ child_ref_rescreen <- child_ref2 %>%
   count(rescreen) %>%
   mutate(outcome = recode(outcome,
                        "ia" = "Inactive",
-                       "p" = "Placement"))
+                       "p" = "Placement")) %>%
+  select(ref_age_class, outcome, n) %>%
+  rename("number" = n)
+
+
 
 plot_rescreened <-ggplot(child_ref_rescreen,
-                         aes(x = ref_age_class, y = n, fill = outcome)) +
+                         aes(x = ref_age_class, y = number, fill = outcome)) +
   geom_col(width = 0.5) +
   scale_fill_manual(values=c("#CC79A7", "#68a4bd")) +
   theme_economist() +
@@ -395,6 +418,9 @@ ggplotly(plot_rescreened)
   
 ```
 
+```{r}
+#rio::export(child_ref_rescreen, here::here("data", "child_ref_rescreen.csv"))
+```
 
 ```{r, source of referral & outcome}
 
@@ -406,11 +432,18 @@ child_ref_outcome$ref_source <- as.factor(child_ref_outcome$ref_source)
 child_ref_outcome$ref_source_ode <- as.factor(child_ref_outcome$ref_source_ode)
 child_ref_outcome$ref_age_class <- as.factor(child_ref_outcome$ref_age_class)
 
-#str(child_ref_outcome)
+child_ref_outcome
+```
+```{r}
+
+#rio::export(child_ref_outcome, here::here("data", "child_ref_outcome.csv"))
+
 ```
 
 
-```{r, secondary ref_source}
+
+
+```{r, secondary ref_source, done}
 
 
 child_ref_sec <- child_ref_outcome %>%
@@ -451,7 +484,7 @@ ggplotly(plot_secondary)
 ```
 
 
-```{r}
+```{r, primary_ref_done}
 child_ref_pri <- child_ref_outcome %>%
   filter(ref_source == "primary") %>%
   mutate(ref_source_ode = case_when(
@@ -533,8 +566,7 @@ child_placement_trans <- child_placement %>%
  
 ```
 
-```{r, Transition}
-
+```{r, Transition, data}
 child_ref_elig <- left_join(child_referral, child_eligibility, 
                               by = "project_child_id") %>%
   select(project_child_id, notification_date, referral_date, 
@@ -566,8 +598,21 @@ child_ref_elig <- child_ref_elig %>%
                        "p" = "Placement")) %>%
   select(ref_age_class, outcome, elig_code) %>%
   group_by(ref_age_class, outcome) %>%
-  count(elig_code) 
+  count(elig_code)
 
+
+
+child_ref_elig
+
+```
+
+
+```{r}
+#rio::export(child_ref_elig, here::here("data", "child_ref_elig.csv"))
+```
+
+
+```{r, Transition, done}
 plot_tran_elig <- ggplot(child_ref_elig, aes(elig_code, n, 
                                             fill = outcome)) +
   scale_fill_manual(values=c("#4c4c4c", "#86BB8D", 
@@ -659,6 +704,8 @@ child_dnq_return$return_category <- paste(child_dnq_return$Inactive,
 #child_dnq_return[sapply(child_dnq_return, is.character)] <- 
  # lapply(child_dnq_return[sapply(child_dnq_return,is.character)],as.factor)
 
+child_dnq_return
+
 ggplot(child_dnq_return, aes(reorder(return_category, n), n, 
                              fill = return_category)) +
   geom_col(fill = "#5F9EA0", width = 0.5) +
@@ -686,6 +733,9 @@ child_dnq_return
 
 
 ```
+```{r}
+#rio::export(child_dnq_return, here::here("data", "child_dnq_return.csv"))
+```
 
 
 ```{r, table}
@@ -693,6 +743,7 @@ child_dnq_return
 child_dnq_return %>%
   select(Inactive, Placement, n) %>%
   reactable()
+ 
 
 
 ```
@@ -713,22 +764,23 @@ child_site_center <- child_site %>%
     Placement = site,
     Number = n)
 
+child_site_center
 #child_site_center$Placement <- as.factor(child_site_center$site)
 ```
 
 ```{r}
 # Export child_site_center in csv for Shiny. For children in each Placement by site plot
 
-write.table(child_site_center, file = "child_site_center.xlsx")
+#rio::export(child_site_center, here::here("data", "child_site_center.csv"))
 
 
 
 ```
 
 ```{r}
-center_plot <- ggplot(child_site_center, aes(reorder(Placement, Number), Number,
+site_plot <- ggplot(child_site_center, aes(reorder(Placement, Number), Number,
                                              fill = Region)) +
-  geom_col(width = 0.5) +
+  geom_col(width = 0.3) +
   theme_economist() +
   scale_fill_manual(values=c("#4c4c4c", "#86BB8D", "#B22222", "#ff9900",
                              "#68a4bd", "#CC79A7", "#0074D9")) +
@@ -737,12 +789,12 @@ center_plot <- ggplot(child_site_center, aes(reorder(Placement, Number), Number,
                                      hjust = 1.0, size = 8),
         axis.title.x = element_blank(),
         axis.title.y = element_blank(),
-        plot.title = element_text(size = 10, hjust = 0.5),
+        plot.title = element_text(size = 12, hjust = 0.5),
         legend.title = element_text( size=8), 
         legend.text=element_text(size=8)) +
   labs(title = "Number of Children in each Placement by Region")
 
-ggplotly(center_plot)
+ggplotly(site_plot)
 
 
 ```

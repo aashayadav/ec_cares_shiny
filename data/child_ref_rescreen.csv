@@ -1,0 +1,9 @@
+ref_age_class,outcome,number
+EI,Inactive,22
+EI,Placement,34
+ECSE,Inactive,10
+ECSE,Placement,11
+EI to ECSE,Inactive,5
+EI to ECSE,Placement,6
+EI to KG,Inactive,1
+EI to KG,Placement,1

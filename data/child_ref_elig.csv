@@ -1,0 +1,12 @@
+ref_age_class,outcome,elig_code,n
+ecse tk,Inactive,CD,1
+ecse tk,Inactive,DD,1
+ecse tk,Placement,Autism,2
+ecse tk,Placement,CD,6
+ecse tk,Placement,DD,7
+ecse tk,Placement,DHH,1
+ei tecse,Inactive,CD,2
+ei tecse,Inactive,DD,6
+ei tecse,Placement,CD,7
+ei tecse,Placement,DD,15
+ei tecse,Placement,DHH,1
