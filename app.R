@@ -15,6 +15,7 @@ library(janitor)
 library(here)
 
 
+
 #upload datasets here#
 
 data_report <- import(here("data", "data_report.csv"))
@@ -67,7 +68,7 @@ create_plot <- function(var) {
           axis.title.x = element_blank(),
           axis.title.y = element_blank(),
           legend.title = element_blank(),
-          plot.title = element_text(hjust = 0.5)) +
+          plot.title = element_text(hjust = 0.5, size = 12)) +
     labs(title = glue::glue("Number of Children in EI & ECSE: {ttl}")) +
     scale_color_OkabeIto() 
   
@@ -250,10 +251,84 @@ ui <- dashboardPage(
         fluidRow(
           box(width = 7, plotlyOutput("site_plot")),
           box(width = 5, uiOutput("site_tbl")))
+        ),
+      
+      tabItem(
+        tabName = "tab_about",
+        fluidRow(
+          box(width = "6 col-lg-4",
+              tags$p(
+                class = "text-center",
+                tags$img(class = "img-responsive",
+                         src = "eccares_logo.png", 
+                         style = "max-width: 150px;")
+                ),
+              
+              tags$p(h2("About the Data")),
+              ),
+          
+          box(title = h2("Contact"),
+              width = "6 col-lg-4",
+              tags$p("Your suggestions, feedback",
+              "complaints or compliments are",
+              "highly valued and will guide",
+              "us to improve the dashboard.",
+              "Please email them to:",
+              HTML(paste0(tags$a(href = "mailto:ayadav@uoregon.edu",
+                                 "ayadav@uoregon.edu"), ".")),
+              tags$p(h2("About the Developer")),
+              tags$p("This dashboard is developed by Asha Yadav.",
+                     "She is currently pursuing Ph.D.in Special Education",
+                     "at the University of Oregon. Connect with her on"))
+              ),
+          
+          box(title = "About this Dashboard",
+              width = "6 col-lg-4",
+              tags$p(
+                class = "text-center",
+                tags$a(
+                  href = "https://rstudio.com",
+                  target = "_blank",
+                  tags$img(class = "image-responsive",
+                           src = "RStudio.png",
+                           style = "max-width: 150px;"
+                           )
+                  ),
+                tags$a(
+                  href = "https://shiny.rstudio.com/",
+                  target = "_blank",
+                  tags$img(class = "image-responsive",
+                           src = "shiny.png",
+                           style = "max-width: 150px; margin-left: 2em;"
+                           )
+                  ),
+                tags$a(
+                  href = "https://www.tidyverse.org/",
+                  target = "_blank",
+                  tags$img(class = "image-responsive",
+                           src = "tidyverse.png",
+                           style = "max-width: 150px; margin-left: 2em;"
+                           )
+                  )
+                ),
+              tags$p(
+                "This dashboard was built in",
+                tags$a(href = "https://r-project.org", target = "_blank", "R"),
+                "and", tags$a(href = "https://rstudio.com", target = "_blank", "RStudio"), "with",
+                tags$strong("shiny,"),
+                tags$strong("shinydashboard,"),
+                tags$strong("ggplot2,"),
+                tags$strong("plotly,"),
+                "the", tags$strong("tidyverse,"),
+                "and many more packages."
+                
+              )
+              )
+          )
         )
       )
     )
-  )
+)
 
   
   # "UI" ends here and "server" starts #
