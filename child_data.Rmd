@@ -295,7 +295,19 @@ child_placement_qtr_tbl <- child_placement_qtr %>%
 
 ```
 ```{r}
+d<- child_placement_qtr_tbl %>%
+  pivot_longer(-year,
+               names_to = "outcome",
+               values_to = "mean_value")
 
+g <- ggplot(d, aes(x = year, y = mean_value, 
+                   group = outcome, color = outcome)) + 
+  geom_point() + geom_line(alpha = 0.4) +
+  labs(title = "Placement outcome by Year", 
+       y = "mean", x = "") +
+  theme_dark()
+
+ggplotly(g, tooltip = c("outcome", "mean_value"))
 
 ```
 

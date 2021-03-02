@@ -15,7 +15,6 @@ library(janitor)
 library(here)
 
 
-
 #upload datasets here#
 
 data_report <- import(here("data", "data_report.csv"))
@@ -41,6 +40,22 @@ options(reactable.theme = reactableTheme(
     &[aria-sort='descending']" = list(background = "hsl(0, 0%, 96%)"),
     borderColor = "#555")))
   
+
+# For placement outcome tab: tabName: placement
+placement_create_tbl <- child_placement_qtr %>%
+  select(year, qtr, Outcome, n) %>%
+  pivot_wider(names_from = Outcome,
+              values_from = n) %>%
+  group_by(year) %>%
+  summarize_all(mean) %>%
+  select(-qtr, -typ_peer_or_tution) %>%
+  rename("evaluation(mean)" = evaluation,
+         "inactive(mean)" = inactive,
+         "notification(mean)" = notification,
+         "placement(mean)" = placement,
+         "referral(mean)" = referral,
+         "screening(mean)" = screening,
+         "elig_team_meeting(mean)" = elig_team_meet)
 
 #2. Monthly Report Data tab
 ##2.1 Function to change name of variables and build a plot on monthly report data tab
@@ -221,7 +236,8 @@ ui <- dashboardPage(
       tabItem(
         tabName = "Placement",
         fluidRow(
-          box(width = 8, plotlyOutput("placement_plot"))),
+          box(width = 6, plotlyOutput("placement_plot")),
+          box(width = 6, plotlyOutput("placement_mean_plot"))),
         fluidRow(uiOutput("placement_tbl"))
         ),
       
@@ -264,7 +280,24 @@ ui <- dashboardPage(
                          style = "max-width: 150px;")
                 ),
               
-              tags$p(h2("About the Data")),
+              tags$p(h2("About this Project")),
+              tags$p("Early Childhood Cares (EC Cares) provides early",
+                     "intervention and early childhood",
+                     "special education services to infants,",
+                     "toddlers, and prechool chidren in Lane",
+                     "County in Oregon."),
+              tags$p("This project was developed as part",
+                     "of the Data Sciene Capstone project.",
+                     "The purpose was to track trends and",
+                     "address the need for data use for",
+                     "accountability, improvements, and ",
+                     "operations at the EI program level."),
+              
+              tags$p(h2("Data Source"),
+                     "The data for the dashboard was provided",
+                     "by EC Cares. Data came from monthly reports",
+                     "from 2015-2021, and from children currently",
+                     "enrolled in EC Cares.")
               ),
           
           box(title = h2("Contact"),
@@ -278,11 +311,18 @@ ui <- dashboardPage(
                                  "ayadav@uoregon.edu"), ".")),
               tags$p(h2("About the Developer")),
               tags$p("This dashboard is developed by Asha Yadav.",
-                     "She is currently pursuing Ph.D.in Special Education",
-                     "at the University of Oregon. Connect with her on"))
+                     "Asha is currently pursuing Ph.D.in Special Education",
+                     "at the University of Oregon. Connect with her at:",
+                     HTML(paste0(tags$a(href = "mailto:ayadav@uoregon.edu",
+                                        "ayadav@uoregon.edu"), ".")),
+              tags$p(h3("Interests:")),
+              tags$ul(
+                tags$li("Children and Family lives"),
+                tags$li("Data Science in R"))
+                     ))
               ),
           
-          box(title = "About this Dashboard",
+          box(title = h2("About this Dashboard"),
               width = "6 col-lg-4",
               tags$p(
                 class = "text-center",
@@ -411,7 +451,7 @@ ui <- dashboardPage(
         theme(axis.title.x = element_blank(),
               axis.title.y = element_blank(),
               plot.title = element_text(hjust = 0.5)) +
-        labs(title = "Primary Referral Sources and Outcomes") +
+        labs(title = "Primary Referral Source and Outcome") +
         coord_flip() +
         facet_wrap(~ref_age_class)
       
@@ -558,22 +598,23 @@ ui <- dashboardPage(
       
     })
     
-    output$placement_tbl <- renderUI({
+    output$placement_mean_plot <- renderPlotly({
       
-      placement_create_tbl <- child_placement_qtr %>%
-        select(year, qtr, Outcome, n) %>%
-        pivot_wider(names_from = Outcome,
-                    values_from = n) %>%
-        group_by(year) %>%
-        summarize_all(mean) %>%
-        select(-qtr, -typ_peer_or_tution) %>%
-        rename("evaluation(mean)" = evaluation,
-               "inactive(mean)" = inactive,
-               "notification(mean)" = notification,
-               "placement(mean)" = placement,
-               "referral(mean)" = referral,
-               "screening(mean)" = screening,
-               "elig_team_meeting(mean)" = elig_team_meet)
+      d <- placement_create_tbl %>%
+        pivot_longer(-year,
+                     names_to = "outcome",
+                     values_to = "mean_value")
+      g <- ggplot(d, aes(x = year, y = mean_value,
+                         group = outcome, color = outcome)) + 
+        geom_point() + geom_line(alpha = 0.4) +
+        labs(title = "Placement outcome by Year", 
+             y = "mean", x = "") +
+        theme_dark()
+      ggplotly(g)
+      
+    })
+    
+    output$placement_tbl <- renderUI({
       
       box(width = 12, reactable(placement_create_tbl,
                                 highlight = TRUE))
