@@ -18,6 +18,12 @@ library(plotly)
 library(kableExtra)
 library(ggthemes)
 library(colorblindr)
+
+#install.packages('rsconnect')
+library(rsconnect)
+rsconnect::setAccountInfo(name='aashayadav',
+			  token='AC782DCCCA5C1A8001B6DC76CBA07E00',
+			  secret='r2L7iXjwdS7aOAbx9xV4hIoWH7H3ZrohaXv0INuv')
 ```
 
 

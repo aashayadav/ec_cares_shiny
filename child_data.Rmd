@@ -23,6 +23,14 @@ library(dplyr)
 library(zoo)
 library(reactable)
 
+#install.packages("htmlwidgets")
+
+
+
+
+
+
+
 ```
 
 ```{r}
@@ -282,14 +290,18 @@ child_placement_qtr_tbl <- child_placement_qtr %>%
               values_from = n) %>%
   group_by(year) %>%
   summarize_all(mean) %>%
-  select(-qtr, -typ_peer_or_tution) %>%
-  rename("evaluation(mean)" = evaluation,
-         "inactive(mean)" = inactive,
-         "notification(mean)" = notification,
-         "placement(mean)" = placement,
-         "referral(mean)" = referral,
-         "screening(mean)" = screening,
-         "elig_team_meeting(mean)" = elig_team_meet)
+  select(-qtr, -typ_peer_or_tution) 
+
+
+
+#%>%
+#  rename("evaluation(mean)" = evaluation,
+#         "inactive(mean)" = inactive,
+#         "notification(mean)" = notification,
+#         "placement(mean)" = placement,
+#         "referral(mean)" = referral,
+#         "screening(mean)" = screening,
+ #        "elig_team_meeting(mean)" = elig_team_meet)
  
   child_placement_qtr_tbl
 
@@ -299,6 +311,8 @@ d<- child_placement_qtr_tbl %>%
   pivot_longer(-year,
                names_to = "outcome",
                values_to = "mean_value")
+  d$outcome <- as.factor(d$outcome)
+
 
 g <- ggplot(d, aes(x = year, y = mean_value, 
                    group = outcome, color = outcome)) + 
@@ -314,12 +328,14 @@ ggplotly(g, tooltip = c("outcome", "mean_value"))
 
 ```{r, Quaterly Placement plot, done}
 
-plot_placement<- ggplot(child_placement_qtr, aes(reorder(qtr, n), n,
+
+plot_placement<- ggplot((child_placement_qtr %>%
+                          filter(year == 2018)), aes(reorder(qtr, n), n,
                                                  fill = Outcome)) +
   scale_fill_manual(values=c("#4c4c4c", "#86BB8D", "#B22222", "#ff9900",
                              "#68a4bd", "#CC79A7", "#008000", "#0072B2" )) +
   geom_col(width = 0.5) +
-  facet_wrap(~year, scales = "free_y") +
+  #facet_wrap(~year, scales = "free_y") +
   theme_economist_white() +
   theme(axis.text.x = element_text(angle = 45,
                                    vjust = 1.0,
