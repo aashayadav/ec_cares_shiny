@@ -14,7 +14,9 @@ library(colorblindr)
 library(janitor)
 library(here)
 library(forcats)
-library(htmlwidgets)
+#library(shinyjs)
+#library(shinyWidgets)
+
 
 
 
@@ -30,6 +32,7 @@ child_eligibility_cond <- import(here("data", "child_eligibility_cond.csv"))
 child_dnq_return <- import(here("data", "child_dnq_return.csv"))
 child_data_foster <- import(here("data", "child_data_foster.csv"))
 child_site_center <- import(here("data", "child_site_center.csv"))
+child_placement_month <- import(here("data", "child_placement_month.csv"))
 
 #A. Add functions here#
 
@@ -37,7 +40,7 @@ child_site_center <- import(here("data", "child_site_center.csv"))
 #. Global theme for all reactable tables
 options(reactable.theme = reactableTheme(
   backgroundColor = "#D6EAF8",
-  highlightColor = "#00a5c1",
+  highlightColor = "#ccf5ff",   #"#00a5c1",
   headerStyle = list(
     "&:hover[aria-sort]" = list(background = "hsl(0, 0%, 96%)"),
     "&[aria-sort='ascending'],
@@ -63,13 +66,7 @@ placement_create_tbl <- child_placement_qtr %>%
   group_by(year) %>%
   summarize_all(mean) %>%
   select(-qtr, -typ_peer_or_tution) #%>%
- # rename("evaluation(mean)" = evaluation,
- #        "inactive(mean)" = inactive,
- #        "notification(mean)" = notification,
- #        "placement(mean)" = placement,
- #        "referral(mean)" = referral,
- #        "screening(mean)" = screening,
- #       "elig_team_meeting(mean)" = elig_team_meet)
+ 
 
 #2. Monthly Report Data tab
 
@@ -90,18 +87,17 @@ create_plot <- function(var) {
     geom_line(aes(group = Qualify), color= "grey80") +
     geom_point(aes(color = Qualify), size = 3) + 
     facet_wrap(~Area, scales = "free_y") +
-    theme_economist() +
-    #theme_minimal(base_size = 15) +
-    theme(axis.text.x = element_text(angle = 45,
-                                     vjust = 1.0,
-                                     hjust = 1.0),
+   # theme_economist() +
+    theme_minimal() +
+    theme(axis.text.x = element_text(size = 11),
+          axis.text.y = element_text(size = 11),
           axis.title.x = element_blank(),
           axis.title.y = element_blank(),
           legend.title = element_blank(),
           legend.text = element_text(size = 10),
           plot.title = element_text(hjust = 0.5, size = 14),
           strip.text = element_text(face="bold", size = 11)) +
-    scale_y_continuous(expand = c(0, 0)) +
+   
     labs(title = glue::glue("Number of Children in EI & ECSE: {ttl}")) +
     scale_color_OkabeIto() 
   
@@ -180,7 +176,8 @@ plot_pri_outcome <-ggplot(child_ref_pri, aes(reorder(ref_source_ode, n),
   geom_col(aes(group = Outcome), width = 0.3) +
   scale_fill_manual(values = c("#4c4c4c", "#ff9900", "#68a4bd",
                                "#86BB8D","#B22222", "#CC79A7")) +
-  theme_economist() +
+  theme_minimal() +
+ # theme_economist() +
   theme(axis.title.x = element_blank(),
         axis.title.y = element_blank(),
         plot.title = element_text(hjust = 0.5),
@@ -209,7 +206,8 @@ plot_pri_outcome <-ggplot(child_ref_pri, aes(reorder(ref_source_ode, n),
                                               fill = ref_source_ode))) +
     geom_col(width = 0.3) +
     scale_fill_manual(values=c("#CC79A7", "#68a4bd", "#86BB8D")) +
-    theme_economist() +
+    #theme_economist() +
+    theme_minimal() +
     theme(axis.title.x = element_blank(),
           axis.title.y = element_blank(),
           legend.title = element_blank(),
@@ -234,7 +232,8 @@ plot_pri_outcome <-ggplot(child_ref_pri, aes(reorder(ref_source_ode, n),
                                fill = outcome)) +
     geom_col(width = 0.5) +
     scale_fill_manual(values=c("#CC79A7", "#68a4bd")) +
-    theme_economist() +
+    #theme_economist() +
+    theme_minimal() +
     theme(axis.title.x = element_blank(),
           axis.title.y = element_blank(),
           legend.title = element_blank(),
@@ -281,10 +280,12 @@ plot_pri_outcome <-ggplot(child_ref_pri, aes(reorder(ref_source_ode, n),
   dnq_return <- ggplot(child_dnq_return,
                        aes(reorder(return_category, n), n,
                            fill = return_category)) +
-    geom_col(fill = "#5F9EA0", width = 0.8) +
+    geom_col(fill = "tomato3", width = 0.8) +
     geom_text(aes(label = n), size = 4) +
-    theme_economist() + 
-    theme(axis.text.x = element_text(size = 10),
+    #theme_economist() + 
+    theme_minimal() +
+    theme(axis.text.x = element_text(size = 11),
+          axis.text.y = element_text(size = 11),
           legend.position = "none",
           axis.title.x = element_blank(),
           axis.title.y = element_blank(),
@@ -303,27 +304,77 @@ plot_pri_outcome <-ggplot(child_ref_pri, aes(reorder(ref_source_ode, n),
   
   ## placement quater plot
   
-  plot_placement <- ggplot(child_placement_qtr,
-                           aes(reorder(qtr, n), n, fill = Outcome)) +
-    scale_fill_manual(values=c("#4c4c4c", "#86BB8D", "#B22222", "#ff9900",
-                               "#68a4bd", "#CC79A7", "#008000", "#0072B2" )) +
-    geom_col(width = 0.5) +
-    facet_wrap(~year, scales = "free_y") +
-    theme_economist_white() +
-    theme(axis.text.x = element_text(angle = 45,
-                                     vjust = 1.0,
-                                     hjust = 1.0,
-                                     size = 10),
-          axis.text.y = element_text(size = 10),
-          axis.title.x = element_blank(),
-          axis.title.y = element_blank(),
-          legend.title = element_text(size = 10),
-          legend.text = element_text(size = 10),
-          strip.text = element_text(size = 10)) +
-    scale_y_continuous(expand = c(0, 0)) +
-    labs(title = "Quaterly Placement Outcome: 2016-2021")
+  plot_placement_qtr <- function(v_year) {
+    
+    
+    ttl <- case_when(
+      
+      v_year == "2015" ~ "2015",
+      v_year == "2016" ~ "2016",
+      v_year == "2017" ~ "2017",
+      v_year == "2018" ~ "2018",
+      v_year == "2019" ~ "2019",
+      v_year == "2020" ~ "2020",
+      TRUE ~ "2021"
+    )
+    
+    
+   # child_placement_qtr$Outcome <- as.factor(child_placement_qtr$Outcome)
+    
+    ggplot(child_placement_qtr %>%
+             filter(year == v_year),
+           aes(qtr, n, color = Outcome, group = Outcome, shape = Outcome)) +
+      
+      scale_color_manual(values=c("#4c4c4c", "#86BB8D", "#B22222", "#ff9900",
+                                 "#68a4bd", "#CC79A7", "#008000", "#0072B2" )) +
+      
+      scale_shape_manual(values = c(15, 16, 17, 3, 4, 18, 11, 13)) +
+      geom_point(size = 2) + 
+      geom_line(alpha = 0.4) +
+      theme_minimal() +
+      theme(axis.text.y = element_text(size = 10),
+            axis.title.x = element_blank(),
+            axis.title.y = element_blank(),
+            legend.title = element_blank(),
+            legend.text = element_text(size = 10)) +
+      labs(title = glue::glue("Placement Outcome by Quarter: {ttl}"))
+  
+  }
   
   
+  ## child_placement_month plot
+  
+  plot_placement_month <- function(v_year) {
+    
+    ttl <- case_when(
+      
+      v_year == "2015" ~ "2015",
+      v_year == "2016" ~ "2016",
+      v_year == "2017" ~ "2017",
+      v_year == "2018" ~ "2018",
+      v_year == "2019" ~ "2019",
+      v_year == "2020" ~ "2020",
+      TRUE ~ "2021"
+    )
+   
+    child_placement_month %>%
+    filter(year == v_year) %>%
+    group_by(year, month) %>%
+    count(Outcome) %>%
+    ggplot(aes(month, n, color = Outcome, group = Outcome, shape = Outcome)) +
+      scale_color_manual(values=c("#4c4c4c", "#86BB8D", "#B22222", "#ff9900",
+                                  "#68a4bd", "#CC79A7", "#008000", "#0072B2" )) +
+      
+      scale_shape_manual(values = c(15, 16, 17, 3, 4, 18, 11, 13)) +
+      geom_point(size = 2) + geom_line(alpha = 0.4) +
+      theme_minimal() +
+      theme(axis.title.x = element_blank(),
+            axis.title.y = element_blank(),
+            legend.title = element_blank(),
+            plot.title = element_text(hjust = 0.5)) +
+    labs(title = glue::glue("Placement Outcome by Month: {ttl}"))
+    
+  }
   
   
   ## placement mean plot
@@ -352,12 +403,15 @@ plot_pri_outcome <-ggplot(child_ref_pri, aes(reorder(ref_source_ode, n),
   
   plot_foster <- ggplot(child_data_foster,
                         aes(x = medi_fost, y = percent)) +
-    geom_col(aes(fill = category), width = 0.4) +
+    geom_col(aes(fill = category), width = 0.3) +
     scale_fill_manual(values=c("#CC79A7", "#68a4bd")) +
-    theme_economist() +
+    #theme_economist() +
+    theme_minimal() +
     theme(axis.title.x = element_blank(),
+          axis.text.x = element_text(size = 11),
+          axis.text.y = element_text(size = 11),
           legend.title = element_blank(),
-          plot.title = element_text(hjust = 0.5, size = 12)) +
+          plot.title = element_text(hjust = 0.5, size = 14)) +
     scale_y_continuous(expand = c(0, 0)) +
     labs(title = "Number of children in foster care and with medicaid",
          y = "Percent")
@@ -365,24 +419,56 @@ plot_pri_outcome <-ggplot(child_ref_pri, aes(reorder(ref_source_ode, n),
 # For Site_plot
 
 ## plot function to be used in server for plot and downloadhandler
-site_plot <- ggplot(child_site_center, 
-                    aes(reorder(Placement, Number), 
-                        Number, fill = Region)) +
-  geom_col(width = 0.5) +
-  theme_economist() +
-  scale_fill_manual(values=c("#4c4c4c", "#86BB8D", "#B22222", "#ff9900",
-                             "#68a4bd", "#CC79A7", "#0074D9")) +
-  theme(axis.text.x = element_text(size = 10),
-        axis.title.x = element_blank(),
-        axis.title.y = element_blank(),
-        plot.title = element_text(size = 12, hjust = 0.5),
-        legend.title = element_blank(), 
-        legend.text=element_text(size=10)) +
-  scale_y_continuous(expand = c(0, 0)) +
-  labs(title = "Number of Children in each Placement by Region") +
-  coord_flip()
+#site_plot <- ggplot(child_site_center, 
+#                    aes(reorder(Placement, Number), 
+ #                       Number, fill = Region)) +
+ # geom_col(width = 0.5) +
+ # theme_economist() +
+ # scale_fill_manual(values=c("#4c4c4c", "#86BB8D", "#B22222", "#ff9900",
+ #                            "#68a4bd", "#CC79A7", "#0074D9")) +
+ # theme(axis.text.x = element_text(size = 10),
+ #       axis.title.x = element_blank(),
+ #       axis.title.y = element_blank(),
+ #       plot.title = element_text(size = 12, hjust = 0.5),
+ #       legend.title = element_blank(), 
+  #      legend.text=element_text(size=10)) +
+ # scale_y_continuous(expand = c(0, 0)) +
+ # labs(title = "Number of Children in each Placement by Region") +
+ # coord_flip()
 
 
+
+site_plot <- function(v_region) {
+  
+  ttl <- case_when(
+    
+    v_region == "Central" ~ "Central",
+    v_region == "Classrooms" ~ "Classrooms",
+    v_region == "Coast" ~ "Coast",
+    v_region == "East" ~ "East",
+    v_region == "Lane Regional Program" ~ "Lane Regional Program",
+    v_region == "Southwest" ~ "Southwest",
+    TRUE ~ "Null"
+  )
+  
+  
+  ggplot(child_site_center %>%
+           filter(Region == v_region), 
+         aes(reorder(Placement, Number),
+             Number)) +
+    geom_col(width = 0.3, fill = "tomato3") +
+    geom_text(aes(label = Number), size = 4) +
+    #theme_economist() +
+    theme_minimal() +
+    theme(axis.text.x = element_text( size = 12),
+          axis.text.y = element_text( size = 12),
+          axis.title.x = element_blank(),
+          axis.title.y = element_blank(),
+          plot.title = element_text(size = 14, hjust = -0.5),
+          legend.position = "none") +
+    labs(title = glue::glue("Number of Children in each Placement: {ttl}")) +
+    coord_flip()
+}
 
 #B. UI: contains dashboardHeader, dashboardsidebar, dashboardBody
 
@@ -404,12 +490,13 @@ ui <- dashboardPage(
   dbHeader,
   dashboardSidebar(
     width = 250,
+    
     sidebarMenu(
       id = "tabs",
-      menuItem("Dashboard", tabName = "dashboard",
-               icon = icon("home"),
-               badgeLabel = "2015-2021",
-               badgeColor = "yellow"),
+      #menuItem("Dashboard", tabName = "dashboard",
+      #         icon = icon("home"),
+        #       badgeLabel = "2015-2021",
+        #       badgeColor = "yellow"),
       
       menuItem("Monthly Report Data", tabName = "monthly_report", 
                icon = icon("calendar-alt"), startExpanded = FALSE),
@@ -425,15 +512,29 @@ ui <- dashboardPage(
       
       menuItem("Child-level Data", tabName = "child", 
                icon = icon("baby"), startExpanded = FALSE,
-               menuSubItem("Referral Sources", tabName = "Referral_Sources"),
-               menuSubItem("Rescreened", tabName = "Rescreened"),
-               menuSubItem("Eligibility Condition", tabName = "Eligibility_Condition"),
-               menuSubItem("Placement", tabName = "Placement"),
-               menuSubItem("Transition", tabName = "Transition"),
-               menuSubItem("DNQ Return", tabName = "DNQ_Return"),
-               menuSubItem("Medicaid Foster", tabName = "Medicaid_Foster"),
-               menuSubItem("Site Center", tabName = "Site_Center")
-               ),
+               menuItem("Referral Sources", tabName = "Referral_Sources"),
+               menuItem("Rescreened", tabName = "Rescreened"),
+               menuItem("Eligibility Condition", tabName = "Eligibility_Condition"),
+               menuItem("Transition", tabName = "Transition"),
+               menuItem("DNQ Return", tabName = "DNQ_Return"),
+               menuItem("Medicaid Foster", tabName = "Medicaid_Foster")),
+      
+      menuItem("Site Center", tabName = "Site_Center"),
+      selectInput("v_region", "Region",
+                  choices = child_site_center %>%
+                    select(Region) %>%
+                    distinct() %>%
+                    arrange(),
+                  selected = "Central"),
+      
+               
+      menuItem("Placement", tabName = "Placement"),
+      selectInput("v_year", "Year",
+                  choices = child_placement_qtr %>%
+                    select(year) %>%
+                    distinct() %>%
+                    arrange(),
+                  selected = "2020"),
       
       menuItem("About", tabName = "tab_about", icon = icon("info"))
       )
@@ -467,14 +568,14 @@ ui <- dashboardPage(
     
     tabItems(
       # Dashboard home
-      tabItem(
-        tabName = "dashboard",
+    #  tabItem(
+     #   tabName = "dashboard",
         #contents for the dashboard home
-        h3(paste0("EC Cares 5-Years Overview")),
-        p("2015-2021"),
-        fluidRow(
-          uiOutput("overview"))
-        ),
+     #   h3(paste0("EC Cares 5-Years Overview")),
+     #   p("2015-2021"),
+     #   fluidRow(
+     #     uiOutput("overview"))
+      #  ),
       
       tabItem(
         tabName = "monthly_report",
@@ -551,14 +652,19 @@ ui <- dashboardPage(
               downloadButton(outputId = "placement_dl",
                              label = "Download Plot",
                              style="color: #fff; background-color: #00a5c1; border-color: Black;")),
+          box(width = 6, plotlyOutput("placement_m_plot"),
+              downloadButton(outputId = "placement_m_dl",
+                             label = "Download Plot",
+                             style="color: #fff; background-color: #00a5c1; border-color: Black;"))
+         ),
+        fluidRow(
+          box(width = 6, uiOutput("placement_tbl"),
+              downloadButton(outputId = "placement_tbl_dl",
+                             label = "Download Data",
+                             style="color: #fff; background-color: #00a5c1; border-color: Black;")),
           box(width = 6, plotlyOutput("placement_mean_plot"),
               downloadButton(outputId = "placement_mean_dl",
                              label = "Download Plot",
-                             style="color: #fff; background-color: #00a5c1; border-color: Black;"))),
-        fluidRow(
-          box(width = 12, uiOutput("placement_tbl"),
-              downloadButton(outputId = "placement_tbl_dl",
-                             label = "Download Data",
                              style="color: #fff; background-color: #00a5c1; border-color: Black;")))
         ),
       
@@ -727,27 +833,27 @@ ui <- dashboardPage(
     )
 )
 
+
   
   # "UI" ends here and "server" starts #
 
   server <- function(input, output) {
     
+       #1. tabName = "dashboard"
     
-    #1. tabName = "dashboard"
-    
-    output$overview <- renderUI({
+    #output$overview <- renderUI({
       
-      overview_tbl <- data_report_pyramid %>%
-        pivot_wider(names_from = "variable",
-                    values_from = "number")
-      box(width = 12, reactable(overview_tbl,
-                                groupBy = "Year",
-                                height = 350,
-                                width = 1200,
-                                striped = TRUE,
-                                minRows = 7,
-                                highlight = TRUE))
-      })
+   #   overview_tbl <- data_report_pyramid %>%
+   #     pivot_wider(names_from = "variable",
+    #                values_from = "number")
+   #   box(width = 12, reactable(overview_tbl,
+    #                            groupBy = "Year",
+     #                           height = 350,
+     #                           width = 1200,
+     #                           striped = TRUE,
+     #                           minRows = 7,
+      #                          highlight = TRUE))
+    #  })
     
     # 2.tabName = "monthlyreport"
     
@@ -833,6 +939,8 @@ ui <- dashboardPage(
         dev.off()
       }
     )
+    
+    
     
     
     
@@ -958,10 +1066,10 @@ ui <- dashboardPage(
     
     output$placement_plot <- renderPlotly({
       
-      ggplotly(plot_placement) %>%
+      
+      ggplotly(plot_placement_qtr(input$v_year)) %>%
         config(displaylogo = F,
-               modeBarButtonsToRemove = 
-                 custom_modebar)
+               modeBarButtonsToRemove = custom_modebar)
       
       
     })
@@ -972,10 +1080,33 @@ ui <- dashboardPage(
       },
       content = function(file) {
         png(file)
-        print(plot_placement)
+        print(plot_placement_qtr(input$v_year))
         dev.off()
       }
     )
+    
+    
+    output$placement_m_plot <- renderPlotly({
+      
+      ggplotly(plot_placement_month(input$v_year)) %>%
+        config(displaylogo = F,
+               modeBarButtonsToRemove = custom_modebar)
+        
+      
+      
+    })
+    
+    output$placement_m_dl <- downloadHandler(
+      filename = function() {
+        paste("placement_m_plot", ".png", sep = "")
+        },
+      content = function(file) {
+        png(file)
+        print(plot_placement_month(input$v_year))
+        dev.off()
+      }
+    )
+    
     
     
     
@@ -1005,7 +1136,8 @@ ui <- dashboardPage(
       box(title = "Placement Outcome(Mean)", 
           reactable(placement_create_tbl,
                     highlight = TRUE,
-                    width = 1200))
+                    width = 500,
+                    height = 375))
       })
     
     output$placement_tbl_dl <- downloadHandler(
@@ -1164,7 +1296,7 @@ ui <- dashboardPage(
     
     output$site_plot <- renderPlotly({
       
-     ggplotly(site_plot) %>%
+     ggplotly(site_plot(input$v_region)) %>%
         config(displaylogo = F,
                modeBarButtonsToRemove = 
                  custom_modebar)

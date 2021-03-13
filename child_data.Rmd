@@ -179,60 +179,100 @@ ggplotly(plot_foster)
 #rio::export(child_data_foster, here::here("data", "child_data_foster.csv"))
 ```
 
-```{r, done}
 
-child_placement1 <- child_placement %>%
+```{r}
+child_placement
+```
+
+```{r, done}
+child_placement_month <- child_placement %>%
   separate(placement_date, into = c("year", "month", "day", sep = "-")) %>%
   mutate(month = factor(month),
          month = recode(month,
-                     "01" = "january",
-                     "02" = "february",
-                     "03" = "march",
-                     "04" = "april",
-                     "05" = "may",
-                     "06" = "june",
-                     "07" = "july",
-                     "08" = "august",
-                     "09" = "september",
-                     "10" = "october",
-                     "11" = "november",
-                     "12" = "december")) %>%
+                     "01" = "Jan",
+                     "02" = "Feb",
+                     "03" = "Mar",
+                     "04" = "Apr",
+                     "05" = "Mar",
+                     "06" = "June",
+                     "07" = "July",
+                     "08" = "Aug",
+                     "09" = "Sep",
+                     "10" = "Oct",
+                     "11" = "Nov",
+                     "12" = "Dec")) %>%
  # unite(placement, prefix:suffix, sep = "_")
 mutate(Outcome = recode(prefix,
-                       "n" = "notification",
-                       "r" = "referral",
-                       "s" = "screening",
-                       "e" = "evaluation",
-                       "etm" = "edu_team_meet",
-                       "p" = "placement",
-                       "ia" = "inactive",
-                       "t" = "typ_peer_or_tution")) %>%
-  group_by(year, month) %>%
-  count(Outcome)
+                       "n" = "Notification",
+                       "r" = "Referral",
+                       "s" = "Screening",
+                       "e" = "Evaluation",
+                       "etm" = "Elig_team_meet",
+                       "p" = "Placement",
+                       "ia" = "Inactive",
+                       "t" = "Typ_peer_or_tution")) 
+child_placement_month <- child_placement_month %>%
+  select(month, year, Outcome)
+```
 
-plot_placement<- ggplot(child_placement1, aes(month, n, 
-                                            fill = Outcome)) +
-  scale_fill_manual(values=c("#4c4c4c", "#86BB8D", "#68a4bd", "#ff9900",
-                             "#ff0000", "#CC79A7", "#00FF00", "#0072B2" )) +
-  geom_col(aes(group = Outcome), width = 0.5) +
-  facet_wrap(~year, scales = "free_y") + 
+
+```{r}
+#download data for plot_placement_month plot
+
+#rio::export(child_placement_month, here::here("data", "child_placement_month.csv"))
+
+```
+
+
+```{r, done}
+# Bar plot
+#plot_placement <- child_placement1 %>%
+#  filter(year == 2014) %>%
+#  group_by(year, month) %>%
+#  count(Outcome) %>%
+#  ggplot(aes(month, n, fill = Outcome)) +
+#  scale_fill_manual(values=c("#4c4c4c", "#86BB8D", "#68a4bd", "#ff9900",
+#                             "#ff0000", "#CC79A7", "#00FF00", "#0072B2" )) +
+#  geom_col(aes(group = Outcome), width = 0.5) +
   #theme_minimal() +
-  theme_economist() +
-  theme(axis.text.x = element_text(angle = 45,
-                                     vjust = 1.0,
-                                     hjust = 1.0),
-        axis.title.x = element_blank(),
+#  theme_economist() +
+#  theme(axis.title.x = element_blank(),
+#        axis.title.y = element_blank(),
+#        legend.title = element_blank(),
+#        plot.title = element_text(hjust = 0.5)) +
+#  labs(title = "Primary Eligibility Condition for EI & ECSE")
+  
+#  ggplotly(plot_placement)
+  
+
+## for the radio button selection
+#child_placement1 %>%
+#  select(year) %>%
+#  distinct() %>%
+#  arrange(year)
+
+
+plot_placement_month <- child_placement_month %>%
+  filter(year == 2018) %>%
+  group_by(year, month) %>%
+  count(Outcome) %>%
+  ggplot(aes(month, n, group = Outcome, color = Outcome, shape = Outcome)) +
+  geom_point(size = 2) + geom_line(alpha = 0.4) +
+  scale_color_manual(values=c("#4c4c4c", "#86BB8D", "#68a4bd", "#ff9900",
+                             "#ff0000", "#CC79A7", "#00FF00", "#0072B2" )) +
+  scale_shape_manual(values = c(15, 16, 17, 3, 4, 18, 11, 13)) +
+  #theme_minimal() +
+  theme_minimal() +
+  theme(axis.title.x = element_blank(),
         axis.title.y = element_blank(),
         legend.title = element_blank(),
         plot.title = element_text(hjust = 0.5)) +
-  labs(title = "Primary Eligibility Condition for EI & ECSE") 
+  labs(title = "Primary Eligibility Condition for EI & ECSE")
+  
+  
+ggplotly(plot_placement_month)
 
-  
-ggplotly(plot_placement)
-  
-                            
  
-
 
 ```
 
@@ -248,7 +288,6 @@ child_placement[sapply(child_placement, is.character)] <-
 
 child_placement$placement_date <- as.Date(child_placement$placement_date, 
                                           format = "%Y-%m-%d")
-str(child_placement)
 
 
 child_placement_qtr <- child_placement %>%
@@ -257,19 +296,22 @@ child_placement_qtr <- child_placement %>%
   count(prefix) %>%
   separate(qd, into = c("year", "qtr", sep = " ")) %>%
   mutate(Outcome = recode(prefix, 
-                         "n" = "notification",
-                         "r" = "referral",
-                         "s" = "screening",
-                         "e" = "evaluation",
-                         "etm" = "elig_team_meet",
-                         "p" = "placement",
-                         "ia" = "inactive",
-                         "t" = "typ_peer_or_tution")) %>%
+                         "n" = "Notification",
+                         "r" = "Referral",
+                         "s" = "Screening",
+                         "e" = "Evaluation",
+                         "etm" = "Elig_team_meet",
+                         "p" = "Placement",
+                         "ia" = "Inactive",
+                         "t" = "Typ_peer_or_tution")) %>%
   filter(year >=2016)
 
 child_placement_qtr <- child_placement_qtr %>%
   select(year, qtr, Outcome, n)
 
+child_placement_qtr$qtr <- as.factor(child_placement_qtr$qtr)
+
+child_placement_qtr
 
 
 ```
@@ -282,7 +324,7 @@ child_placement_qtr <- child_placement_qtr %>%
 ```
 
 
-```{r, Quaterly Placement table, done}
+```{r, Quaterly Placement table(mean), done}
 
 child_placement_qtr_tbl <- child_placement_qtr %>%
   select(year, qtr, Outcome, n) %>%
@@ -290,7 +332,7 @@ child_placement_qtr_tbl <- child_placement_qtr %>%
               values_from = n) %>%
   group_by(year) %>%
   summarize_all(mean) %>%
-  select(-qtr, -typ_peer_or_tution) 
+  select(-qtr, -Typ_peer_or_tution) 
 
 
 
@@ -306,7 +348,7 @@ child_placement_qtr_tbl <- child_placement_qtr %>%
   child_placement_qtr_tbl
 
 ```
-```{r}
+```{r, Mean}
 d<- child_placement_qtr_tbl %>%
   pivot_longer(-year,
                names_to = "outcome",
@@ -315,55 +357,76 @@ d<- child_placement_qtr_tbl %>%
 
 
 g <- ggplot(d, aes(x = year, y = mean_value, 
-                   group = outcome, color = outcome)) + 
-  geom_point() + geom_line(alpha = 0.4) +
-  labs(title = "Placement outcome by Year", 
+                   group = outcome, color = outcome, shape = outcome)) + 
+  geom_point(size = 2) + geom_line(alpha = 0.4) +
+   scale_color_manual(values=c("#4c4c4c", "#86BB8D", "#68a4bd", "#ff9900",
+                             "#ff0000", "#CC79A7", "#00FF00", "#0072B2" )) +
+  scale_shape_manual(values = c(15, 16, 17, 3, 4, 18, 11, 13)) +
+  labs(title = "Placement outcome (Mean) by Year", 
        y = "mean", x = "") +
-  theme_dark()
+  theme_economist()
 
-ggplotly(g, tooltip = c("outcome", "mean_value"))
+ggplotly(g)
 
 ```
 
 
 ```{r, Quaterly Placement plot, done}
 
+# line plot quaterly
 
-plot_placement<- ggplot((child_placement_qtr %>%
-                          filter(year == 2018)), aes(reorder(qtr, n), n,
-                                                 fill = Outcome)) +
-  scale_fill_manual(values=c("#4c4c4c", "#86BB8D", "#B22222", "#ff9900",
+#plot_placement_qtr<- child_placement_qtr %>%
+#  filter(year == 2019) %>%
+#  mutate(qtr = fct_reorder(qtr, n)
+  child_placement_qtr
+  
+ plot_placement_qtr <-  ggplot(child_placement_qtr %>%
+                                 filter(year == 2019), 
+                               aes(qtr, n, color = Outcome, group = Outcome, shape = Outcome)) +
+  scale_color_manual(values=c("#4c4c4c", "#86BB8D", "#B22222", "#ff9900",
                              "#68a4bd", "#CC79A7", "#008000", "#0072B2" )) +
-  geom_col(width = 0.5) +
+  scale_shape_manual(values = c(15, 16, 17, 3, 4, 18, 11, 13)) +
+  geom_point(size = 2) + geom_line(alpha = 0.4) +
   #facet_wrap(~year, scales = "free_y") +
-  theme_economist_white() +
-  theme(axis.text.x = element_text(angle = 45,
-                                   vjust = 1.0,
-                                   hjust = 1.0,
-                                   size = 10),
-        axis.text.y = element_text(size = 10),
+  theme_minimal() +
+  theme(axis.text.y = element_text(size = 10),
         axis.title.x = element_blank(),
         axis.title.y = element_blank(),
         legend.title = element_text(size = 10),
-        legend.text = element_text(size = 10),
-        strip.text = element_text(size = 10)) +
-  labs(title = "Quaterly Placement Outcome: 2016-2021")
-ggplotly(plot_placement)
+        legend.text = element_text(size = 10)) +
+  labs(title = "Quaterly Placement Outcome")
 
 
-
-#child_placement_qtr$placement_date <- as.Date(child_placement$placement_date, 
-                                       #   format = "%Y-%m-%d")
-#child_placement <- arrange(child_placement, placement_date)
-
-#child_placement$qd <- as.yearqtr(child_placement$placement_date)
+ggplotly(plot_placement_qtr)
 
 
-
+ 
 ```
 
   
 
+```{r, qtr_bar_plot}
+plot_placement <- ggplot(child_placement_qtr,
+                           aes(reorder(qtr, n), n, fill = Outcome)) +
+    scale_fill_manual(values=c("#4c4c4c", "#86BB8D", "#B22222", "#ff9900",
+                               "#68a4bd", "#CC79A7", "#008000", "#0072B2" )) +
+    geom_col(width = 0.5) +
+    facet_wrap(~year, scales = "free_y") +
+    theme_economist_white() +
+    theme(axis.text.x = element_text(angle = 45,
+                                     vjust = 1.0,
+                                     hjust = 1.0,
+                                     size = 10),
+          axis.text.y = element_text(size = 10),
+          axis.title.x = element_blank(),
+          axis.title.y = element_blank(),
+          legend.title = element_text(size = 10),
+          legend.text = element_text(size = 10),
+          strip.text = element_text(size = 10)) +
+    scale_y_continuous(expand = c(0, 0)) +
+    labs(title = "Quaterly Placement Outcome: 2016-2021")
+  
+```
 
 
 ```{r, referral sources}
@@ -484,7 +547,6 @@ child_ref_sec <- child_ref_outcome %>%
     TRUE ~ "Other")) %>%
   group_by(ref_age_class) %>%
   count(ref_source_ode)
-  
   
  
 plot_secondary <-ggplot(child_ref_sec, (aes(reorder(ref_age_class, n), n,
@@ -804,6 +866,30 @@ child_site_center
 
 
 ```
+
+```{r}
+
+
+
+site_plot <- ggplot(child_site_center %>%
+                      filter(Region == "Coast"), 
+                    aes(reorder(Placement, Number), 
+                        Number,
+                        fill = Region)) +
+  geom_col(width = 0.3) +
+  theme_economist() +
+  theme(axis.text.x = element_text(angle = 60,
+                                     vjust = 1.0,
+                                     hjust = 1.0, size = 8),
+        axis.title.x = element_blank(),
+        axis.title.y = element_blank(),
+        plot.title = element_text(size = 12, hjust = 0.5),
+        legend.position = "none") +
+  labs(title = "Number of Children in each Placement")
+
+ggplotly(site_plot)
+```
+
 
 ```{r}
 site_plot <- ggplot(child_site_center, aes(reorder(Placement, Number), Number,

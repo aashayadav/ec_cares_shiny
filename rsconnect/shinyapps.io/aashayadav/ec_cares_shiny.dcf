@@ -5,9 +5,9 @@ account: aashayadav
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 3720039
-bundleId: 4319771
+bundleId: 4337972
 url: https://aashayadav.shinyapps.io/ec_cares_shiny/
-when: 1615275227.97372
+when: 1615593479.61493
 asMultiple: FALSE
 asStatic: FALSE
-ignoredFiles: ~$stract.docx|~WRL3213.tmp|Abstract.docx|child_data.Rmd|monthly_report_d.Rmd
+ignoredFiles: ~$stract.docx|~WRL3213.tmp|Abstract.docx|child_data.Rmd|Data use in EI_abstract_Asha.docx|monthly_report_d.Rmd
